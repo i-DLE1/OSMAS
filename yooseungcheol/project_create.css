@@ -25,10 +25,12 @@ header {
 }
 .h1Title{
     font-size: 40px;
-    color:#884A3B;
+    color: aliceblue;
+    /* color:#884A3B; */
     font-weight: 700;
     margin-top: 30px;
     margin-bottom: 30px;
+    background-color: #C49A6C;
 }
 .scrollbox{
     border: 1px solid #884A3B ;
@@ -112,4 +114,31 @@ footer{
     font-size: 30px;
     margin: 0;
     padding: 0;
+}
+table{
+    font-size: 20px;
+}
+.table1{
+    width: 100%;
+    text-align: center;
+
+}
+.table1 tr{
+    color: #C49A6C;
+    border-bottom: 1px solid #C49A6C;
+    padding-top: 20px ;
+    padding-bottom: 15px ;
+}
+.table-border-between{
+    font-weight: 700;
+    color: #884A3B;
+    border-right: 1px solid #C49A6C;
+    border-left: 1px solid #C49A6C;   
+}
+label{
+    font-size: 1.1em;
+    padding-left: 3px;
+    padding-bottom: 2px;
+    color: #884A3B;
+    font-weight: 600;
 }

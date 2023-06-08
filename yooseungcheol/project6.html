@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>프로젝트 등록-프로젝트</title>
+        <link rel="stylesheet" href="../resource/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="./project_create.css">
     </head>
     <body>
@@ -26,6 +27,60 @@
         <!-- 진행 헤더 끝-->
         <main class="main">
             <h1 class="h1Title">새소식 등록</h1>
+
+
+            <!-- 게시글 등록 시작 -->
+            <div style="height: 550px;">
+                <div class="w-100">
+                    <label>제목</label><br>
+                    <input type="text" class="inputbox w-100" />
+                </div>
+                <div class="mt-4">
+                    <label>내용</label>
+                    <div style="height: 300px; border: 1px solid #C49A6C;">웹에디터</div>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: center;margin-top: 30px;">
+                    <input class="footerbtn" type="button" value="취소" />
+                    <input class="footerbtn" type="button" value="등록" />
+                </div>
+            </div>
+            <!-- 게시글 등록 끝 -->
+            <table class="table mt-4">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">내용</th>
+                        <th scope="col">작성일자</th>
+                        <th scope="col">마지막수정일자</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 반복 구간 시작 -->
+                        <th>1</th>
+                        <td class=col-2>더미</td>
+                        <td class=col-5>더미2</td>
+                        <td>2023-01-01</td>
+                        <td>2023-06-10</td>
+                    </tr>
+                    <!-- 반복 구간 끝 -->
+                    <tr>
+                        <th>2</th>
+                        <td>더미</td>
+                        <td>더미2</td>
+                        <td>2023-01-01</td>
+                        <td>2023-06-10</td>
+                    <tr>
+                        <th>3</th>
+                        <td>더미</td>
+                        <td>더미2</td>
+                        <td>2023-01-01</td>
+                        <td>2023-06-10</td>
+                    </tr>
+                </tbody>
+        </table>
+
+
         </main>
         <!-- 하단 버튼 시작 -->
         <footer>
