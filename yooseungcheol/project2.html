@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="ko">
     <head>
         <meta charset="utf-8">
         <title>프로젝트 등록-프로젝트</title>
         <link rel="stylesheet" href="./project_create.css">
+        <link rel="stylesheet" href="../resource/bootstrap/bootstrap.min.css">
     </head>
     <body>
         <!-- 진행 헤더 시작 -->
@@ -27,15 +24,51 @@
             <div>미리보기</div>
         </header>
         <!-- 진행 헤더 끝-->
-        <main>
+
+
+        <main class="main">
+            <h1 class="h1Title">프로젝트 등록</h1>
+            
+            <div class="row mt-2">
+                <h5 class="subtitle">프로젝트 제목</h5>
+                <div>
+                    <input class="inputbox w-100" type="text" />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <h5 class="subtitle">프로젝트 설명</h5>
+                <div>
+                    <input type="text" class="inputbox w-100" />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <h5 class="subtitle">프로젝트 기간</h5>
+                <div class="row">
+                    <div class="col" >
+                        <input type="date" class="inputbox" style="width: 100%;"/>
+                    </div>
+                    <div class="col offset-1" >
+                        <input type="date" class="inputbox" style="width: 100%;"/>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <h5 class="subtitle">펀딩 목표 금액</h5>
+                <div>
+                    <input type="number"  class="inputbox w-100"/>
+                </div>
+            </div>
 
         </main>
         
         
         <!-- 하단 버튼 시작 -->
         <footer>
-            <a href="./index.html"><input class="btn" type="button" value="이전" /></a>
-            <a href="./project3.html"><input class="btn" type="button" value="다음" /></a>
+            <a href="./index.html"><input class="footerbtn" type="button" value="이전" /></a>
+            <a href="./project3.html"><input class="footerbtn" type="button" value="다음" /></a>
         </footer>
         <!-- 하단 버튼 끝 -->
         <script src="" async defer></script>
