@@ -32,7 +32,10 @@ nav ul{
 
    aside#left ul li{
        background-color: #F9DFBB;
-       padding: 5px 10px;
+       width: 150px;
+       height: 30px;
+       padding: 5px 5px;
+       text-align: center;
        border-bottom: 1px solid black;
        
                    }
