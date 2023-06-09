@@ -1,0 +1,36 @@
+.top {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#category {
+    background-color: rgba(201, 195, 195, 0.7);
+    font-size: 13px;
+    width: 100px;
+    height: 50px;
+    margin-right: 20px;
+    }
+
+#title {
+    font-size: 25px;
+    background-color: rgba(201, 195, 195, 0.7);
+    width: 600px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+#logo {
+    background-color: rgba(201, 195, 195, 0.7);
+    font-size: 13px;
+    width: 100px;
+    height: 50px;
+}
+
+.product {
+    display: flex;
+}
+
+#image {
+    font-size: 13px;
+    margin-right: 20px;
+}
