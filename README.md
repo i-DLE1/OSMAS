@@ -2,7 +2,6 @@
 
 
 ### Other Size, Main Size (기타 사이즈, 우린에겐 메인사이즈)
-<br>
 
 # Introduce 
 

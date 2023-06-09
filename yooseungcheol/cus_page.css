@@ -1,0 +1,131 @@
+.cus-nav{
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    height: 140vh;
+    background-color: #F9DFBB;
+    font-size: 15px;
+    color: #884A3B;
+    box-shadow: 0px 0px 7px 0px rgb(126, 126, 126) ;
+}
+.menu-list {
+    list-style: none;
+    list-style-type: none;
+    line-height: 35px;
+    padding-left: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #884A3B;
+}
+.menu-list li{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.menu-visible{
+    transition: 0.2s;
+    display: block;
+}
+.list-nav{
+    border-top: 1px solid #C49A6C;
+    border-bottom: 1px solid #C49A6C;
+}
+.list-nav td{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.list-nav td:hover{
+    background-color: #cda57a;
+    color: white;
+}
+.list-nav td:last-child:hover{
+    background-color:white;
+}
+.menu-none-visible{
+    transition: 0.2s;
+    display: block;
+}
+body{
+    display: grid;
+    grid-template-columns: 270px auto;
+    margin: 0px;
+    margin-right: 60px;
+}
+
+.menu-list li:hover{
+    background-color: #C49A6C;
+    color: white;
+}
+.main{
+    margin-top: 40px;
+    margin-left: 40px;
+    color: #884A3B;
+}
+.h1Title{
+    font-weight: 800;
+}
+.searchBtn{
+    background-color: #C49A6C;
+    border: none;
+    color: white;
+    max-width: 60px !important;
+    border-radius: 5px;
+
+}
+.searchBar{
+    outline-color: #cda57a;
+    border: 1px solid #C49A6C;
+    border-radius: 3px;
+}
+
+.nav-list-area{
+    margin-bottom: 5em;
+}
+.table tr{
+    padding-top: 40px !important;
+    padding-bottom: 40px;
+}
+.table-font{
+    color: #884A3B !important;
+}
+.cus-table{
+    width: 100%;
+}
+.cus-table thead tr{
+    font-weight: 700;
+    height: 3em;
+    border-bottom: 1px solid #C49A6C;
+}
+.cus-table th{
+    padding-left: 20px;
+}
+.cus-table tbody tr{
+    height: 4em;
+    border-bottom: 1px solid #C49A6C;
+    
+}
+
+.cus-table tbody tr:hover{
+    background-color: #C49A6C;
+    color: white;
+}
+.pagenation{
+    margin-top: 3em;
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.pagenation li{
+    border: 1px solid #C49A6C;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+}
+.pagenation li:hover{
+    background-color: #C49A6C;
+    color: white;
+}
