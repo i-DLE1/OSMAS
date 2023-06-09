@@ -103,9 +103,15 @@ body{
 .cus-table tbody tr{
     height: 4em;
     border-bottom: 1px solid #C49A6C;
-    
 }
 
+.cus-table tbody tr td:nth-child(4){
+    max-width: 12vh;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
 .cus-table tbody tr:hover{
     background-color: #C49A6C;
     color: white;

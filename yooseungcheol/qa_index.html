@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="utf-8">
+  <title>프로젝트 - Q/A</title>
+  <link rel="stylesheet" href="../resource/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./cus_page.css">
+</head>
+<body>
+<nav class="cus-nav">
+  <div style="text-align: center;">
+    <img src="../static/image/Logo.png" width="150px" style="margin-top: 30px; margin-bottom: 30px;">
+  </div>
+  <h2>판매자 페이지</h2>
+  <br>
+  <!-- menu-none-visible 스위치 -->
+  <ul class="menu-list">
+    <h5>프로젝트 등록</h5>
+  </ul>
+  <ul class="menu-list">
+    <h5>프로젝트 관리 <span>▼▲</span></h5>
+    <div class="menu-visible">
+      <li>전체 조회</li>
+      <li>심사중</li>
+      <li>진행중</li>
+      <li>반려</li>
+      <li>취소</li>
+    </div>
+  </ul>
+  <ul class="menu-list">
+    <h5>주문관리 <span>▼▲</span></h5>
+    <div class="menu-visible">
+      <li>전체조회</li>
+      <li>주문접수</li>
+      <li>배송처리</li>
+      <li>교환환불</li>
+      <li>취소내역</li>
+      <li>주문정보</li>
+    </div>
+  </ul>
+  <ul class="menu-list">
+    <h5>Q / A <span>▼▲</span></h5>
+    <div class="menu-visible">
+      <li>전체 조회</li>
+      <li>답변 대기중</li>
+      <li>단변 완료</li>
+    </div>
+  </ul>
+  <ul class="menu-list">
+    <h5>권한관리 <span>▼▲</span></h5>
+    <div class="menu-visible">
+      <li>메뉴1</li>
+      <li>메뉴2</li>
+      <li>메뉴3</li>
+    </div>
+  </ul>
+</nav>
+<main class="main">
+  <h1 class="h1Title">프로젝트 관리 - Q / A</h1>
+
+  <div class="nav-list-area">
+    <table class="w-100 list-nav mt-5">
+      <tr class="row">
+        <td class="col-2">전체조회</td>
+        <td class="col-2">답변 대기중</td>
+        <td class="col-2">답변 완료</td>
+        <td class="col">
+          <div class="row col">
+            <select class="col-3 me-3 searchBar">
+              <option>메뉴1</option>
+              <option>메뉴2</option>
+              <option>메뉴3</option>
+              <option>메뉴4</option>
+            </select>
+            <input type="text" class="searchBar col">
+            <button class="searchBtn col ms-2">검색</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- 테이블 시작 -->
+  <table class="cus-table table-font">
+    <thead>
+      <th>#</th>
+      <td>프로젝트 명</td>
+      <td>주문자</td>
+      <td>질문</td>
+      <td>연락처</td>
+      <td>구매옵션</td>
+      <td>결제금액(원)</td>
+      <td>결제수단</td>
+      <td>작성일자</td>
+      <td>상태</td>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>아무나 사가라</td>
+        <td>홍길동</td>
+        <td>ㅇㄹㅇㄹsdfsdfsdfdsfsfdsfdsdsfdsfdsfsssdfsdf</td>
+        <td>010-1111-1112</td>
+        <td>콜랩sdf</td>
+        <td>40,000</td>
+        <td>카드</td>
+        <td>2023-01-10</td>
+        <td>완료</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- pagenation start -->
+  <div>
+    <ul class="pagenation">
+      <li><a herf=#><</a></li>
+      <li><a herf=#>1</a></li>
+      <li><a herf=#>2</a></li>
+      <li><a herf=#>3</a></li>
+      <li><a herf=#>4</a></li>
+      <li><a herf=#>5</a></li>
+      <li><a herf=#>></a></li>
+
+    </ul>
+
+  </div>
+  <!-- pagenation end -->
+  <!-- 테이블 종료 -->
+</main>
+
+</body>
+</html>
