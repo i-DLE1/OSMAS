@@ -7,13 +7,10 @@
     <title>Manager Main Page</title>
     <style>
         /* nav 영역 */
-    nav{margin-top: 10px; margin-bottom: 20px;
-    }
- 
     nav ul{
      list-style: none;
-     border-top: 1px solid red;
-     border-bottom: 1px solid red;
+     border-top: 1px solid gray;
+     border-bottom: 1px solid gray;
      text-align: center;
      display: grid;
      grid-template-columns: auto auto auto auto auto auto;
@@ -31,7 +28,6 @@
      line-height: 3em;
      text-transform: uppercase;
                 }
-    nav ul li a:hover{ text-decoration: underline;}
 
     /* 왼쪽 사이드 메뉴 */
     aside#left{
@@ -43,19 +39,17 @@
     aside#left ul{ list-style: none}
  
     aside#left ul li{
-        background-color: #3f3f3f;
+        background-color: #F9DFBB;
         padding: 5px 10px;
         border-bottom: 1px solid black;
+        
                     }
  
     aside#left ul li a{
-        color: white;
+        color: black;
         text-decoration: none;
                       }
- 
-    aside#left ul li:hover{
-        background-color: red;
-                           }
+
  
     aside#main{
         float: left;
@@ -64,9 +58,9 @@
     /* footer영역 */
     footer{
     clear: both;
-    background-color: #333333;
+    background-color: #5B4612;
     color: white;
-    text-align: center;
+   
     padding: 1em 0px;
       }
  
@@ -89,26 +83,20 @@
     font-size: 14px;
            }
 
-
-    .img {
-        position : absolute;
-        width: 17px;
-        top: 10px;
-        right: 12px;
-        margin: 0;
-          }
     #logo{
         text-align: center;
-        padding: 3em 0em;
-        width: 500px;
-        height: 500px;
+        width: 50%;
+        height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
           }
     </style>
 </head>  
     <header>
-        <div id="logo">
- 
-        <img src="./img/로고.png" width="300px" height="300">
+        <div id="logo"> 
+        <img src="./img/로고.png">
+
         </div>
         <nav>
             <ul>
@@ -125,9 +113,8 @@
     </header>
 
     <aside id="left">
-        <h4>카테고리</h4>
         <ul>
-            <li>관리자 마이페이지</li>
+            <li><a href="./managementMypage">관리자 마이 페이지</a></li>
             <li><a href="./currentFundingRanking">현재 펀딩 순위</a></li>
             <li><a href="./sellerAuthorityManagement">판매자 권한 관리</a></li>
             <li><a href="./productAuthorityManagement">상품 승인 관리</a></li>
@@ -136,19 +123,31 @@
     </aside>
 
     <footer>
-        <ul>
-            <li>공지사항</li>
+        <ul style="list-style: none;">
+            <div style="float: left; width: 10%; padding:10px;">
+            <li><a href="./notice">공지사항</a></li>
+            </div>
+           <div style="float: left; width: 10%; padding:10px;">
             <li><a href="./todayOpen">OSMAS 소개</a></li>
+            </div>
+            <div style="float: left; width: 10%; padding:10px;">
             <li><a href="./hotItem">이용가이드</a></li>
+            </div>
+            <div style="float: left; width: 10%; padding:10px;">
             <li><a href="./openExpect">이용약관</a></li>
+            </div>
+            <div style="float: left; width: 10%; padding:10px;">
             <li><a href="./event">개인정보처리방침</a></li>
+            </div>
+            <div style="float: left; width: 10%; padding:10px;">
             <li><a href="./event">프로젝트 심사 기준</a></li>
+            </div>
             <right>
             <h5>고객 센터</h5><br>
             <h5>평일 9:00 ~ 18:00</h5><br>
             <button style="float: right;">문의하기</button>
             </right>
-            <h6>오스메스는 크라우드펀딩 플랫폼을 운영하는 중개자(통신판매중개자)로서 프로젝트를 진행하는 당사자가 아닙니다.<br> 
+            <h6 style="text-align: center;">오스메스는 크라우드펀딩 플랫폼을 운영하는 중개자(통신판매중개자)로서 프로젝트를 진행하는 당사자가 아닙니다.<br> 
                 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있으므로, 각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.</h6>
         </ul>
     </footer>
