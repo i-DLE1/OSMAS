@@ -1,10 +1,8 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
-    
 }
-
-header {
+.header {
     width: 100%;
     background-color: #C49A6C;
     color: white;
@@ -19,9 +17,10 @@ header {
     color:#884A3B ;
 }
 .main{
-    margin: 4%;
     margin-top: 4em;
-    
+    margin-left: 4%;
+    margin-right: 4%;
+
 }
 .h1Title{
     font-size: 35px;
@@ -33,12 +32,11 @@ header {
     background-color: #C49A6C;
     padding: 10px;
 }
-.scrollbox{
+.scrollBox{
     border: 1px solid #884A3B ;
-    max-height: 300px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    width: 97%;
     padding: 1em;
+
 }
 .item{
     display: flex;
@@ -47,42 +45,47 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.item>input[type=checkbox]{
-    width: 20px;
-    height: 20px;
+.item input{
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
-    background-color: #C49A6C ;
+    border: 1px solid #884A3B;
+    accent-color: #884A3B;
 }
-footer{
+.footer{
+    margin-top: 3em;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footerbtn{
+.footerBtn{
     font-size: large;
     width: 100px;
     height: 50px;
     color: white;
     font-weight: 400;
     background-color: #C49A6C;
-    border: 0px;
+    border: none;
     border-radius: 5px;
     margin: 10px;    
 }
-.inputbox{
+.inputBox{
     padding: 10px;
     height: 40px;
     outline-style: none;
     border: 1px solid rgba(0, 0, 0, 0.3) ;
     border-radius: 3px;
 }
-.inputbox:focus{
-    transition: 0.15s;
+.inputBox:focus{
     border: 2px solid #C49A6C;
     border-radius: 3px;
 }
-
+.container-justify-center-w100{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .uploadBtn{
     text-align: center;
     margin-top: 10px;
@@ -102,7 +105,7 @@ footer{
     border: 1.5px solid #C49A6C;
     border-radius: 2px;
 }
-.additem{
+.addItem{
     width: 40px;
     height: 40px;
     background-color: #C49A6C;
@@ -116,32 +119,22 @@ footer{
     margin: 0;
     padding: 0;
 }
-table{
+
+.endTable{
+    width: 97%;
     font-size: 20px;
 }
-.table1{
-    width: 100%;
-    text-align: center;
-
-}
-.table1 tr{
+.endTable tr{
     color: #C49A6C;
     border-bottom: 1px solid #C49A6C;
     padding-top: 20px ;
     padding-bottom: 15px ;
 }
-.table-border-between{
+.endTable th{
     font-weight: 700;
     color: #884A3B;
     border-right: 1px solid #C49A6C;
     border-left: 1px solid #C49A6C;   
-}
-label{
-    font-size: 1.1em;
-    padding-left: 3px;
-    padding-bottom: 2px;
-    color: #884A3B;
-    font-weight: 600;
 }
 
 .cus-table{
@@ -155,12 +148,19 @@ label{
 }
 .cus-table th{
     padding-left: 20px;
+    padding-right: 20px;
 }
 .cus-table tbody tr{
     height: 4em;
     border-bottom: 1px solid #C49A6C;
-    color: #884A3B;
-    
+}
+.cus-table tbody td:nth-child(3){
+    max-width: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
 }
 
 .cus-table tbody tr:hover{

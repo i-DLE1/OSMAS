@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ko">
     <head>
         <meta charset="utf-8">
@@ -9,7 +8,7 @@
     </head>
     <body>
         <!-- 진행 헤더 시작 -->
-        <header>
+        <header class="header">
             <div >약관 동의</div>
             <div>&nbsp;&nbsp;>&nbsp;&nbsp;</div>
             <div >프로젝트</div>
@@ -27,39 +26,38 @@
         <!-- 진행 헤더 끝-->
         <main class="main">
             <h1 class="h1Title">새소식 등록</h1>
-
-
             <!-- 게시글 등록 시작 -->
             <div style="height: 550px;">
                 <div class="w-100">
-                    <label>제목</label><br>
-                    <input type="text" class="inputbox w-100" />
+                    <label for="title" class="subtitle">제목</label>
+                    <input type="text" class="inputBox w-100" id="title" name="title" />
                 </div>
                 <div class="mt-4">
-                    <label>내용</label>
+                    <label class="subtitle">내용</label>
                     <div style="height: 300px; border: 1px solid #C49A6C;">웹에디터</div>
                 </div>
-                <div style="width: 100%; display: flex; justify-content: center;margin-top: 30px;">
-                    <input class="footerbtn" type="button" value="취소" />
-                    <input class="footerbtn" type="button" value="등록" />
+                <div class="footer">
+                    <input class="footerBtn" type="button" value="취소" />
+                    <input class="footerBtn" type="button" value="등록" />
                 </div>
             </div>
             <!-- 게시글 등록 끝 -->
             <table class="cus-table mt-4">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">제목</th>
-                        <th scope="col">내용</th>
-                        <th scope="col">작성일자</th>
-                        <th scope="col">마지막수정일자</th>
+                        <th class="col">#</th>
+                        <td class="col-2">제목</td>
+                        <td class="col-5">내용</td>
+                        <td class="col">작성일자</td>
+                        <td class="col">마지막수정일자</td>
                     </tr>
                 </thead>
                 <tbody>
                     <!-- 반복 구간 시작 -->
+                    <tr>
                         <th>1</th>
-                        <td class=col-2>더미</td>
-                        <td class=col-5>더미2</td>
+                        <td>더미</td>
+                        <td>더미2</td>
                         <td>2023-01-01</td>
                         <td>2023-06-10</td>
                     </tr>
@@ -67,7 +65,7 @@
                     <tr>
                         <th>2</th>
                         <td>더미</td>
-                        <td>더미2</td>
+                        <td>긴글 테스트하기 위에에에에에에에에렌ㅇ렝렝렝레엘엘엘엘ㅇ렝ㄹ</td>
                         <td>2023-01-01</td>
                         <td>2023-06-10</td>
                     <tr>
@@ -83,11 +81,10 @@
 
         </main>
         <!-- 하단 버튼 시작 -->
-        <footer>
-            <a href="project5.html"><input class="footerbtn" type="button" value="이전" /></a>
-            <a href="project7.html"><input class="footerbtn" type="button" value="다음" /></a>
+        <footer class="footer">
+            <a href="project5.html"><input class="footerBtn" type="button" value="이전" /></a>
+            <a href="project7.html"><input class="footerBtn" type="button" value="다음" /></a>
         </footer>
         <!-- 하단 버튼 끝 -->
-        <script src="" async defer></script>
     </body>
 </html>
