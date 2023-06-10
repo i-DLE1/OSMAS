@@ -1,0 +1,99 @@
+/* nav 영역 */
+nav ul{
+    list-style: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+         }
+ 
+   nav ul li{
+    display: inline;
+    letter-spacing: .3em;
+         }
+ 
+   nav ul li a{
+    color: black;
+    line-height: 3em;
+               }
+
+   /* footer영역 */
+   footer{
+   clear: both;
+   background-color: #5B4612;
+   color: white;
+  
+   padding: 1em 0px;
+     }
+
+   right {
+       color: white;
+       text-align: right;
+         }
+
+   .search {
+       display: flex;
+       align-items: center;
+       margin-right: 30px;
+           }
+
+   input {
+   width: 100%;
+   border: 1px solid #bbb;
+   border-radius: 8px;
+   padding: 10px 12px;
+   font-size: 14px;
+          }
+
+   #logo{
+       text-align: center;
+       width: 50%;
+       height: 400px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+         }
+
+   a {
+       text-decoration: none;
+       color: white;
+   }
+
+   /* 권한 페이지 넘어가는 거..*/
+   .box {
+    width: 200px;
+    height: 50px;
+    background-color: #D9D9D9;
+   }
+   .box:hover {
+    background-color: #91701F;
+   }
+
+   /* 판매자 리스트 박스 */
+   .list {
+    text-align: center;
+    
+    max-width: 1000px;
+    background-color: #ffffff;
+  }
+
+  .item{
+    width: 40%;
+    height: 200px;
+    line-height: 200px;
+    background-color: #C49A6C;
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 25px;
+  }
+
+  /* ~~권한 보류중 박스~~*/
+  .box2 {
+    width: 140px;
+    height: 22px;
+    background-color: #D9D9D9;
+  }
+
+  .box3 {
+    display: flex;
+  justify-content: center;
+   }
+

@@ -1,0 +1,89 @@
+/* nav 영역 */
+nav ul{
+    list-style: none;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+         }
+ 
+   nav ul li{
+    display: inline;
+    letter-spacing: .3em;
+    margin-left: 2em;
+         }
+ 
+   nav ul li a{
+    text-decoration: none;
+    color: black;
+    line-height: 3em;
+    text-transform: uppercase;
+               }
+
+   /* footer영역 */
+   footer{
+   clear: both;
+   background-color: #5B4612;
+   color: white;
+  
+   padding: 1em 0px;
+     }
+
+   right {
+       color: white;
+       text-align: right;
+         }
+
+   .search {
+       display: flex;
+       align-items: center;
+       margin-right: 30px;
+           }
+
+   input {
+   width: 100%;
+   border: 1px solid #bbb;
+   border-radius: 8px;
+   padding: 10px 12px;
+   font-size: 14px;
+          }
+
+   #logo{
+       text-align: center;
+       width: 50%;
+       height: 400px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+         }
+         
+   a {
+       text-decoration: none;
+       color: white;
+   }
+
+/* 상품 관리 */
+   .product {
+    text-align: center;
+    display: flex;
+    gap: 20px 2%;
+    flex-wrap: wrap;
+  }
+  
+  .item{
+    width: 32%;
+  }
+  
+  .product {
+    position: relative;
+    margin: 100px auto;
+    max-width: 1400px;
+    background-color: #ffffff;
+  }
+  
+  .item {
+    height: 300px;
+    line-height: 200px;
+    background-color: #C49A6C;
+  }
