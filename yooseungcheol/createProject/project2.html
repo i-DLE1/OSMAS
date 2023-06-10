@@ -8,7 +8,7 @@
     </head>
     <body>
         <!-- 진행 헤더 시작 -->
-        <header>
+        <header class="header">
             <div >약관 동의</div>
             <div>&nbsp;&nbsp;>&nbsp;&nbsp;</div>
             <div class="active_process">프로젝트</div>
@@ -24,53 +24,50 @@
             <div>미리보기</div>
         </header>
         <!-- 진행 헤더 끝-->
-
-
         <main class="main">
             <h1 class="h1Title">프로젝트 등록</h1>
             
             <div class="row mt-2">
-                <h5 class="subtitle">프로젝트 제목</h5>
                 <div>
-                    <input class="inputbox w-100" type="text" />
+                    <label class="subtitle" for="title">프로젝트 제목</label>
+                    <input class="inputBox w-100" type="text" name="title" id="title" />
                 </div>
             </div>
             <br>
             <div class="row">
-                <h5 class="subtitle">프로젝트 설명</h5>
                 <div>
-                    <input type="text" class="inputbox w-100" />
+                    <label for="body" class="subtitle">프로젝트 설명</label>
+                    <input type="text" class="inputBox w-100" id="body" name="body" />
                 </div>
             </div>
             <br>
             <div class="row">
-                <h5 class="subtitle">프로젝트 기간 ( 시작 ~ 끝 )</h5>
-                <div class="row w-75">
+                <div class="row w-75 mt-3">
                     <div class="col" >
-                        <input type="date" class="inputbox" style="width: 100%;"/>
+                        <label for="startDate" class="subtitle">프로젝트 시작</label>
+                        <input type="date" class="inputBox" style="width: 100%;" id="startDate" name="startDate"/>
                     </div>
                     <div class="col" >
-                        <input type="date" class="inputbox" style="width: 100%;"/>
+                        <label for="endDate" class="subtitle">프로젝트 종료</label>
+                        <input type="date" class="inputBox" style="width: 100%;" id="endDate" name="endDate"/>
                     </div>
                 </div>
             </div>
             <br>
             <div class="row">
-                <h5 class="subtitle">펀딩 목표 금액</h5>
                 <div>
-                    <input type="number"  class="inputbox w-100"/>
+                    <label for="money" class="subtitle">펀딩 목표 금액</label>
+                    <input type="number"  class="inputBox w-100" id="money" name="money"/>
                 </div>
             </div>
-
         </main>
-        
-        
+
         <!-- 하단 버튼 시작 -->
-        <footer>
-            <a href="index.html"><input class="footerbtn" type="button" value="이전" /></a>
-            <a href="project3.html"><input class="footerbtn" type="button" value="다음" /></a>
+        <footer class="footer">
+            <a href="index.html"><input class="footerBtn" type="button" value="이전" /></a>
+            <a href="project3.html"><input class="footerBtn" type="button" value="다음" /></a>
         </footer>
         <!-- 하단 버튼 끝 -->
-        <script src="" async defer></script>
+
     </body>
 </html>
