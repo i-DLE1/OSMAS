@@ -52,15 +52,28 @@ body{
     margin: 0px;
     margin-right: 60px;
 }
-
-.menu-list li:hover{
+a{
+    text-decoration: none;
+    color: #884A3B;
+}
+.menu-list a li:hover{
     background-color: #C49A6C;
-    color: white;
+    color: white !important;
 }
 .main{
     margin-top: 40px;
     margin-left: 40px;
     color: #884A3B;
+}
+.main-header{
+    display: grid;
+    grid-template-columns: auto 300px;
+}
+.main-header div:nth-child(2){
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
 }
 .h1Title{
     font-weight: 800;
@@ -72,6 +85,10 @@ body{
     max-width: 60px !important;
     border-radius: 5px;
 
+}
+.active-page{
+    background-color: #884A3B !important;
+    color: white;
 }
 .searchBar{
     outline-color: #cda57a;
@@ -103,9 +120,15 @@ body{
 .cus-table tbody tr{
     height: 4em;
     border-bottom: 1px solid #C49A6C;
-    
 }
 
+.cus-table tbody tr td:nth-child(4){
+    max-width: 12vh;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
 .cus-table tbody tr:hover{
     background-color: #C49A6C;
     color: white;

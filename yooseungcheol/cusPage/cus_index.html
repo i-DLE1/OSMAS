@@ -3,67 +3,74 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <link rel="stylesheet" href="../resource/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="./cus_page.css">
+        <link rel="stylesheet" href="../../resources/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="cus_page.css">
     </head>
     <body>
-        <nav class="cus-nav">
-            <div style="text-align: center;">
-            <img src="../static/image/Logo.png" width="150px" style="margin-top: 30px; margin-bottom: 30px;">
+    <nav class="cus-nav">
+        <div style="text-align: center;">
+            <img src="../../static/image/Logo.png" width="150px" style="margin-top: 30px; margin-bottom: 30px;">
+        </div>
+        <h2>판매자 페이지</h2>
+        <br>
+        <!-- menu-none-visible 스위치 -->
+        <ul class="menu-list">
+            <h5>프로젝트 등록</h5>
+        </ul>
+        <ul class="menu-list">
+            <h5>프로젝트 관리 <span>▼▲</span></h5>
+            <div class="menu-visible">
+                <a href="./cus_index.html"><li class="active-page">전체 조회</li></a>
+                <a href="./cus_index.html"><li>심사중</li></a>
+                <a href="./cus_index.html"><li>진행중</li></a>
+                <a href="./cus_index.html"><li>반려</li></a>
+                <a href="./cus_index.html"><li>취소</li></a>
             </div>
-            <h2>판매자 페이지</h2>
-            <br>
-            <!-- menu-none-visible 스위치 -->
-            <ul class="menu-list">
-                <h5>프로젝트 등록</h5>
-            </ul>
-            <ul class="menu-list">
-                <h5>프로젝트 관리 <span>▼▲</span></h5>
-                <div class="menu-visible">
-                    <li>전체 조회</li>
-                    <li>심사중</li>
-                    <li>진행중</li>
-                    <li>반려</li>
-                    <li>취소</li>
-                </div>
-            </ul>
-            <ul class="menu-list">
-                <h5>주문관리 <span>▼▲</span></h5>
-                <div class="menu-visible">
-                    <li>전체조회</li>
-                    <li>주문접수</li>
-                    <li>배송처리</li>
-                    <li>교환환불</li>
-                    <li>취소내역</li>
-                    <li>주문정보</li>
-                </div>
-            </ul>
-            <ul class="menu-list">
-                <h5>Q / A <span>▼▲</span></h5>
-                <div class="menu-visible">
-                    <li>전체 조회</li>
-                    <li>답변 대기중</li>
-                    <li>단변 완료</li>
-                </div>
-            </ul>
-            <ul class="menu-list">
-                <h5>권한관리 <span>▼▲</span></h5>
-                <div class="menu-visible">
-                    <li>메뉴1</li>
-                    <li>메뉴2</li>
-                    <li>메뉴3</li>
-                </div>
-            </ul>
-        </nav>
+        </ul>
+        <ul class="menu-list">
+            <h5>주문관리 <span>▼▲</span></h5>
+            <div class="menu-visible">
+                <a href="#"><li>전체조회</li></a>
+                <a href="#"><li>주문접수</li></a>
+                <a href="#"><li>배송처리</li></a>
+                <a href="#"><li>교환환불</li></a>
+                <a href="#"><li>취소내역</li></a>
+                <a href="#"><li>주문정보</li></a>
+            </div>
+        </ul>
+        <ul class="menu-list">
+            <h5>Q / A <span>▼▲</span></h5>
+            <div class="menu-visible">
+                <a href="qa_index.html"><li>전체조회</li></a>
+                <a href="qa_index.html"><li>답변 대기중</li></a>
+                <a href="qa_index.html"><li>답변 완료</li></a>
+            </div>
+        </ul>
+        <ul class="menu-list">
+            <h5>권한관리 <span>▼▲</span></h5>
+            <div class="menu-visible">
+                <a href="#"><li>메뉴1</li></a>
+                <a href="#"><li>메뉴2</li></a>
+                <a href="#"><li>메뉴3</li></a>
+            </div>
+        </ul>
+    </nav>
         <main class="main">
-            <h1 class="h1Title">프로젝트 관리 - 전체조회</h1>
+            <div class="main-header">
+                <div>
+                    <h1 class="h1Title">프로젝트 관리 - 전체조회</h1>
+                </div>
+                <div>
+                    <h5><span>판매자</span>님 환영합니다.</h5>
+                </div>
 
+            </div>
             <div class="nav-list-area">
                 <table class="w-100 list-nav mt-5">
                     <tr class="row"> 
-                        <td class="col ">전체조회</td>
-                        <td class="col">진행중</td>
+                        <td class="col active-page">전체조회</td>
                         <td class="col">심사중</td>
+                        <td class="col">진행중</td>
                         <td class="col">반려</td>
                         <td class="col">취소</td>
                         <td class="col-4">
