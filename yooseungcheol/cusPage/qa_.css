@@ -1,6 +1,6 @@
 .body{
     margin: 20px;
-    background-color: #e5d6c5;
+    background-color: #fff1da;
 }
 .textarea{
     resize: none;
@@ -25,7 +25,7 @@ div{
 
 label{
     font-size: large;
-    color: #cda57a;
+    color: #884a3b;
     font-weight: 600;
     margin-top: 10px;
     margin-bottom: 10px;
