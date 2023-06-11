@@ -7,6 +7,7 @@
     border: none;
     outline-style: none;
     padding: 10px;
+    width: 98%;
 }
 .textarea:disabled{
     background-color: white   
@@ -14,36 +15,27 @@
 .qa-line{
     border: 2px solid #C49A6C;
 }
-input:disabled{
-    background-color: white;
-    border: none;
-    height: 40px;
-}
-div{
-    margin-top: 10px;
-}
-
-label{
-    font-size: large;
+.label{
+    display: block;
+    font-size: 30px;
     color: #884a3b;
-    font-weight: 600;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
-footer{
+.footer{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footerbtn{
+.footerBtn{
     font-size: large;
     width: 100px;
     height: 50px;
     color: white;
     font-weight: 400;
     background-color: #C49A6C;
-    border: 0px;
+    border: 0;
     border-radius: 5px;
     margin: 10px;    
 }
