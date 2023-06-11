@@ -26,26 +26,32 @@
     transition: 0.2s;
     display: block;
 }
+
 .list-nav{
     border-top: 1px solid #C49A6C;
     border-bottom: 1px solid #C49A6C;
 }
+
 .list-nav td{
     margin: 10px;
     padding: 5px;
     text-align: center;
 }
+
 .list-nav td:hover{
     background-color: #cda57a;
     color: white;
 }
+
 .list-nav td:last-child:hover{
     background-color:white;
 }
+
 .menu-none-visible{
     transition: 0.2s;
     display: block;
 }
+
 body{
     display: grid;
     grid-template-columns: 270px auto;
@@ -54,14 +60,17 @@ body{
     margin-bottom: 0px;
     margin-right: 60px;
 }
+
 a{
     text-decoration: none;
     color: #884A3B;
 }
+
 .menu-list a li:hover{
     background-color: #C49A6C;
     color: white !important;
 }
+
 .main{
     min-width: 900px;
     margin-top: 40px;
@@ -72,27 +81,31 @@ a{
     display: grid;
     grid-template-columns: auto 300px;
 }
+
 .main-header div:nth-child(2){
     display: flex;
     justify-content: end;
     align-items: center;
-
 }
+
 .h1Title{
     font-weight: 800;
 }
+
 .searchBtn{
     background-color: #C49A6C;
     border: none;
     color: white;
     max-width: 60px !important;
     border-radius: 5px;
-
 }
+
 .active-page{
     background-color: #884A3B !important;
     color: white;
+
 }
+
 .searchBar{
     outline-color: #cda57a;
     border: 1px solid #C49A6C;
@@ -102,24 +115,30 @@ a{
 .nav-list-area{
     margin-bottom: 5em;
 }
+
 .table tr{
     padding-top: 40px !important;
     padding-bottom: 40px;
 }
+
 .table-font{
     color: #884A3B !important;
 }
+
 .cus-table{
     width: 100%;
 }
+
 .cus-table thead tr{
     font-weight: 700;
     height: 3em;
     border-bottom: 1px solid #C49A6C;
 }
+
 .cus-table th{
     padding-left: 20px;
 }
+
 .cus-table tbody tr{
     height: 4em;
     border-bottom: 1px solid #C49A6C;
@@ -130,12 +149,13 @@ a{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
 }
+
 .cus-table tbody tr:hover{
     background-color: #C49A6C;
     color: white;
 }
+
 .pagenation{
     margin-top: 3em;
     list-style: none;
@@ -143,6 +163,7 @@ a{
     display: flex;
     justify-content: center;
 }
+
 .pagenation li{
     border: 1px solid #C49A6C;
     padding-left: 10px;
@@ -151,6 +172,7 @@ a{
     padding-bottom: 5px;
     margin: 5px;
 }
+
 .pagenation li:hover{
     background-color: #C49A6C;
     color: white;

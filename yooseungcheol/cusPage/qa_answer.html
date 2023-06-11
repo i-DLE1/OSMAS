@@ -2,30 +2,30 @@
 <html lang="ko">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>질문 답변</title>
         <link rel="stylesheet" href="qa_.css">
-        <link rel="stylesheet" href="../../resources/bootstrap/bootstrap.min.css">
     </head>
     <body class="body">
         <div>
-            <label>제목 : </label><br>
-            <input type="text" name="title" class="w-100" disabled>
-            <hr class="qa-line" />
+            <div style="margin-top: 2em;">
+                <label for="title" class="label">제목</label>
+                <textarea type="text" id="title" name="title" class="textarea" disabled></textarea>
+                <hr class="qa-line" />
+            <div style="margin-top: 2em">
+                <label for="content" class="label">내용</label>
+                <textarea class="textarea" type="text" id="content" name="content" rows="3" disabled > </textarea>
+                <hr class="qa-line" />
+            </div>
+            <div style="margin-top: 2em">
+                <label for="answer" class="label">답변</label>
+                <textarea class="textarea" type="text" id="answer" name="answer" rows="5"> </textarea>
+                <hr class="qa-line" />
+            </div>
+            <footer class="footer">
+                <a href="#"><input class="footerBtn" type="button" value="취소" /></a>
+                <a href="#"><input class="footerBtn" type="button" value="등록" /></a>
+            </footer>
         </div>
-        <div>
-            <label>내용 : </label><br>
-            <textarea class="w-100 textarea" type="text" name="content" rows="3" disabled > </textarea>
-            <hr class="qa-line" />
-        </div>
-        <div>
-            <label>답변 : </label><br>
-            <textarea class="w-100 textarea" type="text" name="answer" rows="5"> </textarea>
-            <hr class="qa-line" />
-        </div>
-        <footer>
-            <a href="#"><input class="footerbtn" type="button" value="취소" /></a>
-            <a href="#"><input class="footerbtn" type="button" value="등록" /></a>
-        </footer>
     </body>
 </html>
 
