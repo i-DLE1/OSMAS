@@ -71,7 +71,6 @@ nav ul{
    /* 판매자 리스트 박스 */
    .list {
     text-align: center;
-    
     max-width: 1000px;
     background-color: #ffffff;
   }
@@ -83,6 +82,7 @@ nav ul{
     background-color: #C49A6C;
     padding: 5px 0px 5px 5px;
     margin-bottom: 25px;
+    display: flex;
   }
 
   /* ~~권한 보류중 박스~~*/
