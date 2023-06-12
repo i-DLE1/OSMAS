@@ -1,16 +1,14 @@
 .body{
     margin: 20px;
-    background-color: #fff1da;
 }
 .textarea{
     resize: none;
-    border: none;
     outline-style: none;
     padding: 10px;
     width: 98%;
-}
-.textarea:disabled{
-    background-color: white   
+    border: 1px solid #884A3B;
+    background-color: white;
+    border-radius:4px;
 }
 .qa-line{
     border: 2px solid #C49A6C;

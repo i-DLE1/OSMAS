@@ -1,7 +1,8 @@
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
+
 .header {
     width: 100%;
     background-color: #C49A6C;
@@ -17,27 +18,25 @@ body {
     color:#884A3B ;
 }
 .main{
-    margin-top: 4em;
-    margin-left: 4%;
-    margin-right: 4%;
-
+    margin: 4em 4% 0 4% ;
 }
+
 .h1Title{
     font-size: 35px;
     color: aliceblue;
-    /* color:#884A3B; */
     font-weight: 700;
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: #C49A6C;
     padding: 10px;
 }
+
 .scrollBox{
     border: 1px solid #884A3B ;
     width: 97%;
     padding: 1em;
-
 }
+
 .item{
     display: flex;
     justify-content: end;
@@ -45,6 +44,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .item input{
     width: 30px;
     height: 30px;
@@ -52,6 +52,7 @@ body {
     border: 1px solid #884A3B;
     accent-color: #884A3B;
 }
+
 .footer{
     margin-top: 3em;
     width: 100%;
@@ -59,6 +60,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .footerBtn{
     font-size: large;
     width: 100px;
@@ -70,6 +72,7 @@ body {
     border-radius: 5px;
     margin: 10px;    
 }
+
 .inputBox{
     padding: 10px;
     height: 40px;
@@ -77,15 +80,18 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.3) ;
     border-radius: 3px;
 }
+
 .inputBox:focus{
     border: 2px solid #C49A6C;
     border-radius: 3px;
 }
+
 .container-justify-center-w100{
     display: flex;
     justify-content: center;
     width: 100%;
 }
+
 .uploadBtn{
     text-align: center;
     margin-top: 10px;
@@ -96,15 +102,18 @@ body {
     height: 35px;
     border-radius: 5px;
 }
+
 .subtitle{
     font-size: 20px;
     color: #884A3B;
 }
+
 .line{
     margin-top: 30px;
     border: 1.5px solid #C49A6C;
     border-radius: 2px;
 }
+
 .addItem{
     width: 40px;
     height: 40px;
@@ -124,12 +133,14 @@ body {
     width: 97%;
     font-size: 20px;
 }
+
 .endTable tr{
     color: #C49A6C;
     border-bottom: 1px solid #C49A6C;
     padding-top: 20px ;
     padding-bottom: 15px ;
 }
+
 .endTable th{
     font-weight: 700;
     color: #884A3B;
@@ -140,27 +151,29 @@ body {
 .cus-table{
     width: 100%;
 }
+
 .cus-table thead tr{
     font-weight: 700;
     height: 3em;
     border-bottom: 1px solid #C49A6C;
     color: #884A3B;
 }
+
 .cus-table th{
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .cus-table tbody tr{
     height: 4em;
     border-bottom: 1px solid #C49A6C;
 }
+
 .cus-table tbody td:nth-child(3){
     max-width: 50px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
-
 }
 
 .cus-table tbody tr:hover{

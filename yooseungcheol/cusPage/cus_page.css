@@ -1,21 +1,23 @@
 .cus-nav{
-    display: flexbox;
+    display: block;
     justify-content: center;
     text-align: center;
     height: 140vh;
     background-color: #F9DFBB;
     font-size: 15px;
     color: #884A3B;
-    box-shadow: 0px 0px 7px 0px rgb(126, 126, 126) ;
+    box-shadow: 0 0 7px 0 rgb(126, 126, 126) ;
 }
 .menu-list {
     list-style: none;
-    list-style-type: none;
     line-height: 35px;
-    padding-left: 0px;
+    padding-left: 0;
     padding-top: 5px;
     padding-bottom: 5px;
     border-bottom: 1px solid #884A3B;
+}
+.menu-list:hover div{
+    display: block;
 }
 .menu-list li{
     padding-top: 2px;
@@ -55,10 +57,7 @@
 body{
     display: grid;
     grid-template-columns: 270px auto;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    margin-right: 60px;
+    margin: 0 60px 0 0;
 }
 
 a{
@@ -66,8 +65,11 @@ a{
     color: #884A3B;
 }
 
-.menu-list a li:hover{
-    background-color: #C49A6C;
+.menu-list li:hover{
+    background-color: #C49A6C !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.menu-list li:hover a{
     color: white !important;
 }
 
@@ -102,8 +104,11 @@ a{
 
 .active-page{
     background-color: #884A3B !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     color: white;
-
+}
+.active-page a{
+    color: white !important;
 }
 
 .searchBar{
@@ -159,17 +164,13 @@ a{
 .pagenation{
     margin-top: 3em;
     list-style: none;
-    list-style-type: none;
     display: flex;
     justify-content: center;
 }
 
 .pagenation li{
     border: 1px solid #C49A6C;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 10px 5px 10px ;
     margin: 5px;
 }
 
