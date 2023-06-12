@@ -1,0 +1,74 @@
+main{
+    display: block;
+}
+.container_main{
+    margin:0 auto;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 50px;
+   }
+#log_frm{
+    
+}
+.logo{
+text-align: center;
+}
+.logo a{}
+ul{
+    list-style: none;
+}
+.find_info{
+    display: flex;
+    color: black;
+    justify-content: flex-end;
+    
+}
+.find_info li a{
+    color : gray;
+}
+.find_info li{
+    font-size: 10px;
+    margin-right: 5px;
+}
+a{
+    text-decoration: none;
+}
+
+.input_text{
+    width: 95%;
+    height: 50px;
+    padding-left: 10px;
+    margin-bottom: 8px;
+}
+
+.error_message{
+    font-size: 12px;
+    color: red;
+    /* display:none; */
+}
+
+.keep_check{
+    
+}
+.log_button{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.log_login{
+    width: 95%;
+    height: 50px;
+    background-color: #884A39;
+    color: white;
+}
+
+.tab_list ul{
+    margin:0 auto;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 50px;
+    display: flex;
+}
+.tab_list ul li{
+    margin-right: 30px;
+}
