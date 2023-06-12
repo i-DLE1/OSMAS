@@ -21,35 +21,6 @@ nav ul{
     text-transform: uppercase;
                }
 
-   /* 왼쪽 사이드 메뉴 */
-   aside#left{
-       float: left;
-       width: 10em;
-       margin-right: 1em;
-             }
-
-   aside#left ul{ list-style: none}
-
-   aside#left ul li{
-       background-color: #F9DFBB;
-       width: 150px;
-       height: 30px;
-       padding: 5px 5px;
-       text-align: center;
-       border-bottom: 1px solid black;
-       
-                   }
-
-   aside#left ul li a{
-       color: black;
-       text-decoration: none;
-                     }
-
-
-   aside#main{
-       float: left;
-             }
-
    /* footer영역 */
    footer{
    clear: both;
@@ -96,10 +67,35 @@ nav ul{
        color: white;
    }
 
-   .scroll {
-    overflow:scroll; 
-    width:1300px; 
-    height:1000px;
-    background-color: #F9DFBC;
-    margin: 0 auto;
-   }
+       /*드래그 방지*/
+       .drag-prevent{
+        -ms-user-select: none;
+        -moz-user-select: -moz-none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+    }
+
+ /* 페이지 넘어가는 거..*/
+   .menu {
+    text-align: center;
+    display: flex;
+    gap: 20px 2%;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 100px auto;
+    max-width: 1400px;
+    background-color: #ffffff;
+  }
+  
+  .box {
+    height: 350px;
+    line-height: 300px;
+    text-align: center;
+    background-color: #D9D9D9;
+    width: 30%;
+  }
+
+  .box:hover {
+    background-color: #FFC16F;
+       }
