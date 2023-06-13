@@ -5,6 +5,7 @@
         <title></title>
         <link rel="stylesheet" href="/resources/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="./cus_page.css">
+        <script src="../../resources/jqeury/jquery-3.7.0.min.js"></script>
     </head>
     <body>
         <nav class="cus-nav">
@@ -19,7 +20,7 @@
             </ul>
             <ul class="menu-list">
                 <h5>프로젝트 관리 <span>▼▲</span></h5>
-                <div class="menu-visible">
+                <div class="menu-visible ">
                     <li class="active-page"><a href="./cus_index.html">전체 조회</a></li>
                     <li><a href="./cus_index.html">심사중</a></li>
                     <li><a href="./cus_index.html">진행중</a></li>
@@ -29,7 +30,7 @@
             </ul>
             <ul class="menu-list">
                 <h5>주문관리 <span>▼▲</span></h5>
-                <div class="menu-visible">
+                <div class="menu-visible ">
                     <li><a href="#">전체조회</a></li>
                     <li><a href="#">주문접수</a></li>
                     <li><a href="#">배송처리</a></li>
@@ -48,7 +49,7 @@
             </ul>
             <ul class="menu-list">
                 <h5>권한관리 <span>▼▲</span></h5>
-                <div class="menu-visible">
+                <div class="menu-visible ">
                     <li><a href="#">메뉴1</a></li>
                     <li><a href="#">메뉴2</a></li>
                     <li><a href="#">메뉴3</a></li>
@@ -100,37 +101,8 @@
                             <td>심사단계</td>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th>1</th>
-                            <td>아무나 사가라</td>
-                            <td>100,100,100</td>
-                            <td>900,900</td>
-                            <td><span>2023-01-01</span> ~ <span>2023-10-01</span></td>
-                            <td>진행중</td>
-                        </tr>
-                        <tr>
-                            <th>2</th>
-                            <td>열려차 참깨</td>
-                            <td>10,010,100</td>
-                            <td>900,900</td>
-                            <td><span>2023-01-01</span> ~ <span>2023-10-01</span></td>
-                            <td>심사중</td>
-                        <tr>
-                            <th>3</th>
-                            <td>아무나 사가라</td>
-                            <td>100,100,100</td>
-                            <td>900,900</td>
-                            <td><span>2023-01-01</span> ~ <span>2023-10-01</span></td>
-                            <td>취소</td>
-                        <tr>
-                            <th>4</th>
-                            <td>아무나 사가라</td>
-                            <td>100,100,100</td>
-                            <td>900,900</td>
-                            <td><span>2023-01-01</span> ~ <span>2023-10-01</span></td>
-                            <td>심사중</td>
-                        </tr>
+                    <tbody id="customerProjectList">
+                        <!-- 반복 구간 -->
                     </tbody>
                 </table>
                 <!-- pagenation start -->
@@ -149,6 +121,7 @@
             <!-- 테이블 종료 -->
             </div>
         </main>
-        
+        <script src="customerPage.js"></script>
+        <script>customerProjectList()</script>
     </body>
 </html>

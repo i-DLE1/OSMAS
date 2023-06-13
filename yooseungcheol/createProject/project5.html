@@ -6,6 +6,8 @@
         <title>프로젝트 등록-FAQ등록</title>
         <link rel="stylesheet" href="project_create.css">
         <link rel="stylesheet" href="../../resources/bootstrap/bootstrap.min.css">
+        <script src="../../resources/jqeury/jquery-3.7.0.min.js"></script>
+
     </head>
     <body>
         <!-- 진행 헤더 시작 -->
@@ -27,7 +29,7 @@
         <!-- 진행 헤더 끝-->
         <main class="main">
             <h1 class="h1Title">FAQ 등록</h1>
-            <div>
+            <div id="faq_list">
                 <!-- 등록 컴포넌트 시작 -->
                 <div>
                     <label class="subtitle" for="title">제목</label>
@@ -37,22 +39,24 @@
                     <label class="subtitle" for="body" >내용</label>
                     <textarea class="inputBox w-100" rows="2" style="resize: none; height: 80px !important;"  id="body" name="body"></textarea>
                 </div>
-                <div class="row" style="margin-top: 15px;">
-                    <div class="container-justify-center-w100">
-                        <button class="addItem">
-                            <img src="../../static/image/additem.png" width="40px" height="40">
-                        </button>
-                    </div>
-                </div>
                 <hr class="line">
+            </div>
                 <!-- 등록 컴포넌트 끝 -->
+            <div class="row" style="margin-top: 15px;">
+                <div class="container-justify-center-w100">
+                    <button id="fqa_add" class="addItem" type="button">
+                        <img src="../../static/image/additem.png" width="40px" height="40">
+                    </button>
+                </div>
             </div>
         </main>
+
         <!-- 하단 버튼 시작 -->
         <footer class="footer">
             <a href="project4.html"><input class="footerBtn" type="button" value="이전" /></a>
             <a href="project6.html"><input class="footerBtn" type="button" value="다음" /></a>
         </footer>
+        <script src="./projectCreate.js"></script>
         <!-- 하단 버튼 끝 -->
     </body>
 </html>
