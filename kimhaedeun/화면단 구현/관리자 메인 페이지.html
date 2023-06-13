@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>관리자 마이 페이지</title>
-    <link rel="stylesheet" href="../css/관리자 메인 페이지.css"> 
+    <link rel="stylesheet" href="../css/관리자 메인 페이지.css">
+    
 </head>  
     <header>
         <div id="logo">
@@ -15,11 +16,21 @@
         </div>
         <nav>
             <ul>
-                <li><a href="./category">카테고리</a></li>
-                <li><a href="./todayOpen">오늘 오픈</a></li>
-                <li><a href="./hotItem">인기 상품</a></li>
-                <li><a href="./openExpect">오픈 예정</a></li>
-                <li><a href="./event">이벤트</a></li>
+            <div class="dropdown , dropbtn">
+                <button class="gugu"><a href="./카테고리뿅.html">카테고리</a></button>
+                <div class="dropdown-content">
+                                     <a href="">관리자 마이페이지</a>
+                                     <a href="./카테고리단/현재 펀딩 순위.html">현재 펀딩 순위</a>
+                                     <a href="./관리자의 판매자 권한 관련/부여/부여 대기.html">판매자 권한 관리</a>
+                                     <a href="./관리자의 상품 승인 관리 관련/승인 대기.html">상품 승인 관리</a>
+                                     <a href="./카테고리단/제안 받기.html">제안 받기</a>
+                </div>
+            </div>
+                
+                <button class="gugu"><a href="./todayOpen">오늘 오픈</a></button>
+                <button class="gugu"><a href="./hotItem">인기 상품</a></button>
+                <button class="gugu"><a href="./openExpect">오픈 예정</a></button>
+                <button class="gugu"><a href="./event">이벤트</a></button>
                 <li class="search">
                     <input type="text" placeholder="검색할 내용을 입력해주세요">
                 </li>
@@ -27,15 +38,9 @@
         </nav>
     </header>
 
-    <aside id="left">
-        <ul>
-            <li><a href="./managementMypage">관리자 마이 페이지</a></li>
-            <li><a href="../화면단 구현/카테고리단/현재 펀딩 순위.html">현재 펀딩 순위</a></li>
-            <li><a href="./관리자의 판매자 권한 관련/부여/부여 대기.html">판매자 권한 관리</a></li>
-            <li><a href=".//관리자의 상품 승인 관리 관련/승인 대기.html">상품 승인 관리</a></li>
-            <li><a href="./카테고리단/제안 받기.html">제안 받기</a></li>
-        </ul>
-    </aside>
+    <middle>
+        
+    </middle>
 
     <footer>
         <ul style="list-style: none;">
