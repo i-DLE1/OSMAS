@@ -1,0 +1,38 @@
+.logo{
+    text-align: center;
+    }
+
+ul{
+        list-style: none;
+}
+
+.content{
+    margin:0 auto;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 50px;
+}
+.terms_desc{
+    font-size: 14px;
+    margin: 9px 0 0 28px;
+}
+
+.btn_submit{
+    border-radius: 6px;
+    width: 95%;
+    height: 50px;
+    background-color: #884A39;
+    color: white;
+    
+}
+.container_button{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.term{
+    margin-bottom: 30px;
+}
