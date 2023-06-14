@@ -73,6 +73,11 @@ body {
     margin: 10px;    
 }
 
+.footerBtn:hover{
+    transition: 0.3s;
+    background-color: #884A3B;
+}
+
 .inputBox{
     padding: 10px;
     height: 40px;

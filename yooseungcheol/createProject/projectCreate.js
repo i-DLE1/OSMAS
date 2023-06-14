@@ -73,3 +73,29 @@ function productList(){
         </tr>`)
     );
 }
+
+function productInfoList() {
+    let dummyData = [
+        {title : "어쩌구 저쩌구",money:"200,000",count:12},
+        {title : "어쩌구 저쩌구",money:"200,000",count:12},
+        {title : "어쩌구 저쩌구",money:"200,000",count:12},
+        {title : "어쩌구 저쩌구",money:"200,000",count:12},
+        {title : "어쩌구 저쩌구",money:"200,000",count:12},
+        {title : "어쩌구 저쩌구",money:"200,000",count:12},
+    ]
+
+    dummyData.forEach((item,index)=>{
+        let elementText= `
+        <tr class="row">
+            <th class="col-1">상품명</th>
+            <td class="col">어쩌구 저쩌구</td>
+            <th class="col-2">가격(원)</th>
+            <td class="col">200,000</td>
+            <th class="col-1">수량</th>
+            <td class="col-2">12개 </td>
+        </tr>
+        `
+        $("#project-end-list").append(elementText)
+    })
+
+}

@@ -81,3 +81,25 @@ body{
 .product-statistics tbody tr td:last-child{
     text-align: end;
 }
+.footerBtn{
+    font-size: large;
+    width: 100px;
+    height: 50px;
+    color: white;
+    font-weight: 400;
+    background-color: #C49A6C;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px;
+}
+.footerBtn:hover{
+    transition: 0.3s;
+    background-color: #884A3B;
+}
+.footer{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+.
