@@ -9,15 +9,20 @@
     grid-column-gap: 4em;
     grid-template-columns: auto auto auto;
 }
+
 .menu-list-project-view{
     width: 100%;
     margin: 5em 0 5em 0;
     display: flex;
     justify-content: center;
 }
-.menu-list-project-view span{
+
+.menu-list-project-view div{
     margin: 0 10px 0 10px;
     padding: 15px 40px 15px 40px;
+    display: flex;
+    justify-content: center;
+    min-width: 50px;
     font-size: 17px;
     font-weight: 500;
     border-radius: 10px;

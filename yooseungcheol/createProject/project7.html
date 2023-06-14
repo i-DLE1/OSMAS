@@ -5,6 +5,7 @@
         <title>프로젝트 등록-마무리</title>
         <link rel="stylesheet" href="project_create.css">
         <link rel="stylesheet" href="../../resources/bootstrap/bootstrap.min.css">
+        <script src="../../resources/jqeury/jquery-3.7.0.min.js"></script>
     </head>
     <body>
         <!-- 진행 헤더 시작 -->
@@ -52,17 +53,8 @@
             <h1 class="h1Title" style="margin-top: 80px;">상품 등록 정보</h1>
             <div class="container-justify-center-w100">
                 <table class="endTable">
-                    <tbody>
-                        <!-- 반복 시작 -->
-                        <tr class="row">
-                            <th class="col-1">상품명</th>
-                            <td class="col">어쩌구 저쩌구</td>
-                            <th class="col-2">가격(원)</th>
-                            <td class="col">200,000</td>
-                            <th class="col-1">수량</th>
-                            <td class="col-2">12개 </td>
-                        </tr>
-                        <!-- 반복 끝 -->
+                    <tbody id="project-end-list">
+                        <!--  javascript -->
                     </tbody>
                 </table>
             </div>
@@ -74,5 +66,7 @@
             <a href="#"><input class="footerBtn" type="button" value="심사요청" /></a>
         </footer>
         <!-- 하단 버튼 끝 -->
+        <script src="projectCreate.js"></script>
+        <script>productInfoList()</script>
     </body>
 </html>
