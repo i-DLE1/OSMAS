@@ -119,7 +119,7 @@ body {
     border-radius: 2px;
 }
 
-.addItem{
+.addItem, .subItem{
     width: 40px;
     height: 40px;
     background-color: #C49A6C;
@@ -184,4 +184,15 @@ body {
 .cus-table tbody tr:hover{
     background-color: #C49A6C;
     color: white;
+}
+
+.additem-product-col2, .additem-faq-col2{
+    display: grid;
+    grid-template-columns: auto 100px;
+
+}
+.additem-product-col2>div:nth-child(2) , .additem-faq-col2>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

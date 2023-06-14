@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="project_create.css">
         <link rel="stylesheet" href="../../resources/bootstrap/bootstrap.min.css">
         <script src="../../resources/jqeury/jquery-3.7.0.min.js"></script>
+
     </head>
     <body>
         <!-- 진행 헤더 시작 -->
@@ -39,7 +40,7 @@
             <h1 class="h1Title">상품 추가</h1>
             <div id="product_list">
                 <!-- 상품 추가 컴포넌트 시작 -->
-                <div>
+                <div id="additem-product-index">
                     <div class="row" style="margin-top: 1em;">
                         <div class="col">
                             <label class="subtitle" for="name">옵션명</label>
@@ -68,14 +69,14 @@
                             <input class="w-100 inputBox" type="number" id="shippingFee" name="shippingFee">
                         </div>
                     </div>
-
                     <hr class="line">
                 </div>
                 <!-- 상품 추가 컴포넌트 끝 -->
+
             </div>
             <div class="row" style="margin-top: 2em;">
                 <div class="container-justify-center-w100">
-                    <button id="product-add" class="addItem">
+                    <button id="product-add" class="addItem" >
                         <img src="/static/image/addItem.png" width="40px" height="40px" >
                     </button>
                 </div>
@@ -87,6 +88,7 @@
             <a href="project4.html"><input class="footerBtn" type="button" value="다음" /></a>
         </footer>
         <!-- 하단 버튼 끝 -->
-    <script src="projectCreate.js"></script>
+
     </body>
+    <script src="projectCreate.js"></script>
 </html>
