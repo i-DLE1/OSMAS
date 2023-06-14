@@ -27,8 +27,9 @@
 
 .category {
     text-align: center;
-    /* background-color: rgba(201, 195, 195, 0.7); */
+    background-color: rgba(201, 195, 195, 0.7);
     font-size: 20px;
+    font-weight: bold;
     width: 100px;
     height: 50px;
     }
@@ -122,6 +123,20 @@
     transition: width 0.5s ease-in-out;
     }
 
+#orderbutton{
+    background-color: #C49A6C;
+    font-size: 20px;
+    font-weight: bold;
+}
+#orderbutton:hover{
+    background-color: #dbc3a8;
+
+}
+#orderbutton:active {
+    transform: scale(0.95);
+  }
+
+
 .optionmiddle {
     background-color: rgba(201, 195, 195, 0.7);
     height: 40px;
@@ -159,4 +174,18 @@
     text-align: center;
     line-height: 5px;
     cursor: pointer;
+    }
+
+.selectedpage {
+    background-color: #C49A6C;
+    font-weight: bold;
+    }
+
+.contentsmiddle:hover {
+    background-color: #C49A6C;
+    }
+
+.contentsbottom {
+    background-color: #d8d0c8;
+    height: 2000px;
     }
