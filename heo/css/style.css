@@ -35,4 +35,8 @@ a{
 
 .term{
     margin-bottom: 30px;
+    
+}
+.term textarea{
+    margin-left: 5px;
 }
