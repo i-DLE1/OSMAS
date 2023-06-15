@@ -20,24 +20,36 @@
         <h2 class="signup_h2">회원정보입력</h2>
         <form>
             <label for="id">아이디</label>
+            <span class="condition">영문또는 숫자로 4자~12자로 입력해주세요.</span>
             <div class="signup_info">
                 <input type="text" name="id" id="id" placeholder="아이디">
             </div>
+            <p class="error_message" id="id_con">
+                아이디 형식이 올바르지 않습니다.
+            </p>
             <label for="nickName">닉네임</label>
+            <span class="condition">한글기준 2자~8자. 영문기준 4자~16자로 입력해주세요</span>
             <div class="signup_info">
                 <input type="text" name="nickName" id="nickName" placeholder="닉네임">
             </div>
+            <p class="error_message" id="nick_con">
+                닉네임 형식이 올바르지 않습니다.
+            </p>
             <label for="pwd">비밀번호</label>
+            <span class="condition">영문,숫자 혼합하여 8자~15자로 입렬해주세요</span>
             <div class="signup_info">
                 <input type="password" name="pwd" id="pwd" placeholder="비밀번호">
             </div>
+            <p class="error_message" id="pwd_con">
+                비밀번호이 형식이 올바르지 않습니다.
+            </p>
             <label for="name">이름</label>
             <div class="signup_info">
                 <input type="text" name="name" id="name" placeholder="이름">
             </div>
             <label for="pNum">휴대전화번호</label>
             <div class="signup_info">
-                <input type="text" name="pNum" id="pNum" placeholder="휴대전화번호">
+                <input type="tel" name="pNum" id="pNum" placeholder="휴대전화번호">
             </div>
             <label for="birthDate">생년월일</label>
             <div class="signup_info">
