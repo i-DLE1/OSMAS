@@ -1,3 +1,26 @@
+nav ul{
+    list-style: none;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+nav ul li{
+display: inline;
+letter-spacing: .3em;
+margin-left: 2em;
+}
+
+nav ul li a{
+text-decoration: none;
+color: black;
+line-height: 3em;
+text-transform: uppercase;
+}
+
+
 .contents{
     /* background-color: rgba(201, 195, 195, 0.7); */
     width: 1200px;
@@ -11,11 +34,7 @@
     transform: translateY(-50%);  
 }
 
-.image {
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
+
 
 
 
@@ -49,11 +68,39 @@
     height: 50px;
 }
 
+.logoimage {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
 .product {
     display: flex;
     justify-content: center;
     
 }
+
+
+
+/* .productimg {
+    width:500px;
+    height:500px;
+    object-fit:cover;
+    margin-right: 50px;
+    margin-bottom: 50px;
+} */
+
+/* .image {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+} */
+
+.imagecontainer {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    }
 
 .productimg {
     /* background-color: rgba(201, 195, 195, 0.7); */
@@ -62,7 +109,23 @@
     object-fit:cover;
     margin-right: 50px;
     margin-bottom: 50px;
+    overflow: hidden;
 }
+
+.image {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display: none;
+}
+
+.imagebutton {
+    width:30px;
+    height:30px;
+    object-fit:cover;
+}
+
+
 
 
 .option {
@@ -81,10 +144,14 @@
 .optiontop {
     display: flex;
     justify-content: space-between;
+
     }
-.optiontop-1 {
+    
+.optiontop-sub {
+    align-self: flex-end;
     display: flex;
     justify-content: space-between;
+
     }
 
 .progress-bar-container {
@@ -98,25 +165,23 @@
     overflow: hidden;
     }
 
-.progresstext {
+.progresstext {  
     position: absolute;
+    display: flex;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 25px ;
-    text-align: center;
 }
     
-.progress1 {
-    font-size: 25px ;
-    text-align: center;
+.progress-gauge1 {
     width: 60%;
     height: 100%;
     background-color: #fcd15d;
     transition: width 0.5s ease-in-out;
 }
 
-.progress2 {
+.progress-gauge2 {
     width: 33%;
     height: 100%;
     background-color: #f37e69;
@@ -157,6 +222,60 @@
     font-size: 25px ;
 
 }
+
+#donation{
+    width: 180px; 
+    height: 15px; 
+    text-align: right;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+#selectbox{
+    width: 500px; 
+    height: 35px;
+}
+
+#totalamount{
+    margin-right: 10px; 
+    font-weight: bold;
+}
+
+#optioncheck{
+    width: 180px; 
+    height: 15px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+
+#optionamount{
+    width: 100px; 
+    height: 15px; 
+    text-align: right;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+#plusbutton{
+    width: 40px; 
+    font-size: 30px; 
+    text-align: center;
+}
+
+#minusbutton{
+    width: 40px; 
+    font-size: 40px;
+}
+
+
+
+
+
+
 
 .optionbottom {
     text-align: center;

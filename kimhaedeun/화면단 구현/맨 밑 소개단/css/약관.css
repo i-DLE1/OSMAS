@@ -92,10 +92,18 @@ a {
     color: white;
 }
 
-   .scroll {
-    overflow:scroll; 
-    width:1300px; 
-    height:1000px;
-    background-color: #F9DFBC;
-    margin: 0 auto;
-   }
+   .termsContainer {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 35px;
+  }
+
+  .terms {
+    overflow-y: scroll;
+    max-height: 600px;
+    max-width: 1200px;
+    border: 1px solid #ccc;
+    padding: 80px;
+  }
