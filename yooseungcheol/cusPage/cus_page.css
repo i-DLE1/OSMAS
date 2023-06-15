@@ -34,7 +34,7 @@
     border-bottom: 1px solid #C49A6C;
 }
 
-.list-nav td{
+.list-nav td, .list-nav th{
     margin: 10px;
     padding: 5px;
     text-align: center;
@@ -123,6 +123,7 @@ a{
     margin-bottom: 5em;
 }
 
+
 .table tr{
     padding-top: 40px !important;
     padding-bottom: 40px;
@@ -176,7 +177,7 @@ a{
     margin: 5px;
 }
 
-.pagenation li:hover{
+.pagenation li:hover, .pagenation li:hover a {
     background-color: #C49A6C;
-    color: white;
+    color: white !important;
 }

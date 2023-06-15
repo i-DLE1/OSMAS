@@ -153,45 +153,45 @@ body {
     border-left: 1px solid #C49A6C;   
 }
 
-.cus-table{
+.cusTable{
     width: 100%;
 }
 
-.cus-table thead tr{
+.cusTable thead tr{
     font-weight: 700;
     height: 3em;
     border-bottom: 1px solid #C49A6C;
     color: #884A3B;
 }
 
-.cus-table th{
+.cusTable th{
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.cus-table tbody tr{
+.cusTable tbody tr{
     height: 4em;
     border-bottom: 1px solid #C49A6C;
 }
 
-.cus-table tbody td:nth-child(3){
+.cusTable tbody td:nth-child(3){
     max-width: 50px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.cus-table tbody tr:hover{
+.cusTable tbody tr:hover{
     background-color: #C49A6C;
     color: white;
 }
 
-.additem-product-col2, .additem-faq-col2{
+.addItemProductCol2, .addItemFAQCol2{
     display: grid;
     grid-template-columns: auto 100px;
 
 }
-.additem-product-col2>div:nth-child(2) , .additem-faq-col2>div:nth-child(2){
+.addItemProductCol2>div:nth-child(2) , .addItemFAQCol2>div:nth-child(2){
     display: flex;
     justify-content: center;
     align-items: center;

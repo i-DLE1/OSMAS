@@ -1,16 +1,7 @@
 let projectListCount = 1;
 
-$(".menu").click(function () {
-    $(".content").slideUp();
-    //$(this).next("p").slideDown();
-    $(this)
-        .next("p")
-        .slideToggle(500, function () {
-            alert("슬라이드 토글 확인");
-        });
-});
-
-function customerProjectList(){
+function customerProjectList(filter){
+    $("#customerProjectList").html("")
     // 더미 데이터
     let projectList = [
         {title : "title1",money:"100,100,000", currentMoney:"900,900",startDate:"2023-01-01",endDate:"2023-10-10",state:"진행중"},
@@ -29,11 +20,13 @@ function customerProjectList(){
         <td>${item.state}</td>
     </tr>
     `
-    $("#customerProjectList").append(elementText)
+    $("#customerProjectList").append(elementText);
     })
 }
 
-function proejctQAList(){
+function proejctQAList(filter){
+    $("#customerQAList").html("")
+
     // 더미 데이터
     let projectList = [
         {title : "title2",  accountID : "홍길동", content : "내내용ㅇ요ㅐ요ㅐ애ㅛ애ㅛ내요내", phone:"010-1111-2222",option:"옵션1",money:"40,000",payment:"카드", createDate:"2023-01-23",state:"완료"},
@@ -58,6 +51,31 @@ function proejctQAList(){
                 <td>${item.state}</td>
             </tr>
         `
-        $("#customerQAList").append(elementText)
+        $("#customerQAList").append(elementText);
     })
 }
+
+function activeElement(element){
+    let selectEl = $(element)
+    let selectId = selectEl.prop("id")
+
+    $(`#${selectId}Menu`).siblings("li").removeClass("active-page")
+    $(`#${selectId}Menu`).addClass("active-page")
+
+    selectEl.prop("id");
+    selectEl.siblings("td").removeClass("active-page")
+    //$(`${}Menu`).addClass("active-page")
+    selectEl.addClass("active-page")
+    return selectId
+}
+$("#cusMenu td").click(function (){
+    let selectId = activeElement(this)
+    customerProjectList(selectId)
+})
+
+$("#qaMenu td").click(function (){
+    let selectId = activeElement(this)
+    proejctQAList(selectId)
+})
+
+
