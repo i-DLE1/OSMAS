@@ -92,14 +92,6 @@ a {
     color: white;
 }
 
-   .scroll {
-    overflow:scroll; 
-    width:1300px; 
-    height:1000px;
-    background-color: #F9DFBC;
-    margin: 0 auto;
-   }
-
    .termsContainer {
     display: flex;
   justify-content: center;
