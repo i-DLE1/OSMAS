@@ -1,7 +1,6 @@
 /* nav 영역 */
 nav ul{
   list-style: none;
-
   text-align: center;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
@@ -99,14 +98,19 @@ a {
     list-style: none;
     display: inline;
   }
-
    .box:hover {
     background-color: #91701F;
+   }
+
+   .box3 {
+    display: flex;
+  justify-content: center;
    }
 
    /* 판매자 리스트 박스 */
    .list {
     text-align: center;
+    
     max-width: 1000px;
     background-color: #ffffff;
   }
@@ -118,7 +122,6 @@ a {
     background-color: #C49A6C;
     padding: 5px 0px 5px 5px;
     margin-bottom: 25px;
-    display: flex;
   }
 
   /* ~~권한 보류중 박스~~*/
@@ -127,9 +130,4 @@ a {
     height: 22px;
     background-color: #D9D9D9;
   }
-
-  .box3 {
-    display: flex;
-  justify-content: center;
-   }
 

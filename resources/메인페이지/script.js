@@ -27,18 +27,29 @@ var cssPath = relativePath+ '/' + '메인 페이지.css';
 var logopath = relativePath + '/'+  'resources' + '/' + '로고.PNG';
 
 // 헤더 로드
+<<<<<<< HEAD
+fetch('./resources/메인페이지/header.html')
+=======
 fetch(headerPath)
+>>>>>>> main
   .then(response => response.text())
   .then(data => {
     document.getElementById('header').innerHTML = data;
   });
 
+<<<<<<< HEAD
+// 푸터 로드
+fetch('./resources/메인페이지/footer.html')
+=======
   // 푸터 로드
 fetch(footerPath)
+>>>>>>> main
   .then(response => response.text())
   .then(data => {
     document.getElementById('footer').innerHTML = data;
   });
+<<<<<<< HEAD
+=======
 
 
   var element = document.getElementById('element');
@@ -61,3 +72,4 @@ fetch(footerPath)
 
   // 요소에 클래스 추가
   element.classList.add('shared-style');
+>>>>>>> main

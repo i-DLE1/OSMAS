@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>권한 회수 신청 양식 폼</title>
+    <link rel="stylesheet" href="../css/양식.css"> 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var reasonSelect = document.getElementById("reason");
+            var otherReasonDiv = document.getElementById("otherReasonDiv");
+
+            // 페이지 로드 시 이전에 선택한 값 복원
+            var savedReason = localStorage.getItem("selectedReason");
+            if (savedReason) {
+                reasonSelect.value = savedReason;
+                handleReasonSelection();
+            }
+
+            // 이벤트 리스너 등록
+            reasonSelect.addEventListener("change", function() {
+                var selectedReason = reasonSelect.value;
+
+                // 선택한 사유 저장
+                localStorage.setItem("selectedReason", selectedReason);
+
+                handleReasonSelection();
+            });
+
+            function handleReasonSelection() {
+                var selectedReason = reasonSelect.value;
+
+                if (selectedReason === "기타") {
+                    otherReasonDiv.style.display = "block";
+                } else {
+                    otherReasonDiv.style.display = "none";
+                }
+            }
+            
+            // 페이지 로드 시 사유 선택 초기화
+            resetReasonSelection();
+        });
+
+        function resetReasonSelection() {
+            var reasonSelect = document.getElementById("reason");
+            var otherReasonDiv = document.getElementById("otherReasonDiv");
+            var otherReasonInput = document.getElementById("otherReasonInput");
+
+            reasonSelect.selectedIndex = 0;
+            otherReasonDiv.style.display = "none";
+            otherReasonInput.value = "";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="../../화면단 구현/관리자 메인 페이지.html">
+                <img src="../../img/로고.png">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./category">카테고리</a></li>
+                <li><a href="./todayOpen">오늘 오픈</a></li>
+                <li><a href="./hotItem">인기 상품</a></li>
+                <li><a href="./openExpect">오픈 예정</a></li>
+                <li><a href="./event">이벤트</a></li>
+                <li class="search">
+                    <input type="text" placeholder="검색할 내용을 입력해주세요">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <middle>
+        <h1 style="text-align: center; margin: 50px;">권한 회수 신청하기</h1>
+
+        <form action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="sellerName">판매자 ID</label>
+                <input type="text" id="sellerName" name="sellerName" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="reason">회수 사유</label>
+                <select id="reason" name="reason" onchange="handleReasonSelection()" required>
+                    <option value="">사유를 선택해주세요</option>
+                    <option value="판매중지">판매 중지</option>
+                    <option value="다른펀딩사이트를이용">다른 펀딩 사이트를 이용</option>
+                    <option value="기타">기타</option>
+                </select>
+                <div id="otherReasonDiv" style="margin: 10px;">
+                    <textarea id="otherReasonInput" name="otherReason" placeholder="기타 사유를 입력해주세요"></textarea>
+                </div>
+              </div>
+
+            <div class="file-upload">
+                <label for="file">대표자 인감증명서(또는 본인서명사실확인서)</label>
+                <input type="file" id="file" name="uploadedFile" required>
+            </div>
+
+            <h5 style="text-align: center;">
+                권한 회수 완료 즉시 판매자님의 데이터가 영구적으로 삭제됩니다. <br>
+                OSMAS는 귀하의 개인 정보를 안전하게 보호하려 노력하고 있습니다.
+            </h5>
+            <br><br>
+        
+        <div class="submit-container">
+         <input type="submit" value="수정">
+         <input type="submit" value="제출">
+         <input type="submit" value="삭제">
+        </div>
+        </form>
+    </middle>
+
+    <footer>
+        <ul style="list-style: none;">
+            <div class="container">
+                <div>
+                    <li class="guide"><a href="./notice">공지사항</a></li>
+                    <li class="guide"><a href="../../화면단 구현/맨 밑 소개단/OSMAS소개.html">OSMAS 소개</a></li>
+                    <li class="guide"><a href="../../화면단 구현/이용가이드 화면단/이용가이드(메인).html">이용가이드</a></li>
+                </div>
+
+                <div>
+                    <li class="guide"><a href="../../화면단 구현/맨 밑 소개단/이용 약관.html">이용약관</a></li>
+                    <li class="guide"><a href="../../화면단 구현/맨 밑 소개단/개인정보 처리방침.html">개인정보처리방침</a></li>
+                    <li class="guide"><a href="../../화면단 구현/맨 밑 소개단/프로젝트 심사 기준.html">프로젝트 심사 기준</a></li>
+                </div>
+            </div>
+
+            <div class="container2">
+                <div class="container3">
+                    <h5 class="call">고객 센터</h5>
+                    <h5 class="call">평일 9:00 ~ 18:00</h5>
+                    <button class="call" style="float: right; padding: 4px;">문의하기</button>
+                </div>
+                <h6 style="text-align: center; padding-top: 30px;">오스메스는 크라우드펀딩 플랫폼을 운영하는 중개자(통신판매중개자)로서 프로젝트를 진행하는 당사자가 아닙니다.<br> 
+                    상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있으므로, 각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.</h6>
+                <h6 style="padding-top: 30px;">© 2023 OSMAS. ALL RIGHTS RESERVED.</h6>    
+            </div>
+        </ul>
+    </footer> 
+</body>
+</html>
