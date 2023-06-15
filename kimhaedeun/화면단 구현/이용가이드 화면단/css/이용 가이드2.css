@@ -102,6 +102,8 @@ a {
     margin: 100px auto;
     max-width: 1400px;
     background-color: #ffffff;
+    justify-content: center; /* 요소들을 가운데 정렬 */
+    margin: 10px auto 100px; /* 상단으로 이동된 마진 값 */
   }
   
   .box {
