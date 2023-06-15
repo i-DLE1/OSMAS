@@ -1,12 +1,24 @@
 let faqListCount = 2;
 let productCount = 2;
-$("#fqa_add").click(function (){
+
+
+function removeItemButton(funcName){
+    let elementText = `
+                <div id="subItem">
+                    <button id="productSub" class="subItem" onclick="${funcName}()">
+                        <img src="/static/image/subItem.png" width="40px" height="40px" >
+                    </button>
+                </div>`
+    return elementText;
+}
+
+$("#fqaAdd").click(function (){
     $('#subItem').remove()
     $(`#faqIndex${faqListCount-1}`).children().children().prop("class","")
     let text = `
         <div id="faqIndex${faqListCount}">
             <div>
-                <div id="faqSubIndex${faqListCount}" class="additem-faq-col2">
+                <div id="faqSubIndex${faqListCount}" class="addItemFAQCol2">
                     <div>
                         <div>
                             <label class="subtitle" for="title${faqListCount}">제목</label>
@@ -17,41 +29,34 @@ $("#fqa_add").click(function (){
                             <textarea class="inputBox w-100" rows="2" style="resize: none; height: 80px !important;"  id="body${faqListCount}" name="body"></textarea>
                         </div>
                     </div>
-                    <div id="subItem">
-                        <button id="product-sub" class="subItem" onclick="faqItemRemove()">
-                            <img src="/static/image/subItem.png" width="40px" height="40px" >
-                        </button>
-                    </div>
+                    ${removeItemButton("faqItemRemove")}
                 </div>
                 <div>
                     <hr class="line">
                 </div>
             </div>
         </div>`
-    $('#faq_list').append(text);
+    $('#faqList').append(text);
     faqListCount++;
 });
 
 function faqItemRemove(){
     faqListCount--;
-    const elementText =`
-        <div id="subItem">
-            <button id="product-sub" class="subItem" onclick="faqItemRemove()">
-                <img src="/static/image/subItem.png" width="40px" height="40px" >
-            </button>
-        </div>`
+
+    const elementText = removeItemButton("faqItemRemove")
+
     $(`#faqIndex${faqListCount}`).remove();
     $(`#faqSubIndex${faqListCount-1}`)
-        .prop("class","additem-faq-col2")
+        .prop("class","addItemFAQCol2")
         .append(elementText)
 }
 
-$("#product-add").click(function (){
+$("#productAdd").click(function (){
     $("#subItem").remove();
-    $(`#additem-product-index${productCount-1}`).children().prop("class","")
+    $(`#addItemProductIndex${productCount-1}`).children().prop("class","")
     let text=
-        `<div id="additem-product-index${productCount}">
-            <div id="product-sub-index${productCount}" class="additem-product-col2">
+        `<div id="addItemProductIndex${productCount}">
+            <div id="productSubIndex${productCount}" class="addItemProductCol2">
                 <div id="item">
                     <div class="row" style="margin-top: 1em;">
                         <div class="col">
@@ -82,36 +87,26 @@ $("#product-add").click(function (){
                         </div>
                     </div>
                 </div>
-                <div id="subItem">
-                    <button id="product-sub" class="subItem" onclick="itemRemove()">
-                        <img src="/static/image/subItem.png" width="40px" height="40px" >
-                    </button>
-                </div>
+                ${removeItemButton("itemRemove")}
             </div>
             <div>
                 <hr class="line">
             </div>
         </div>`
-    $("#product_list").append(text)
+    $("#productList").append(text)
     productCount++;
 })
 
-function itemRemove (){
+function itemRemove(){
     productCount--;
-    let elementText = `
-                <div id="subItem">
-                    <button id="product-sub" class="subItem" onclick="itemRemove()">
-                        <img src="/static/image/subItem.png" width="40px" height="40px" >
-                    </button>
-                </div>`
-    $(`#additem-product-index${productCount}`).remove();
-    $(`#product-sub-index${productCount-1}`)
+    let elementText = removeItemButton("itemRemove")
+    $(`#addItemProductIndex${productCount}`).remove();
+    $(`#productSubIndex${productCount-1}`)
         .append(elementText)
-        .prop("class","additem-product-col2");
-
+        .prop("class","addItemProductCol2");
 }
 
-function productList(){
+function newsList(){
     // 더미 데이터
     let newList = [
         {title:"title1", body:"body11111",startDate:"2023-01-01",endDate:"2032-10-10"},
@@ -121,7 +116,7 @@ function productList(){
         ];
     
     newList.forEach((item,index)=>
-        $("#news_list").append(`
+        $("#newsList").append(`
         <tr>
             <th>${index+1}</th>
             <td>${item.title}</td>
@@ -153,7 +148,12 @@ function productInfoList() {
             <td class="col-2">12개 </td>
         </tr>
         `
-        $("#project-end-list").append(elementText)
+        $("#projectEndList").append(elementText)
     })
+}
 
+function newsRegist(){
+    this.preventDefault();
+    $("#newsList").html("")
+    newsList()
 }

@@ -21,11 +21,11 @@
             <ul class="menu-list">
                 <h5>프로젝트 관리 <span>▼▲</span></h5>
                 <div class="menu-visible ">
-                    <li class="active-page"><a href="./cus_index.html">전체 조회</a></li>
-                    <li><a href="./cus_index.html">심사중</a></li>
-                    <li><a href="./cus_index.html">진행중</a></li>
-                    <li><a href="./cus_index.html">반려</a></li>
-                    <li><a href="./cus_index.html">취소</a></li>
+                    <li id="cusAllMenu" class="active-page"><a href="./cus_index.html">전체 조회</a></li>
+                    <li id="cusScreenMenu"><a href="./cus_index.html">심사중</a></li>
+                    <li id="cusOngoMenu"><a href="./cus_index.html">진행중</a></li>
+                    <li id="cusRefuseMenu"><a href="./cus_index.html">반려</a></li>
+                    <li id="cusCancleMenu"><a href="./cus_index.html">취소</a></li>
                 </div>
             </ul>
             <ul class="menu-list">
@@ -42,9 +42,9 @@
             <ul class="menu-list">
                 <h5>Q / A <span>▼▲</span></h5>
                 <div class="menu-visible">
-                    <li><a href="qa_index.html">전체조회</a></li>
-                    <li><a href="qa_index.html">답변 대기중</a></li>
-                    <li><a href="qa_index.html">답변 완료</a></li>
+                    <li id="qaAllMenu"><a href="./qa_index.html">전체조회</a></li>
+                    <li id="qaWaitMenu"><a href="./qa_index.html">답변 대기중</a></li>
+                    <li id="qaCompleteMenu"><a href="./qa_index.html">답변 완료</a></li>
                 </div>
             </ul>
             <ul class="menu-list">
@@ -67,25 +67,25 @@
                     </div>
                 </div>
                 <div class="nav-list-area">
-                    <table class="w-100 list-nav mt-5">
+                    <table id="cusMenu" class="w-100 list-nav mt-5">
                         <tr class="row">
-                            <td class="col active-page">전체조회</td>
-                            <td class="col">심사중</td>
-                            <td class="col">진행중</td>
-                            <td class="col">반려</td>
-                            <td class="col">취소</td>
-                            <td class="col-4">
-                            <div class="row col">
-                                <select class="col-3 me-3 searchBar">
-                                    <option>메뉴1</option>
-                                    <option>메뉴2</option>
-                                    <option>메뉴3</option>
-                                    <option>메뉴4</option>
-                                </select>
-                                <input type="text" class="searchBar col">
-                                <button class="searchBtn col ms-2">검색</button>
-                            </div>
-                            </td>
+                            <td id="cusAll" class="col active-page">전체조회</td>
+                            <td id="cusScreen" class="col">심사중</td>
+                            <td id="cusOngo" class="col">진행중</td>
+                            <td id="cusRefuse" class="col">반려</td>
+                            <td id="cusCancle" class="col">취소</td>
+                            <th class="col-4">
+                                <div class="row col">
+                                    <select class="col-3 me-3 searchBar">
+                                        <option>메뉴1</option>
+                                        <option>메뉴2</option>
+                                        <option>메뉴3</option>
+                                        <option>메뉴4</option>
+                                    </select>
+                                    <input type="text" class="searchBar col">
+                                    <button class="searchBtn col ms-2">검색</button>
+                                </div>
+                            </th>
                         </tr>
                     </table>
                 </div>
