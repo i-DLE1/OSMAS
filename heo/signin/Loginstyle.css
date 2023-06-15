@@ -54,7 +54,7 @@ a{
 }
 
 .ok_button{
-    width: 95%;
+    width: 80%;
     height: 50px;
     background-color: #884A39;
     color: white;
@@ -71,7 +71,7 @@ a{
     margin:0 auto;
 }
 .contant_header{
-    border-bottom: 1px solid;
+    border-bottom: 4px solid #333;
     padding-bottom: 4px;
 }
 

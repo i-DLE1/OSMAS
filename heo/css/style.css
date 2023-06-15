@@ -9,8 +9,9 @@ ul{
 .content{
     margin:0 auto;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     margin-top: 50px;
+    
 }
 .terms_desc{
     font-size: 14px;
@@ -35,4 +36,64 @@ a{
 
 .term{
     margin-bottom: 30px;
+    
 }
+.term textarea{
+    margin-left: 5px;
+}
+
+.signup_h2{
+    border-bottom: 4px solid #333;
+}
+
+.signup_info{
+    height: 50px;
+    margin: 10px;
+    margin-bottom:30px;
+    
+}
+.signup_info input{
+    height: 100%;
+    width: 80%;
+    border: 1px solid #dde2e6;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 16px;
+}
+
+.signup_info button{
+    width: 50px;
+    height: 50px;
+    border-color: #cdd3d8;
+    color:#495057;
+    border-radius: 4px;
+    border: 1px solid #cdd3d8;
+}
+label{
+    margin-left: 10px;   
+}
+#email{
+    width: 70%;
+}
+#emailNum{
+    width: 70%;
+}
+
+.sign_con{
+    text-align: center;
+    font-size: 20px;
+}
+.container_button{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.ok_button{
+    width: 50%;
+    height: 50px;
+    background-color: #884A39;
+    color: white;
+    margin-bottom: 8px;
+}
+
