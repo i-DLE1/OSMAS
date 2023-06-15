@@ -28,11 +28,20 @@ table {
     font-weight: bold;
     }
 
-.content{
+.content {
     margin-right: 700px;
     position: absolute;
     top: 300px;
     left: 10px;
+}
+
+.content h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.content h3.bold {
+    font-weight: bold;
 }
 
 .index{
@@ -49,4 +58,36 @@ table {
 
 .tablemargin{
     margin-left: 5px;
+}
+
+.search{
+    display: flex; justify-content: flex-start; margin-left: 250px;
+
+}
+
+.search input[type="text"] {
+    width: 70%; 
+    height: 40px;
+}
+
+.search-icon {
+    width:30px; height:30px; margin-right: 10px; margin-top: 10px;
+}
+
+.member-list{
+    display: flex; justify-content: flex-start; margin-left: 250px;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    color: rgba(83, 56, 3, 0.992);
+}
+
+.profil {
+    display:block; margin: 0 auto; margin-left: -20px; width:120px; height:100px; float: left;
 }
