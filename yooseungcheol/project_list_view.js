@@ -19,6 +19,7 @@ function projectListView(){
         }else{
             color = "days-red";
         }
+
         let elementText= `
         <div class ="project-item">
             <div>

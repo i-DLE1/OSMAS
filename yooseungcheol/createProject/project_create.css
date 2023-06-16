@@ -43,6 +43,7 @@ body {
     align-items:center;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 1em;
 }
 
 .item input{
@@ -51,6 +52,7 @@ body {
     margin-right: 10px;
     border: 1px solid #884A3B;
     accent-color: #884A3B;
+    background: #C49A6C;
 }
 
 .footer{
@@ -106,6 +108,8 @@ body {
     width: 150px;
     height: 35px;
     border-radius: 5px;
+    clip:rect(0,0,0,0);
+
 }
 
 .subtitle{
@@ -195,4 +199,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.required-item{
+    margin-left: 6px;
+    color: red;
+    font-weight: 600;
+    font-size: 20px;
 }
