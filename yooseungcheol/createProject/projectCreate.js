@@ -1,4 +1,4 @@
-let faqListCount = 2;
+let faqListCount = 1;
 let productCount = 2;
 
 
@@ -10,6 +10,63 @@ function removeItemButton(funcName){
                     </button>
                 </div>`
     return elementText;
+}
+
+function fqaLoadDummy() {
+    let data = [
+        {title : "타이틀1", body:"내용물 111"},
+        {title : "타이틀2", body:"내용물 222"},
+        {title : "타이틀3", body:"내용물 333"},
+        {title : "타이틀4", body:"내용물 444"},
+        {title : "타이틀5", body:"내용물 555"},
+    ]
+    fqaLoadList(data)
+}
+
+function faqAddSubItem(faqListCount) {
+    const elementText = removeItemButton("faqItemRemove")
+    $(`#faqSubIndex${faqListCount-1}`)
+        .prop("class","addItemFAQCol2")
+        .append(elementText)
+}
+
+function faqItemRemove(){
+    faqListCount--;
+
+    if(faqListCount > 2){
+        $(`#faqIndex${faqListCount}`).remove();
+        faqAddSubItem(faqListCount);
+    }else {
+        $(`#faqIndex${faqListCount}`).remove();
+    }
+}
+
+function fqaLoadList(data) {
+    data.forEach(item=>{
+        let text = `
+        <div id="faqIndex${faqListCount}">
+            <div>
+                <div id="faqSubIndex${faqListCount}" >
+                    <div>
+                        <div>
+                            <label class="subtitle" for="title${faqListCount}">제목</label>
+                            <input class="inputBox w-100" id="title"${faqListCount} name="title${faqListCount}" value="${item.title}"/>
+                        </div>
+                        <div class="mt-4">
+                            <label class="subtitle" for="body${faqListCount}" >내용</label>
+                            <textarea class="inputBox w-100" rows="2" style="resize: none; height: 80px !important;"  id="body${faqListCount}" name="body" >${item.body}</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <hr class="line">
+                </div>
+            </div>
+        </div>`
+        $('#faqList').append(text);
+        faqListCount++;
+    })
+    faqAddSubItem(faqListCount);
 }
 
 $("#fqaAdd").click(function (){
@@ -39,17 +96,6 @@ $("#fqaAdd").click(function (){
     $('#faqList').append(text);
     faqListCount++;
 });
-
-function faqItemRemove(){
-    faqListCount--;
-
-    const elementText = removeItemButton("faqItemRemove")
-
-    $(`#faqIndex${faqListCount}`).remove();
-    $(`#faqSubIndex${faqListCount-1}`)
-        .prop("class","addItemFAQCol2")
-        .append(elementText)
-}
 
 $("#productAdd").click(function (){
     $("#subItem").remove();
@@ -106,16 +152,29 @@ function itemRemove(){
         .prop("class","addItemProductCol2");
 }
 
-function newsList(){
-    // 더미 데이터
-    let newList = [
+function newsListDummy() {
+    let data = [
         {title:"title1", body:"body11111",startDate:"2023-01-01",endDate:"2032-10-10"},
         {title:"title2", body:"body22222",startDate:"2023-02-01",endDate:"2032-10-10"},
         {title:"title3", body:"body33333",startDate:"2023-03-01",endDate:"2032-10-10"},
         {title:"title4", body:"body44444",startDate:"2023-04-01",endDate:"2032-10-10"},
-        ];
-    
-    newList.forEach((item,index)=>
+    ];
+    newsList(data);
+}
+
+function productInfoListDummy() {
+    let data = [
+        {title : "어쩌구 저쩌구",money:"200,000",count:12},
+        {title : "어쩌구 저쩌구",money:"200,000",count:12},
+        {title : "어쩌구 저쩌구",money:"200,000",count:12},
+        {title : "어쩌구 저쩌구",money:"200,000",count:12},
+        {title : "어쩌구 저쩌구",money:"200,000",count:12},
+        {title : "어쩌구 저쩌구",money:"200,000",count:12},
+    ]
+    productInfoList(data);
+}
+function newsList(data){
+    data.forEach((item,index)=>
         $("#newsList").append(`
         <tr>
             <th>${index+1}</th>
@@ -127,25 +186,16 @@ function newsList(){
     );
 }
 
-function productInfoList() {
-    let dummyData = [
-        {title : "어쩌구 저쩌구",money:"200,000",count:12},
-        {title : "어쩌구 저쩌구",money:"200,000",count:12},
-        {title : "어쩌구 저쩌구",money:"200,000",count:12},
-        {title : "어쩌구 저쩌구",money:"200,000",count:12},
-        {title : "어쩌구 저쩌구",money:"200,000",count:12},
-        {title : "어쩌구 저쩌구",money:"200,000",count:12},
-    ]
-
-    dummyData.forEach((item,index)=>{
+function productInfoList(data) {
+    data.forEach((item,index)=>{
         let elementText= `
         <tr class="row">
             <th class="col-1">상품명</th>
-            <td class="col">어쩌구 저쩌구</td>
+            <td class="col">${item.title}</td>
             <th class="col-2">가격(원)</th>
-            <td class="col">200,000</td>
+            <td class="col">${item.money}</td>
             <th class="col-1">수량</th>
-            <td class="col-2">12개 </td>
+            <td class="col-2">${item.count}개 </td>
         </tr>
         `
         $("#projectEndList").append(elementText)
@@ -156,4 +206,78 @@ function newsRegist(){
     this.preventDefault();
     $("#newsList").html("")
     newsList()
+}
+
+function indexCheckConfirm() {
+    if( !($("#check1").prop("checked") && $("#check2").prop("checked"))){
+        alert("필수 항목에 체크를 하지 않았습니다.")
+    }else{
+        location.href="project2.html"
+    }
+}
+
+// 보류
+// function project1Confirm() {
+//     const title = $("#title").val()
+//     const body = $("#body").val()
+//     const startDate = $("#startDate").val()
+//     const endDate = $("#endDate").val()
+//     const money = $("#money").val()
+//
+//     let startDateString = new Date(startDate).toLocaleString().slice(0,new Date(startDate))
+//     let todayString = new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })
+//     startDateString =  startDateString.slice(0, startDateString.lastIndexOf("."))
+//     todayString =  todayString.slice(0, todayString.lastIndexOf("."))
+//
+//
+//     if(title === "" || body === "" || startDate === "" || endDate === "" || money === ""){
+//         alert("필수 항목을 입력하지 않았습니다. ")
+//     }else{
+//         if(money < 1000000){
+//             alert("펀딩 목표 금액은 100만원 이하일 수 없습니다.")
+//         }
+//         if(startDateString === todayString){
+//             alert("익일 부터 프로젝트를 시작할 수 있습니다. ")
+//         }
+//     }
+// }
+
+
+
+
+function project2LoadData() {
+
+}
+
+function project2LoadDate() {
+
+}
+
+function project3LoadData() {
+
+}
+
+function project3Confirm() {
+
+}
+
+function project4LoadData() {
+    newsListDummy()
+    //newsList(data)
+}
+
+function project4Confirm() {
+
+}
+function project5LoadDate(){
+    fqaLoadDummy() // 더미데이터 로드
+    //fqaLoadList(data)
+}
+
+function project5Confirm() {
+
+}
+function project6LoadData() {
+    newsListDummy()
+    //newsList(data)
 }
