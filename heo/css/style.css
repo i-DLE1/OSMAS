@@ -160,7 +160,12 @@ label{
     width: 250px;
 }
 
-.btn_rf, .btn_de{
+.btn_re{
     width: 50px;
     height: 50px;
+    border-color: #cdd3d8;
+    color: white;
+    background-color: #00c4c4 ;
+    border-radius: 4px;
+    border: 1px solid #cdd3d8;
 }
