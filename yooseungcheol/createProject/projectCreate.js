@@ -5,7 +5,7 @@ let productCount = 1;
 function removeItemButton(funcName){
     let elementText = `
                 <div id="subItem">
-                    <button id="productSub" class="subItem" onclick="${funcName}()">
+                    <button id="productSub" class="sub-item" onclick="${funcName}()">
                         <img src="/static/image/subItem.png" width="40px" height="40px" >
                     </button>
                 </div>`
@@ -26,7 +26,7 @@ function fqaLoadDummy() {
 function faqAddSubItem(faqListCount) {
     const elementText = removeItemButton("faqItemRemove")
     $(`#faqSubIndex${faqListCount-1}`)
-        .addClass("addItemFAQCol2")
+        .addClass("add-item-faq-col-2")
         .append(elementText)
 }
 
@@ -49,12 +49,12 @@ function fqaLoadList(data) {
                 <div id="faqSubIndex${faqListCount}" >
                     <div>
                         <div>
-                            <label class="subtitle" for="title${faqListCount}">제목</label>
-                            <input class="inputBox w-100" id="title${faqListCount}" name="title${faqListCount}" value="${item.title}"/>
+                            <label class="sub-title" for="title${faqListCount}">제목</label>
+                            <input class="input-box w-100" id="title${faqListCount}" name="title${faqListCount}" value="${item.title}"/>
                         </div>
                         <div class="mt-4">
-                            <label class="subtitle" for="body${faqListCount}">내용</label>
-                            <textarea class="inputBox w-100" rows="2" style="resize: none; height: 80px !important;"  id="body${faqListCount}" name="body" >${item.body}</textarea>
+                            <label class="sub-title" for="body${faqListCount}">내용</label>
+                            <textarea class="input-box w-100" rows="2" style="resize: none; height: 80px !important;"  id="body${faqListCount}" name="body" >${item.body}</textarea>
                         </div>
                     </div>
                 </div>
@@ -84,15 +84,15 @@ $("#fqaAdd").click(function (){
     let text = `
         <div id="faqIndex${faqListCount}">
             <div>
-                <div id="faqSubIndex${faqListCount}" class="addItemFAQCol2">
+                <div id="faqSubIndex${faqListCount}" class="add-item-faq-col-2">
                     <div>
                         <div>
-                            <label class="subtitle" for="title${faqListCount}">제목</label>
-                            <input class="inputBox w-100" id="title${faqListCount}" name="title${faqListCount}"/>
+                            <label class="sub-title" for="title${faqListCount}">제목</label>
+                            <input class="input-box w-100" id="title${faqListCount}" name="title${faqListCount}"/>
                         </div>
                         <div class="mt-4">
-                            <label class="subtitle" for="body${faqListCount}" >내용</label>
-                            <textarea class="inputBox w-100" rows="2" style="resize: none; height: 80px !important;"  id="body${faqListCount}" name="body"></textarea>
+                            <label class="sub-title" for="body${faqListCount}" >내용</label>
+                            <textarea class="input-box w-100" rows="2" style="resize: none; height: 80px !important;"  id="body${faqListCount}" name="body"></textarea>
                         </div>
                     </div>
                     ${removeItemButton("faqItemRemove")}
@@ -124,38 +124,38 @@ $("#productAdd").click(function (){
     $(`#addItemProductIndex${productCount-1}`).children().prop("class","")
     let text=
         `<div id="addItemProductIndex${productCount}">
-            <div id="productSubIndex${productCount}" class="addItemProductCol2">
+            <div id="productSubIndex${productCount}" class="add-item-product-col-2">
                 <div id="item">
                     <div class="row" style="margin-top: 1em;">
                         <div class="col">
-                            <label class="subtitle" for="name">상품명</label>
-                            <input class="w-100 inputBox" type="text" id="name${productCount}" name="name${productCount}">
+                            <label class="sub-title" for="name">상품명</label>
+                            <input class="w-100 input-box" type="text" id="name${productCount}" name="name${productCount}">
                         </div>
                         <div class="col">
-                            <label class="subtitle" for="size">사이즈</label>
-                            <input class="w-100 inputBox" type="text" id="size${productCount}" name="size${productCount}">
+                            <label class="sub-title" for="size">사이즈</label>
+                            <input class="w-100 input-box" type="text" id="size${productCount}" name="size${productCount}">
                         </div>
                         <div class="col-2">
-                            <label for="count" class="subtitle">수량</label>
-                            <input class="w-100 inputBox" type="number" id="count${productCount}" name="count${productCount}">
+                            <label for="count" class="sub-title">수량</label>
+                            <input class="w-100 input-box" type="number" id="count${productCount}" name="count${productCount}">
                         </div>
                         <div class="col-3">
-                            <label for="money" class="subtitle">금액</label>
-                            <input class="w-100 inputBox" type="number" id="money${productCount}" name="money${productCount}">
+                            <label for="money" class="sub-title">금액</label>
+                            <input class="w-100 input-box" type="number" id="money${productCount}" name="money${productCount}">
                         </div>
                     </div>
                     <div class="row" style="margin-top: 1em;">
                         <div class="col">
-                            <label for="body" class="subtitle">설명</label>
-                            <input class="w-100 inputBox" type="text" id="body${productCount}" name="body${productCount}">
+                            <label for="body" class="sub-title">설명</label>
+                            <input class="w-100 input-box" type="text" id="body${productCount}" name="body${productCount}">
                         </div>
                         <div class="col-3">
-                            <label for="shippingStart" class="subtitle">배송시작</label>
-                            <input class="w-100 inputBox" type="date" id="shippingStart${productCount}" name="shippingStart${productCount}">
+                            <label for="shippingStart" class="sub-title">배송시작</label>
+                            <input class="w-100 input-box" type="date" id="shippingStart${productCount}" name="shippingStart${productCount}">
                         </div>
                         <div class="col-3">
-                            <label for="shippingFee" class="subtitle">배송비</label>
-                            <input class="w-100 inputBox" type="number" id="shippingFee${productCount}" name="shippingFee${productCount}">
+                            <label for="shippingFee" class="sub-title">배송비</label>
+                            <input class="w-100 input-box" type="number" id="shippingFee${productCount}" name="shippingFee${productCount}">
                         </div>
                     </div>
                 </div>
@@ -216,7 +216,7 @@ function productItemRemove(){
 function productAddSubItem(productCount) {
     const elementText = removeItemButton("productItemRemove")
     $(`#productSubIndex${productCount-1}`)
-        .addClass("addItemProductCol2")
+        .addClass("add-item-product-col-2")
         .append(elementText)
 }
 
@@ -228,34 +228,34 @@ function productItemLoad(data){
                 <div id="item">
                     <div class="row" style="margin-top: 1em;">
                         <div class="col">
-                            <label class="subtitle" for="name">상품명</label>
-                            <input class="w-100 inputBox" type="text" id="name${productCount}" name="name${productCount}" value=${item.name}>
+                            <label class="sub-title" for="name">상품명</label>
+                            <input class="w-100 input-box" type="text" id="name${productCount}" name="name${productCount}" value=${item.name}>
                         </div>
                         <div class="col">
-                            <label class="subtitle" for="size">사이즈</label>
-                            <input class="w-100 inputBox" type="text" id="size${productCount}" name="size${productCount}" value=${item.size}>
+                            <label class="sub-title" for="size">사이즈</label>
+                            <input class="w-100 input-box" type="text" id="size${productCount}" name="size${productCount}" value=${item.size}>
                         </div>
                         <div class="col-2">
-                            <label for="count" class="subtitle">수량</label>
-                            <input class="w-100 inputBox" type="number" id="count${productCount}" name="count${productCount}" value=${item.count}>
+                            <label for="count" class="sub-title">수량</label>
+                            <input class="w-100 input-box" type="number" id="count${productCount}" name="count${productCount}" value=${item.count}>
                         </div>
                         <div class="col-3">
-                            <label for="money" class="subtitle">금액</label>
-                            <input class="w-100 inputBox" type="number" id="money${productCount}" name="money${productCount}" value=${item.money}>
+                            <label for="money" class="sub-title">금액</label>
+                            <input class="w-100 input-box" type="number" id="money${productCount}" name="money${productCount}" value=${item.money}>
                         </div>
                     </div>
                     <div class="row" style="margin-top: 1em;">
                         <div class="col">
-                            <label for="body" class="subtitle">설명</label>
-                            <input class="w-100 inputBox" type="text" id="body${productCount}" name="body${productCount}" value=${item.body}>
+                            <label for="body" class="sub-title">설명</label>
+                            <input class="w-100 input-box" type="text" id="body${productCount}" name="body${productCount}" value=${item.body}>
                         </div>
                         <div class="col-3">
-                            <label for="shippingStart" class="subtitle">배송시작</label>
-                            <input class="w-100 inputBox" type="date" id="shippingStart${productCount}" name="shippingStart${productCount}" value=${item.shippingStart}>
+                            <label for="shippingStart" class="sub-title">배송시작</label>
+                            <input class="w-100 input-box" type="date" id="shippingStart${productCount}" name="shippingStart${productCount}" value=${item.shippingStart}>
                         </div>
                         <div class="col-3">
-                            <label for="shippingFee" class="subtitle">배송비</label>
-                            <input class="w-100 inputBox" type="number" id="shippingFee${productCount}" name="shippingFee${productCount}" value=${item.shppingFee}>
+                            <label for="shippingFee" class="sub-title">배송비</label>
+                            <input class="w-100 input-box" type="number" id="shippingFee${productCount}" name="shippingFee${productCount}" value=${item.shppingFee}>
                         </div>
                     </div>
                 </div>
@@ -378,4 +378,12 @@ function project5Confirm() {
 function project6LoadData() {
     newsListDummy()
     //newsList(data)
+}
+
+function previewImage(ele) {
+    let img = new FileReader()
+    img.onload = function (e){
+        $(ele).siblings("label").children().prop("src",e.target.result)
+    }
+    img.readAsDataURL(ele.files[0])
 }

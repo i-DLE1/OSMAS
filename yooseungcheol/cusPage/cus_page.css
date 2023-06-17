@@ -92,11 +92,11 @@ a{
     align-items: center;
 }
 
-.h1Title{
+.h1-title{
     font-weight: 800;
 }
 
-.searchBtn{
+.search-btn{
     background-color: #C49A6C;
     border: none;
     color: white;
@@ -113,7 +113,7 @@ a{
     color: white !important;
 }
 
-.searchBar{
+.search-bar{
     outline-color: #cda57a;
     border: 1px solid #C49A6C;
     border-radius: 3px;
@@ -164,20 +164,20 @@ a{
     color: white;
 }
 
-.pagenation{
+.cus-page{
     margin-top: 3em;
     list-style: none;
     display: flex;
     justify-content: center;
 }
 
-.pagenation li{
+.cus-page li{
     border: 1px solid #C49A6C;
     padding: 5px 10px 5px 10px ;
     margin: 5px;
 }
 
-.pagenation li:hover, .pagenation li:hover a {
+.cus-page li:hover, .cus-page li:hover a {
     background-color: #C49A6C;
     color: white !important;
 }
