@@ -120,3 +120,47 @@ label{
 #pwd_con{
     display: none;
 }
+
+.review_list{
+    border-bottom: 1px solid #dedfe4;
+    padding-left: 0;
+    display: flex;
+    font-size: 24px;
+}
+
+
+.board{
+    margin:0 auto;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 50px;
+}
+
+.btn_myreview a, .btn_review a{
+    color: white;
+}
+.btn_myreview{
+    background-color: #00c4c4 ;
+    margin-right: 10px;
+    padding: 10px;
+}
+.btn_review{
+    background-color: #00c4c4 ;
+    margin-right: 10px;
+    padding: 10px;
+    
+}
+#selectKeyword{
+    height: 25px;
+    width: 100px;
+}
+
+#select{
+    height: 25px;
+    width: 250px;
+}
+
+.btn_rf, .btn_de{
+    width: 50px;
+    height: 50px;
+}
