@@ -4,8 +4,8 @@
 .textarea{
     resize: none;
     outline-style: none;
-    padding: 10px;
-    width: 98%;
+    padding: 5px;
+    width: 96%;
     border: 1px solid #884A3B;
     background-color: white;
     border-radius:4px;
@@ -21,6 +21,7 @@
     margin-bottom: 20px;
 }
 .footer{
+    margin-top: 2em;
     width: 100%;
     display: flex;
     justify-content: center;

@@ -3,13 +3,15 @@ let productCount = 1;
 
 
 function removeItemButton(funcName){
-    let elementText = `
-                <div id="subItem">
-                    <button id="productSub" class="sub-item" onclick="${funcName}()">
-                        <img src="/static/image/subItem.png" width="40px" height="40px" >
-                    </button>
-                </div>`
-    return elementText
+    let $div = $("<div>").attr("id","subItem")
+    let $button = $("<button>").attr("id","productSub")
+                                .addClass("sub-item")
+                                .attr("onclick",`${funcName}()`)
+    $button.append($("<img>").attr("src","/static/image/subItem.png")
+                                .attr("width","40px")
+                                .attr("height","40px"))
+    $div.append($button)
+    return $("<div>").append($div).html()
 }
 
 function fqaLoadDummy() {
@@ -25,9 +27,8 @@ function fqaLoadDummy() {
 
 function faqAddSubItem(faqListCount) {
     const elementText = removeItemButton("faqItemRemove")
-    $(`#faqSubIndex${faqListCount-1}`)
-        .addClass("add-item-faq-col-2")
-        .append(elementText)
+    $(`#faqSubIndex${faqListCount-1}`).addClass("add-item-faq-col-2")
+                                        .append(elementText)
 }
 
 function faqItemRemove(){
@@ -204,7 +205,6 @@ function productItemDummy() {
 
 function productItemRemove(){
     productCount--;
-    console.log(productCount)
     if(productCount > 2){
         $(`#addItemProductIndex${productCount}`).remove();
         productAddSubItem(productCount);
@@ -215,9 +215,8 @@ function productItemRemove(){
 
 function productAddSubItem(productCount) {
     const elementText = removeItemButton("productItemRemove")
-    $(`#productSubIndex${productCount-1}`)
-        .addClass("add-item-product-col-2")
-        .append(elementText)
+    $(`#productSubIndex${productCount-1}`).addClass("add-item-product-col-2")
+                                            .append(elementText)
 }
 
 function productItemLoad(data){
@@ -265,8 +264,6 @@ function productItemLoad(data){
                 <hr class="line">
             </div>
         </div>`
-        // ${removeItemButton("itemRemove")}
-        //  class="addItemProductCol2"
         $("#productList").append(text)
         productCount++
     })

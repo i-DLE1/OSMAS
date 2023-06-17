@@ -1,3 +1,14 @@
+a{
+    text-decoration: none;
+    color: #884A3B;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 270px auto;
+    margin: 0 60px 0 0;
+}
+
 .cus-nav{
     display: block;
     justify-content: center;
@@ -16,12 +27,25 @@
     padding-bottom: 5px;
     border-bottom: 1px solid #884A3B;
 }
+.menu-list a{
+    display: block;
+}
 .menu-list:hover div{
     display: block;
 }
 .menu-list li{
     padding-top: 2px;
     padding-bottom: 2px;
+}
+.menu-list>h5>a{
+    padding: 10px 0 10px 0 ;
+    color: #884A3B !important;
+}
+.menu-list>h5>a:hover{
+    transition: 0.5s;
+    background-color: #884A3B !important;
+    color: white !important;
+    padding: 10px 0 10px 0 ;
 }
 
 .menu-visible{
@@ -52,17 +76,6 @@
 .menu-none-visible{
     transition: 0.2s;
     display: block;
-}
-
-body{
-    display: grid;
-    grid-template-columns: 270px auto;
-    margin: 0 60px 0 0;
-}
-
-a{
-    text-decoration: none;
-    color: #884A3B;
 }
 
 .menu-list li:hover{
@@ -137,19 +150,26 @@ a{
     width: 100%;
 }
 
-.cus-table thead tr{
+.cus-table>thead>tr{
     font-weight: 700;
     height: 3em;
     border-bottom: 1px solid #C49A6C;
+}
+
+.cus-table thead>tr>td:nth-child(n+5):nth-child(-n+7){
+    text-align: center;
 }
 
 .cus-table th{
     padding-left: 20px;
 }
 
-.cus-table tbody tr{
+.cus-table>tbody>tr{
     height: 4em;
     border-bottom: 1px solid #C49A6C;
+}
+.cus-table tbody>tr>td:nth-child(n+5):nth-child(-n+7){
+    text-align: center;
 }
 
 .cus-table tbody tr td:nth-child(4){
@@ -180,4 +200,17 @@ a{
 .cus-page li:hover, .cus-page li:hover a {
     background-color: #C49A6C;
     color: white !important;
+}
+.cus-button {
+    border: 1px solid #C49A6C;
+    font-size: 15px;
+    color:#C49A6C ;
+    background-color: white ;
+    border-radius: 7px;
+    margin: 0 5px 0 5px;
+}
+.cus-button:hover{
+    border: 1px solid #884A3B;
+    background-color: #884A3B;
+    color: white;
 }

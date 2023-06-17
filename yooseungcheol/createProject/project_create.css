@@ -104,6 +104,7 @@ body {
     display: flex;
     justify-content: center;
     grid-column-gap: 39px;
+    overflow: auto;
 }
 .image-upload-button{
     object-fit: cover;

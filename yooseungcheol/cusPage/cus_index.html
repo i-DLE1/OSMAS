@@ -16,7 +16,7 @@
             <br>
             <!-- menu-none-visible 스위치 -->
             <ul class="menu-list">
-                <h5>프로젝트 등록</h5>
+                <h5><a href="../createProject/index.html" target="_blank">프로젝트 등록</a></h5>
             </ul>
             <ul class="menu-list">
                 <h5>프로젝트 관리 <span>▼▲</span></h5>
@@ -47,14 +47,6 @@
                     <li id="qaCompleteMenu"><a href="./qa_index.html">답변 완료</a></li>
                 </div>
             </ul>
-            <ul class="menu-list">
-                <h5>권한관리 <span>▼▲</span></h5>
-                <div class="menu-visible ">
-                    <li><a href="#">메뉴1</a></li>
-                    <li><a href="#">메뉴2</a></li>
-                    <li><a href="#">메뉴3</a></li>
-                </div>
-            </ul>
         </nav>
         <main>
             <div class="main">
@@ -76,14 +68,8 @@
                             <td id="cusCancle" class="col">취소</td>
                             <th class="col-4">
                                 <div class="row col">
-                                    <select class="col-3 me-3 searchBar">
-                                        <option>메뉴1</option>
-                                        <option>메뉴2</option>
-                                        <option>메뉴3</option>
-                                        <option>메뉴4</option>
-                                    </select>
-                                    <input type="text" class="searchBar col">
-                                    <button class="searchBtn col ms-2">검색</button>
+                                    <input type="text" class="search-bar col" placeholder="검색할 프로젝트명">
+                                    <button class="search-btn col ms-2 me-2">검색</button>
                                 </div>
                             </th>
                         </tr>
@@ -99,6 +85,7 @@
                             <td>참여금액(원)</td>
                             <td>프로젝트기간</td>
                             <td>심사단계</td>
+                            <td>기능</td>
                         </tr>
                     </thead>
                     <tbody id="customerProjectList">

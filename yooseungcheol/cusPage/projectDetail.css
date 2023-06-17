@@ -90,7 +90,7 @@ body{
     background-color: #C49A6C;
     border: 0;
     border-radius: 5px;
-    margin: 10px;
+    margin-bottom: 50px;
 }
 .footer-btn:hover{
     transition: 0.3s;
