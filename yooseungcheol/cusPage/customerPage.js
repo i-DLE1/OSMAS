@@ -78,4 +78,25 @@ $("#qaMenu td").click(function (){
     proejctQAList(selectId)
 })
 
+function cancelTableDummyData(){
+    let data =
+        {title : "프로젝트명", startDate : "2023-01-01", endDate : "2023-10-10",
+        money : "90,000,000",currentMoney : "9,000,000",accomplieRate : "10%",   cancelFee : "2%"
+            , estimate:"180,000", state : "진행중" }
+    cancelTable(data)
+}
+
+function cancelTable(data) {
+
+    let $tableTr = $("#cancel-table tr")
+    $($tableTr[0]).children("td").text(data.title) // 프로젝트 명
+    $($tableTr[1]).children("td").text(data.startDate) // 시작일
+    $($tableTr[2]).children("td").text(data.endDate) // 종료일
+    $($tableTr[3]).children("td").text(data.money) // 목표금액
+    $($tableTr[4]).children("td").text(data.currentMoney) // 모금액
+    $($tableTr[5]).children("td").text(data.accomplieRate) // 달성률
+    $($tableTr[6]).children("td").text(data.cancelFee) // 취소 수수료율
+    $($tableTr[7]).children("td").text(data.estimate) // 취소 예상금액
+    $($tableTr[8]).children("td").text(data.state) // 상태
+}
 

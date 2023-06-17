@@ -32,6 +32,8 @@ function projectListView(){
             <div>${item.title}</div>
             <div>참여자 수 : <span >${item.user}</span>명</div>
         </div>`
+
+
         $("#project-view-list").append(elementText)
     })
 }
