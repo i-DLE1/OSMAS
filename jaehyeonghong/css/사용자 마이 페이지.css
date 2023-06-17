@@ -3,10 +3,9 @@ nav ul{
     list-style: none;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
-    text-align: center;
+    text-align: center auto;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-
 }
 
 nav ul li{
@@ -161,4 +160,24 @@ footer a {
 .dropdown-content a:hover {background-color: #ddd;}
 
 .dropdown:hover .dropdown-content {display: block;}
+
+
+.btn_setting {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    overflow:visible;
+    text-indent:-9999px;
+    background: url(../image/settingl.png) no-repeat center / 20px;
+}
+
+.info_box {
+    list-style: none;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    text-align: center;    
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
 
