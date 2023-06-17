@@ -1,14 +1,3 @@
-.footerBtn{
-    font-size: large;
-    width: 100px;
-    height: 50px;
-    color: white;
-    font-weight: 400;
-    background-color: #C49A6C;
-    border: 0px;
-    border-radius: 5px;
-    margin: 10px;
-}
 .container-justify-center-w100{
     display: flex;
     width: 100%;
@@ -46,4 +35,23 @@
     padding-left: 20px;
     text-align: start;
     border-bottom: 1px solid #884A3B;
+}
+
+.cancel-content-area{
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+}
+.cancel-content-title{
+    color: #884A3B;
+}
+.cancel-content{
+    width: 430px;
+    border : 1px solid #884A3B;
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.cancel-content:focus{
+    outline-style : none;
 }
