@@ -124,8 +124,7 @@ text-transform: uppercase;
 }
 
 .imagebuttoncontainer {
-    position: absolute;
-    margin: 0;
+    margin-left: 35%;
     top: 540px;
     left: 380px;
     radius: 30%;
@@ -323,7 +322,7 @@ text-transform: uppercase;
 
 .contentsbottom {
     padding: 3%;
-    background-color: #d8d0c8;
+    /* background-color: #d8d0c8; */
     height: 2000px;
     }
 
@@ -340,3 +339,62 @@ text-transform: uppercase;
     text-align: center;
 
 }
+
+.teaminfo{
+    display: flex;
+    font-size: 30px;
+
+}
+
+table th{
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-size: 30px;
+    padding-top: 20px;
+    
+}
+
+table td{
+    border-bottom: 1px solid black;
+    font-size: 25px;
+    padding-top: 20px;
+    
+}
+
+.tdindex{
+    text-align: center;
+}
+.button-cell {
+    width: 100px;
+  }
+
+
+
+
+.cus-page{
+    margin-top: 3em;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.cus-page li{
+    border: 1px solid #ffffff;
+    padding: 5px 10px 5px 10px ;
+    margin: 5px;
+}
+
+.cus-page li:hover, .cus-page li:hover a {
+    color: rgb(0, 0, 0) !important;
+}
+a {
+    text-decoration: none;
+  }
+
+  #question{
+    width: 800px; 
+    height: 15px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
