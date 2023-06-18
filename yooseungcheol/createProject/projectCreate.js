@@ -3,15 +3,15 @@ let productCount = 1;
 
 
 function removeItemButton(funcName){
-    let $div = $("<div>").attr("id","subItem")
+    let $div = $("<div>").attr("id","subItem");
     let $button = $("<button>").attr("id","productSub")
                                 .addClass("sub-item")
-                                .attr("onclick",`${funcName}()`)
+                                .attr("onclick",`${funcName}()`);
     $button.append($("<img>").attr("src","/static/image/subItem.png")
                                 .attr("width","40px")
-                                .attr("height","40px"))
-    $div.append($button)
-    return $("<div>").append($div).html()
+                                .attr("height","40px"));
+    $div.append($button);
+    return $("<div>").append($div).html();
 }
 
 function fqaLoadDummy() {
@@ -21,14 +21,15 @@ function fqaLoadDummy() {
         {title : "타이틀3", body:"내용물 333"},
         {title : "타이틀4", body:"내용물 444"},
         {title : "타이틀5", body:"내용물 555"},
-    ]
-    fqaLoadList(data)
+    ];
+
+    fqaLoadList(data);
 }
 
 function faqAddSubItem(faqListCount) {
-    const elementText = removeItemButton("faqItemRemove")
+    const elementText = removeItemButton("faqItemRemove");
     $(`#faqSubIndex${faqListCount-1}`).addClass("add-item-faq-col-2")
-                                        .append(elementText)
+                                        .append(elementText);
 }
 
 function faqItemRemove(){
@@ -71,16 +72,16 @@ function fqaLoadList(data) {
 }
 
 $("#fqaAdd").click(function (){
-    let titleVal = $(`#title${faqListCount-1}`).val()
-    let bodyVal = $(`#body${faqListCount-1}`).val()
+    let titleVal = $(`#title${faqListCount-1}`).val();
+    let bodyVal = $(`#body${faqListCount-1}`).val();
 
     if(titleVal === "" || bodyVal === ""){
-        alert("입력 되지 않은 필드가 존재합니다.")
+        alert("입력 되지 않은 필드가 존재합니다.");
         return;
     }
 
-    $('#subItem').remove()
-    $(`#faqIndex${faqListCount-1}`).children().children().prop("class","")
+    $('#subItem').remove();
+    $(`#faqIndex${faqListCount-1}`).children().children().prop("class","");
 
     let text = `
         <div id="faqIndex${faqListCount}">
@@ -109,20 +110,20 @@ $("#fqaAdd").click(function (){
 });
 
 $("#productAdd").click(function (){
-    let $nameVal = $(`#name${productCount-1}`).val()
-    let $sizeVal = $(`#size${productCount-1}`).val()
-    let $countVal = $(`#count${productCount-1}`).val()
-    let $moneyVal = $(`#money${productCount-1}`).val()
-    let $bodyVal = $(`#body${productCount-1}`).val()
-    let $shippingStartVal = $(`#shippingStart${productCount-1}`).val()
-    let $shippingFeeVal = $(`#shippingFee${productCount-1}`).val()
+    let $nameVal = $(`#name${productCount-1}`).val();
+    let $sizeVal = $(`#size${productCount-1}`).val();
+    let $countVal = $(`#count${productCount-1}`).val();
+    let $moneyVal = $(`#money${productCount-1}`).val();
+    let $bodyVal = $(`#body${productCount-1}`).val();
+    let $shippingStartVal = $(`#shippingStart${productCount-1}`).val();
+    let $shippingFeeVal = $(`#shippingFee${productCount-1}`).val();
 
     if($nameVal === "" || $sizeVal === ""|| $countVal === ""|| $moneyVal === ""|| $bodyVal === ""|| $shippingStartVal === ""|| $shippingFeeVal === ""){
-        alert("입력 되지 않은 필드가 존재합니다.")
+        alert("입력 되지 않은 필드가 존재합니다.");
         return;
     }
     $("#subItem").remove();
-    $(`#addItemProductIndex${productCount-1}`).children().prop("class","")
+    $(`#addItemProductIndex${productCount-1}`).children().prop("class","");
     let text=
         `<div id="addItemProductIndex${productCount}">
             <div id="productSubIndex${productCount}" class="add-item-product-col-2">
@@ -160,13 +161,13 @@ $("#productAdd").click(function (){
                         </div>
                     </div>
                 </div>
-                ${removeItemButton("productItemRemove")}
+                ${removeItemButton("productItemRemove")};
             </div>
             <div>
                 <hr class="line">
             </div>
         </div>`
-    $("#productList").append(text)
+    $("#productList").append(text);
     productCount++;
 })
 
@@ -182,13 +183,13 @@ function newsListDummy() {
 
 function productInfoListDummy() {
     let data = [
-        {title : "어쩌구 저쩌구",money:"200,000",count:12},
-        {title : "어쩌구 저쩌구",money:"200,000",count:12},
-        {title : "어쩌구 저쩌구",money:"200,000",count:12},
-        {title : "어쩌구 저쩌구",money:"200,000",count:12},
-        {title : "어쩌구 저쩌구",money:"200,000",count:12},
-        {title : "어쩌구 저쩌구",money:"200,000",count:12},
-    ]
+        {title : "어쩌구 저쩌구", size:"70", money:"200,000", count:12},
+        {title : "어쩌구 저쩌구", size:"70", money:"200,000", count:12},
+        {title : "어쩌구 저쩌구", size:"70", money:"200,000", count:12},
+        {title : "어쩌구 저쩌구", size:"70", money:"200,000", count:12},
+        {title : "어쩌구 저쩌구", size:"70", money:"200,000", count:12},
+        {title : "어쩌구 저쩌구", size:"70", money:"200,000", count:12},
+    ];
     productInfoList(data);
 }
 
@@ -199,8 +200,8 @@ function productItemDummy() {
         {name : "상품명3", size:"200", count : 3, money:100, body: "상세내용3", shippingStart : "2023-03-01", shppingFee: 1000},
         {name : "상품명4", size:"70", count : 4, money:1000, body: "상세내용4", shippingStart : "2023-04-01", shppingFee: 0},
         {name : "상품명5", size:"75", count : 5, money:20000, body: "상세내용5", shippingStart : "2023-05-01", shppingFee: 100},
-    ]
-    productItemLoad(data)
+    ];
+    productItemLoad(data);
 }
 
 function productItemRemove(){
@@ -214,9 +215,9 @@ function productItemRemove(){
 }
 
 function productAddSubItem(productCount) {
-    const elementText = removeItemButton("productItemRemove")
+    const elementText = removeItemButton("productItemRemove");
     $(`#productSubIndex${productCount-1}`).addClass("add-item-product-col-2")
-                                            .append(elementText)
+                                            .append(elementText);
 }
 
 function productItemLoad(data){
@@ -264,49 +265,51 @@ function productItemLoad(data){
                 <hr class="line">
             </div>
         </div>`
-        $("#productList").append(text)
+        $("#productList").append(text);
         productCount++
     })
-    productAddSubItem(productCount)
+    productAddSubItem(productCount);
 }
 
 
 function newsList(data){
     data.forEach((item,index)=>{
-        let $tr = $(`<tr>`)
+        let $tr = $(`<tr>`);
         $tr.append($(`<th>`).text(index+1))
-        $tr.append($(`<td>`).text(item.title))
-        $tr.append($(`<td>`).text(item.body))
-        $tr.append($(`<td>`).text(item.startDate))
-        $tr.append($(`<td>`).text(item.endDate))
+            .append($(`<td>`).text(item.title))
+            .append($(`<td>`).text(item.body))
+            .append($(`<td>`).text(item.startDate))
+            .append($(`<td>`).text(item.endDate));
         $("#newsList").append($tr);
-    })
+    });
 }
 
 function productInfoList(data) {
     data.forEach((item,index)=>{
-        let $tr = $(`<tr>`)
+        let $tr = $(`<tr>`);
         $tr.addClass("row")
-        $tr.append($(`<th>`).addClass( "col-1").text("상품평"))
-        $tr.append($(`<td>`).addClass( "col").text(item.title))
-        $tr.append($(`<th>`).addClass( "col-2").text("가격(원)"))
-        $tr.append($(`<td>`).addClass( "col").text(item.money))
-        $tr.append($(`<th>`).addClass( "col-1").text("수량"))
-        $tr.append($(`<td>`).addClass( "col-2").text(item.count))
-        $("#projectEndList").append($tr)
+            .append($(`<th>`).addClass( "col-1").text("상품명"))
+            .append($(`<td>`).addClass( "col").text(item.title))
+            .append($(`<th>`).addClass( "col-1").text("사이즈"))
+            .append($(`<td>`).addClass( "col").text(item.size))
+            .append($(`<th>`).addClass( "col-2").text("가격(원)"))
+            .append($(`<td>`).addClass( "col").text(item.money))
+            .append($(`<th>`).addClass( "col-1").text("수량"))
+            .append($(`<td>`).addClass( "col-2").text(item.count));
+        $("#projectEndList").append($tr);
 
     })
 }
 
 function newsRegist(){
     this.preventDefault();
-    $("#newsList").html("")
-    newsList()
+    $("#newsList").html("");
+    newsList();
 }
 
 function indexCheckConfirm() {
     if( !($("#check1").prop("checked") && $("#check2").prop("checked"))){
-        alert("필수 항목에 체크를 하지 않았습니다.")
+        alert("필수 항목에 체크를 하지 않았습니다.");
     }else{
         location.href="project2.html"
     }
@@ -348,7 +351,7 @@ function project2LoadDate() {
 }
 
 function project3LoadData() {
-    productItemDummy()
+    productItemDummy();
     // productItemLoad(data)
 }
 
@@ -357,7 +360,7 @@ function project3Confirm() {
 }
 
 function project4LoadData() {
-    newsListDummy()
+    newsListDummy();
     //newsList(data)
 }
 
@@ -365,7 +368,7 @@ function project4Confirm() {
 
 }
 function project5LoadDate(){
-    fqaLoadDummy() // 더미데이터 로드
+    fqaLoadDummy(); // 더미데이터 로드
     //fqaLoadList(data)
 }
 
@@ -373,14 +376,14 @@ function project5Confirm() {
 
 }
 function project6LoadData() {
-    newsListDummy()
+    newsListDummy();
     //newsList(data)
 }
 
 function previewImage(ele) {
-    let img = new FileReader()
+    let img = new FileReader();
     img.onload = function (e){
         $(ele).siblings("label").children().prop("src",e.target.result)
-    }
-    img.readAsDataURL(ele.files[0])
+    };
+    img.readAsDataURL(ele.files[0]);
 }
