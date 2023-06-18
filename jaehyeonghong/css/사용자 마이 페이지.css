@@ -1,3 +1,7 @@
+body * {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 /* nav 영역 */
 nav ul{
     list-style: none;
@@ -161,7 +165,7 @@ footer a {
 
 .dropdown:hover .dropdown-content {display: block;}
 
-
+/* 1.프로필* 첫화면*/
 .btn_setting {
     position: relative;
     width: 30px;
@@ -171,6 +175,15 @@ footer a {
     background: url(../image/settingl.png) no-repeat center / 20px;
 }
 
+.info_box {
+    border: 0;
+    border-radius: 8px;
+    background-color: #efefef;
+    margin: 2px;
+    padding: 60px;
+}
+
+/*2.프로필 설정*/
 
 
 
