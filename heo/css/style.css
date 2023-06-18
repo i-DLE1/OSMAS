@@ -13,9 +13,10 @@ ul{
     margin-top: 50px;
     
 }
+
 .terms_desc{
     font-size: 14px;
-    margin: 9px 0 0 28px;
+    margin: 9px 0 5px 35px;
 }
 
 .btn_submit{
@@ -29,7 +30,10 @@ ul{
 .container_button{
     text-align: center;
 }
-
+.term_hadder{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 a{
     text-decoration: none;
 }
@@ -97,6 +101,7 @@ label{
     background-color: #884A39;
     color: white;
     margin-bottom: 8px;
+    border-radius: 4px;
 }
 
 .condition{
@@ -183,4 +188,35 @@ label{
     padding-left: 0;
     display: flex;
     font-size: 24px;
+}
+
+.address_title span{
+    margin-left: 10px;
+}
+.address_title{
+    margin-bottom: 10px;
+}
+
+.address_info{
+    margin-left: 10px;
+}
+
+.address_info button{
+    background-color: #00c4c4 ;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #cdd3d8;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.address_info input{
+    height: 30px;
+    width: 500px;
+    border: 1px solid #dde2e6;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 16px;
 }
