@@ -55,3 +55,11 @@
 .cancel-content:focus{
     outline-style : none;
 }
+
+.cancel-content-area label{
+    position: absolute;
+    width: 430px;
+    text-align: right;
+    color: #884A3B;
+    top: 725px;
+}
