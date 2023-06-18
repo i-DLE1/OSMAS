@@ -171,13 +171,6 @@ footer a {
     background: url(../image/settingl.png) no-repeat center / 20px;
 }
 
-.info_box {
-    list-style: none;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    text-align: center;    
-    display:grid;
-    grid-template-columns: auto auto auto auto auto;
-}
+
 
 
