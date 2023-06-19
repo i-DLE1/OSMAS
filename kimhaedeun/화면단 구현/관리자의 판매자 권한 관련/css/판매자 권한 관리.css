@@ -103,33 +103,75 @@ a {
    .box:hover {
     background-color: #91701F;
    }
-
+/*//////////////////////////////////////////////////*/
    /* 판매자 리스트 박스 */
-   .list {
+   .product {
+    display: flex;
+    align-items: center;
     text-align: center;
-    max-width: 1000px;
-    background-color: #ffffff;
+  }
+  
+  .image-container {
+    margin-right: 80px;
+  }
+  
+  .image-container img {
+    width: 300px;
+    height: auto;
+    margin-left: 80px;
+  }
+  
+  .button-container {
+    margin-left: auto;
+  }
+  
+  .seller-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .sale-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .buy-button,
+  .add-to-cart-button {
+    padding: 10px 20px;
+    background-color: #bea376;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .buy-button:hover,
+  .add-to-cart-button:hover {
+    background-color: #89724C;
   }
 
-  .item{
-    width: 40%;
-    height: 200px;
-    line-height: 200px;
-    background-color: #C49A6C;
-    padding: 5px 0px 5px 5px;
-    margin-bottom: 25px;
+  /* 아랫단 숫자 페이지 */
+  .pagenation {
+    margin-top: 3em;
+    list-style: none;
     display: flex;
+    justify-content: center;
   }
-
-  /* ~~권한 보류중 박스~~*/
-  .box2 {
-    width: 140px;
-    height: 22px;
-    background-color: #D9D9D9;
+  
+  .pagenation li {
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
   }
-
-  .box3 {
-    display: flex;
-  justify-content: center;
-   }
-
+  
+  .pagenation li:hover,
+  .pagenation li:hover a {
+    background-color: #89724C;
+    color: white !important;
+  }
+  
+  .pagenation li a {
+    color: black; /* 숫자 글씨 색상을 변경하려면 원하는 색상으로 설정하세요 */
+    text-decoration: none;
+  }
