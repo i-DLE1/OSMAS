@@ -1,60 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <div>
-        <h2>결제</h2>
-        <section>
-            <h3>프로젝트 정보</h3>
-            <img src="./grid.png" height="30px" width="30px" alt="">
-            상품이름
-            상품정보 
-            예상 전달일
-        </section>
-        <section>
-            <h3>후원자 정보</h3>
-            이름
-            이메일
-            연락처
-        </section>
-        <form action="">
-        <section>
-            <h2>결제정보</h2>
-            상품금액
-            배송비
-            쿠폰사용
-            포인트사용
-            총결제 금액
-        </section>
-        <section>
-            <h2>배송정보</h2>
-            배송지
-            새로입력 추가
-            우편번호검색
-            상세정보
-            배송시 요청사항(선택)
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        h2 {
+            border-bottom: 1px solid black;
+        }
 
-        </section>
-        <section>
-            <h2>결제 수단</h2>
-            <input type="checkbox" name="kakato"> 
-            <label for="kakato">카카오 페이</label> 
-        </section>
-        <section>
-        <h2><label for="checkbox1"> 약관 동의</label></h2>
-        <input type="checkbox1" id="chk_box1">
-        <input type="checkbox2" id="chk_box2">
-        <label for="chk_box1"> 개인정보 제 3자 제공동의(필수)</label>
-        <input type="checkbox3" id="chk_box3">
-        <label for="chk_box3"> 후원 유의사항 확인</label>
-        </section>
-        <button type=""><a href="./payS.html">결제 하기</a></button>
-    </form>
+        .paycontent {
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="board" style="width: 500px;">
+        <form action="">
+            <h2>상품 정보</h2>
+            <section>
+                <div style="display: flex;">
+                    <img src="./grid.png" height="80px" width="100px" alt="">
+                    <div style="margin-left: 10px;">
+                        <div style="margin-top: 15px;">
+                            상품이름
+                        </div>
+                        <div style="font-size: 12px; margin-top: 5px;">
+                            <span>
+                                100000원
+                            </span>
+                            <span> 10%
+                            </span><span> 10일남음
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="paycontent">
+                    상품 구성 상의 하의
+                </div>
+                <div class="paycontent">
+                    상품금액
+                    <span>5000원</span>
+                </div>
+                <div class="paycontent">
+                    추가 후원금
+                    <span>1000원</span>
+                </div>
+                <div class="paycontent">
+                    예상 전달일
+                    <span>6월 28일</span>
+                </div class="paycontent">
+
+            </section>
+            <section>
+                <h2>후원자 정보</h2>
+                <div class="paycontent">
+                    이름 <span class="name">감자</span>
+                </div>
+                <div class="paycontent">
+                    이메일
+                    <span class="email">gamja@naver.com</span>
+                </div>
+                <div class="paycontent">
+                    연락처 <span class="pnum"> 010-xxxx-xxxx</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>배송지</h2>
+                <div class="address_title">
+                    <span>새로입력</span>
+                    <span>기존배송지</span>
+                </div>
+                <div class="address_info">
+                    <div class="address_new" style="">
+                        <button>우편번호검색</button>
+                        <span class="address_num"></span>
+                        <div class="address_first">
+                            <input type="text" style="display: none;">
+                        </div>
+                        <div class="address_second">
+                            <input type="text" placeholder="상세정보">
+                        </div>
+                    </div>
+                    <div class="address_existing" style="display:none;">
+                        <ul >
+                            <li><span> 감자나라 고무마시 </span><span>채소동</span> <button>선택</button></li> 
+                        </ul>
+                    </div>
+                    <div>배송시 요청사항(선택)</div>
+                    <input type="text" placeholder="ex)부재 시 경비실에 맡겨주세요">
+                </div>
+            </section>
+            <section>
+                <h2>결제 수단</h2>
+                <div style="margin-left: 10px;">
+                    <input type="checkbox" id="kakao">
+                    <label for="kakao" style="margin-left: 0px;">카카오 페이</label>
+                </div>
+            </section>
+            <section>
+                <h2>약관 동의</h2>
+                <div style="margin-left: 10px;">
+                    <input type="checkbox" id="chk_box1">
+                    <label for="chk_box1" style="margin-left: 0px;"> 개인정보 제 3자 제공동의(필수)</label>
+                    <a href="" style="float: right;">보기</a>
+                    <br>
+                    <input type="checkbox" id="chk_box2">
+                    <label for="chk_box2" style="margin-left: 0px;""> 후원 유의사항 확인</label>
+                    <a href="" style=" float: right;">보기</a>
+                </div>
+            </section>
+            <div style="text-align: center;">
+                <button type="button" onclick="location.href='./payS.html'" class="ok_button"
+                    style="margin-top: 10px;">결제 하기</button>
+            </div>
+        </form>
     </div>
+
 </body>
+
 </html>

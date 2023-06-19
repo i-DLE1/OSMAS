@@ -17,7 +17,7 @@
   <br>
   <!-- menu-none-visible 스위치 -->
   <ul class="menu-list">
-    <h5>프로젝트 등록</h5>
+    <h5><a href="../createProject/index.html" target="_blank">프로젝트 등록</a></h5>
   </ul>
   <ul class="menu-list">
     <h5>프로젝트 관리 <span>▼▲</span></h5>
@@ -48,19 +48,11 @@
         <li id="qaCompleteMenu"><a href="./qa_index.html">답변 완료</a></li>
     </div>
   </ul>
-  <ul class="menu-list">
-    <h5>권한관리 <span>▼▲</span></h5>
-    <div class="menu-disable">
-        <li><a href="#">메뉴1</a></li>
-        <li><a href="#">메뉴2</a></li>
-        <li><a href="#">메뉴3</a></li>
-    </div>
-  </ul>
 </nav>
 <main class="main">
   <div class="main-header">
     <div>
-      <h1 class="h1Title">프로젝트 관리 - Q / A</h1>
+      <h1 class="h1-title">프로젝트 관리 - Q / A</h1>
     </div>
     <div>
       <h5><span>판매자</span>님 환영합니다.</h5>
@@ -75,14 +67,16 @@
         <td id="qaComplete" class="col-2">답변 완료</td>
         <th class="col">
           <div class="row col">
-            <select class="col-3 me-3 searchBar">
-              <option>메뉴1</option>
-              <option>메뉴2</option>
-              <option>메뉴3</option>
-              <option>메뉴4</option>
+            <select name="searchSelect" class="col-4 me-3 search-bar">
+              <option value="title">프로젝트명</option>
+              <option value="customer">작성자</option>
+              <option value="question">질문</option>
+              <option value="phone">연락처</option>
+              <option value="product-option">상품옵션</option>
+              <option value="pay-method">결제수단</option>
             </select>
-            <input type="text" class="searchBar col">
-            <button class="searchBtn col ms-2">검색</button>
+            <input type="text" class="search-bar col" id="search" name="search">
+            <button class="search-btn col ms-2 me-2">검색</button>
           </div>
         </th>
       </tr>
@@ -93,7 +87,7 @@
     <thead>
       <th>#</th>
       <td>프로젝트 명</td>
-      <td>ID</td>
+      <td>작성자(ID)</td>
       <td>질문</td>
       <td>연락처</td>
       <td>구매옵션</td>
@@ -108,7 +102,7 @@
   </table>
   <!-- pagenation start -->
   <div>
-    <ul class="pagenation">
+    <ul class="cus-page">
       <li><a href=""><</a></li>
       <li><a href="">1</a></li>
       <li><a href="">2</a></li>

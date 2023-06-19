@@ -29,3 +29,8 @@
     background-color: #C49A6C;
     color: white;
 }
+.flex-center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

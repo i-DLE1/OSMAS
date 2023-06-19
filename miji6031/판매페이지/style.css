@@ -21,6 +21,8 @@ text-transform: uppercase;
 }
 
 
+
+
 .contents{
     /* background-color: rgba(201, 195, 195, 0.7); */
     width: 1200px;
@@ -97,9 +99,11 @@ text-transform: uppercase;
 } */
 
 .imagecontainer {
-    width: 600px;
-    height: 500px;
+    /* background-color: rgba(201, 195, 195, 0.7); */
+    height: 550px;
+    margin: 0;
     display: flex;
+    flex-direction: column;
     }
 
 .productimg {
@@ -119,10 +123,22 @@ text-transform: uppercase;
     display: none;
 }
 
+.imagebuttoncontainer {
+    margin-left: 35%;
+    top: 540px;
+    left: 380px;
+    radius: 30%;
+    
+    }
+
 .imagebutton {
+    background-color: rgba(255, 255, 255, 0.568);
     width:30px;
     height:30px;
+    border-radius: 100px;
     object-fit:cover;
+    width: 30px;
+    height: 15px;
 }
 
 
@@ -305,6 +321,80 @@ text-transform: uppercase;
     }
 
 .contentsbottom {
-    background-color: #d8d0c8;
+    padding: 3%;
+    /* background-color: #d8d0c8; */
     height: 2000px;
     }
+
+
+.productimage {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.contentheadline{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.teaminfo{
+    display: flex;
+    font-size: 30px;
+
+}
+
+table th{
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-size: 30px;
+    padding-top: 20px;
+    
+}
+
+table td{
+    border-bottom: 1px solid black;
+    font-size: 25px;
+    padding-top: 20px;
+    
+}
+
+.tdindex{
+    text-align: center;
+}
+.button-cell {
+    width: 100px;
+  }
+
+
+
+
+.cus-page{
+    margin-top: 3em;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.cus-page li{
+    border: 1px solid #ffffff;
+    padding: 5px 10px 5px 10px ;
+    margin: 5px;
+}
+
+.cus-page li:hover, .cus-page li:hover a {
+    color: rgb(0, 0, 0) !important;
+}
+a {
+    text-decoration: none;
+  }
+
+  #question{
+    width: 800px; 
+    height: 15px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+  }

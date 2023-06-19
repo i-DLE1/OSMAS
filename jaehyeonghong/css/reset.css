@@ -1,0 +1,85 @@
+
+/* ============================================================================================
+	Reset
+============================================================================================ */
+html {
+	/* Prevent font scaling in landscape */
+
+   -webkit-text-size-adjust: none; /*Chrome, Safari, newer versions of Opera*/
+
+   -moz-text-size-adjust: none; /*Firefox*/
+
+   -ms-text-size-adjust: none;  /*Ie*/
+
+   -o-text-size-adjust: none; /*old versions of Opera*/
+
+}
+body,h1,h2,h3,h4,h5,h6,table,div,header,section,a,ul,li,tr,td,th,tbody,thead,tfoot,ol,button,input,select,p{margin: 0; padding:0 ; box-sizing: border-box;  }
+
+nav, ul{
+  list-style:none
+}
+a{
+  text-decoration: none;
+}
+table{
+  border-collapse: collapse;
+}
+input,select {
+  vertical-align: middle;
+}
+
+fieldset, img {
+	border: none;
+}
+
+dl, ul, ol, menu, li {
+	list-style: none;
+}
+
+input, select, textarea, button {
+	vertical-align: middle;
+	outline: 0;
+}
+
+button {
+	border: 0 none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+body, th, td, input, select, textarea, button, select {
+	color: #111;
+	font-size: 15px;
+	line-height: 1.5;
+	letter-spacing: -0.4px;
+}
+
+body {
+	overflow-x: auto;
+	width: 100%;
+}
+
+a {
+	color: #111;
+	text-decoration: none;
+}
+address, caption, cite, code, dfn, em, var {
+	font-style: normal;
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+	border: 0;
+	border-collapse: collapse;
+}
+
+.clear-fix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
