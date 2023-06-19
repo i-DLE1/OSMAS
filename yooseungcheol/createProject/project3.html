@@ -15,7 +15,7 @@
             <div>&nbsp;&nbsp;>&nbsp;&nbsp;</div>
             <div >프로젝트</div>
             <div>&nbsp;&nbsp;>&nbsp;&nbsp;</div>
-            <div class="active_process">상품</div>
+            <div class="active-process">상품</div>
             <div>&nbsp;&nbsp;>&nbsp;&nbsp;</div>
             <div>상품 상세</div>
             <div>&nbsp;&nbsp;>&nbsp;&nbsp;</div>
@@ -27,56 +27,55 @@
         </header>
         <!-- 진행 헤더 끝-->
         <main class="main">
-            <h1 class="h1Title">상품 등록</h1>
-            <div class="row" style="height: 300px;">
-                <div class="col" style="max-height: 200px;">
-                    <div style="background-color: antiquewhite; height: 200px;">썸네일</div>
-                    <div style="text-align: center; margin-top: 10px;">
-                        <input class="uploadBtn" type="file" value="upload image" />
+            <h1 class="h1-title">상품 이미지 등록</h1>
+            <div class="image-upload-list" >
+                    <div>
+                        <label for="file1" >
+                            <img class="image-upload-button" src="" onerror="this.src='../../static/image/imageAddButton.png'" >
+                            <div class="image-upload-description">대표이미지</div>
+                        </label>
+                        <input id="file1" name="file1" type="file" style="display: none" onchange="previewImage(this)" accept="image/jpeg, image/jpg, image/png" />
+                    </div>
+                    <div>
+                        <label for="file2" >
+                            <img class="image-upload-button" src="" onerror="this.src='../../static/image/imageAddButton.png'">
+                            <div class="image-upload-description">썸네일</div>
+                        </label>
+                        <input id="file2" name="file2" type="file" style="display: none" onchange="previewImage(this)" accept="image/jpeg, image/jpg, image/png"/>
+                    </div>
+                    <div>
+                        <label for="file3" >
+                            <img class="image-upload-button" src="" onerror="this.src='../../static/image/imageAddButton.png'">
+                            <div class="image-upload-description">추가</div>
+                        </label>
+                        <input id="file3" name="file3" type="file" style="display: none" onchange="previewImage(this)" accept="image/jpeg, image/jpg, image/png"/>
+                    </div>
+                    <div>
+                        <label for="file4" >
+                            <img class="image-upload-button" src="" onerror="this.src='../../static/image/imageAddButton.png'">
+                            <div class="image-upload-description">추가</div>
+                        </label>
+                        <input id="file4" name="file4" type="file" style="display: none" onchange="previewImage(this)" accept="image/jpeg, image/jpg, image/png"/>
+                    </div>
+                    <div>
+                        <label for="file5" >
+                            <img class="image-upload-button" src="" onerror="this.src='../../static/image/imageAddButton.png'">
+                            <div class="image-upload-description">추가</div>
+                        </label>
+                        <input id="file5" name="file5" type="file" style="display: none" onchange="previewImage(this)" accept="image/jpeg, image/jpg, image/png"/>
                     </div>
                 </div>
-                <div class="col" style="max-height:250px;background-color: antiquewhite;"><div>빈공간</div></div>
             </div>
-            <h1 class="h1Title">상품 추가</h1>
+            <h1 class="h1-title">상품 추가</h1>
             <div id="productList">
                 <!-- 상품 추가 컴포넌트 시작 -->
-                <div id="addItemProductIndex">
-                    <div class="row" style="margin-top: 1em;">
-                        <div class="col">
-                            <label class="subtitle" for="name">옵션명</label>
-                            <input class="w-100 inputBox" type="text" id="name" name="name">
-                        </div>
-                        <div class="col-3">
-                            <label for="count" class="subtitle">수량</label>
-                            <input class="w-100 inputBox" type="number" id="count" name="count">
-                        </div>
-                        <div class="col-3">
-                            <label for="money" class="subtitle">금액</label>
-                            <input class="w-100 inputBox" type="number" id="money" name="money">
-                        </div>
-                    </div>
-                    <div class="row" style="margin-top: 1em;">
-                        <div class="col">
-                            <label for="body" class="subtitle">설명</label>
-                            <input class="w-100 inputBox" type="text" id="body" name="body">
-                        </div>
-                        <div class="col-3">
-                            <label for="shippingStart" class="subtitle">배송시작</label>
-                            <input class="w-100 inputBox" type="date" id="shippingStart" name="shippingStart">
-                        </div>
-                        <div class="col-3">
-                            <label for="shippingFee" class="subtitle">배송비</label>
-                            <input class="w-100 inputBox" type="number" id="shippingFee" name="shippingFee">
-                        </div>
-                    </div>
-                    <hr class="line">
-                </div>
+
                 <!-- 상품 추가 컴포넌트 끝 -->
 
             </div>
             <div class="row" style="margin-top: 2em;">
                 <div class="container-justify-center-w100">
-                    <button id="productAdd" class="addItem" >
+                    <button id="productAdd" class="add-item" >
                         <img src="/static/image/addItem.png" width="40px" height="40px" >
                     </button>
                 </div>
@@ -84,11 +83,12 @@
         </main>
         <!-- 하단 버튼 시작 -->
         <footer class="footer">
-            <a href="project2.html"><input class="footerBtn" type="button" value="이전" /></a>
-            <a href="project4.html"><input class="footerBtn" type="button" value="다음" /></a>
+            <a href="project2.html"><input class="footer-btn" type="button" value="이전" /></a>
+            <a href="project4.html"><input class="footer-btn" type="button" value="다음" /></a>
         </footer>
         <!-- 하단 버튼 끝 -->
 
     </body>
     <script src="projectCreate.js"></script>
+    <script >project3LoadData()</script>
 </html>

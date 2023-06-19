@@ -14,10 +14,10 @@
     <div class="col-2">
         <div>
             <div>
-                <div class="subtitle">
+                <div class="sub-title">
                     <span>프로젝트 정보</span>
                 </div>
-                <table class="project-table">
+                <table id="project-detail-table" class="project-table">
                     <tbody>
                         <tr>
                             <th>프로젝트 명</th>
@@ -48,7 +48,7 @@
                 </table>
             </div>
             <div>
-                <div class="subtitle">
+                <div class="sub-title">
                     <span>상품별 판매 현황</span>
                 </div>
                 <table class="product-statistics">
@@ -73,11 +73,13 @@
     </div>
     <div class="footer" style="margin-top: 4em">
         <footer class="footer">
-            <a href="#"><input class="footerBtn" type="button" value="취소" /></a>
-            <a href="#"><input class="footerBtn" type="button" value="등록" /></a>
+            <input class="footer-btn" type="button" value="닫기" onclick="window.close()" />
         </footer>
     </div>
     <script src="projectDetail.js"></script>
-    <script >projectStaticsList()</script>
+    <script >
+        projectDetailDummyData()
+        projectStaticListDummyData()
+    </script>
 </body>
 </html>
