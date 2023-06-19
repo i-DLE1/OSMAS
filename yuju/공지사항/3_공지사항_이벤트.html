@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>공지사항_이벤트</title>
-    <link herf="./adminstyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="./adminstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
+    <header>
     <div class="notice">
         <img class="notice_header" src="./resource/logo.png" style="display:block; margin: 0 auto; width:180px; height:130px;">
         <nav>
             <ul>
-                <h1>공지사항</h1>
-                <a href="./1_공지사항_전체보기.html" style="color: rgba(83, 56, 3, 0.992)">전체보기</a>
-                <a href="./2_공지사항_공지사항.html" style="color: rgba(83, 56, 3, 0.992)">공지사항</a>
-                <a href="./3_공지사항_이벤트.html" style="color: rgba(83, 56, 3, 0.992)">이벤트</a>
-                <a href="./4_공지사항_보도자료.html" style="color: rgba(83, 56, 3, 0.992)">보도자료</a>
+                <li><a href="./category">카테고리</a></li>
+                <li><a href="./todayOpen">오늘 오픈</a></li>
+                <li><a href="./hotItem">인기 상품</a></li>
+                <li><a href="./openExpect">오픈 예정</a></li>
+                <li><a href="./event">이벤트</a></li>
+                <li class="search">
+                    <input type="text" placeholder="검색할 내용을 입력해주세요">
+                </li>
             </ul>
+    </header>
+
+    <h1 class="notice1">공지사항</h1>
+            <div class="notice2">
+                <a href="./1_공지사항_전체보기.html">전체보기</a>
+                <a href="./2_공지사항_공지사항.html">공지사항</a>
+                <a href="./3_공지사항_이벤트.html"  style="font-weight: bold;">이벤트</a>
+                <a href="./4_공지사항_보도자료.html">보도자료</a>
+            </div>
         </nav>
     </div>
-    <style>
-        .title_box {
-            display:inline-block; 
-            width:100%; 
-            padding:10px 0 10px 0; 
-            line-height:1.3em; 
-            background:#EAEAEA; 
-            color:#333333; 
-            text-align:center; 
-            font-size:16px; 
-            font-weight:bold;
-        }
-    </style>
+
+    
 
 <div class="contents_box">
     <ul class="notice_letter">
@@ -150,7 +154,44 @@
 </div>
     
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
+    <footer>
+        <ul style="list-style: none;">
+            <div class="container">
+                <div>
+                    <li class="guide"><a href="./notice">공지사항</a></li>
+                    <li class="guide"><a href="./OSMAS소개.html">OSMAS 소개</a></li>
+                    <li class="guide"><a href="../이용가이드 화면단/이용가이드(메인).html">이용가이드</a></li>
+                </div>
+
+                <div>
+                    <li class="guide"><a href="./이용 약관.html">이용약관</a></li>
+                    <li class="guide"><a href="">개인정보처리방침</a></li>
+                    <li class="guide"><a href="./프로젝트 심사 기준.html">프로젝트 심사 기준</a></li>
+                </div>
+            </div>
+
+            <div class="container2">
+                <div class="container3">
+                    <h5 class="call">고객 센터</h5>
+                    <h5 class="call">평일 9:00 ~ 18:00</h5>
+                    <button class="call" style="float: right; padding: 4px;">문의하기</button>
+                </div>
+                <h6 style="text-align: center; padding-top: 30px;">오스메스는 크라우드펀딩 플랫폼을 운영하는 중개자(통신판매중개자)로서 프로젝트를 진행하는 당사자가 아닙니다.<br> 
+                    상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있으므로, 각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.</h6>
+                <h6 style="padding-top: 30px;">© 2023 OSMAS. ALL RIGHTS RESERVED.</h6>    
+            </div>
+        </ul>
+    </footer>
+
+</body>
+</html>
 
 </body>
 </html>

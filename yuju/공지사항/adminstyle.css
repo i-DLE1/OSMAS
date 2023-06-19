@@ -42,10 +42,12 @@ text-transform: uppercase;
 
 .notice1{
     text-align: right; margin-right: 1270px;
+    color: #5B4612;
 }
-
-.notice2{
-    text-align: center; margin-right: 1110px; 
+.notice2 {
+    text-align: center;
+    margin-right: 1115px;
+    color: rgba(55, 38, 7, 0.462);
 }
 
 .p1{
@@ -221,3 +223,71 @@ a {
     background-color: #000; /* 원하는 선의 색상 설정 */
     margin: 10px auto;  /* 원하는 선의 위아래 여백 설정 */
 }
+
+/* 푸터 */
+footer{
+    clear: both;
+    background-color: #5B4612;
+    color: white;
+    
+    padding: 1em 0px;
+    }
+    
+    right {
+        color: white;
+        text-align: right;
+    }
+    
+    input {
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    }
+    
+    #logo{
+        text-align: center;
+        width: 50%;
+        height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: 200px 200px auto;
+    }
+    
+    .container2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+    .container3 {
+        /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30px;
+        padding-right: 20px;
+    }
+    
+    .guide a{
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .call{
+        text-align: center;
+        margin: 0%;
+    }
+    
+    /* a {
+        text-decoration: none;
+        color: white;
+    }
+     */
