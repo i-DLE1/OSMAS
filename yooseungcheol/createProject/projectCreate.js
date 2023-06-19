@@ -7,7 +7,7 @@ function removeItemButton(funcName){
     let $button = $("<button>").attr("id","productSub")
                                 .addClass("sub-item")
                                 .attr("onclick",`${funcName}()`);
-    $button.append($("<img>").attr("src","/static/image/subItem.png")
+    $button.append($("<img>").attr("src","/static/image/subitem.png")
                                 .attr("width","40px")
                                 .attr("height","40px"));
     $div.append($button);

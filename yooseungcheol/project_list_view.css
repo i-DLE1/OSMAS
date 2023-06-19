@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 .project-list-main{
     display: grid;
     place-items: center;
@@ -33,4 +39,20 @@
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.proejct-list-tag-selection{
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    padding: 7px 15px 7px 15px;
+    background-color: white;
+    border: 1px solid #884A3B;
+    color: #884A3B;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.proejct-list-tag-selection-active{
+    color: white;
+    background-color: #884A3B;
 }
