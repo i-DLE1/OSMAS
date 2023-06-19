@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>질문 답변</title>
         <link rel="stylesheet" href="qa_.css">
+        <script src="../../resources/jqeury/jquery-3.7.0.min.js"></script>
     </head>
     <body class="body">
         <div>
@@ -13,19 +14,22 @@
                 <hr class="qa-line" />
             <div style="margin-top: 2em">
                 <label for="content" class="label">내용</label>
-                <textarea class="textarea" type="text" id="content" name="content" rows="3" disabled > </textarea>
+                <textarea class="textarea" type="text" id="content" name="content" rows="2" disabled > </textarea>
                 <hr class="qa-line" />
             </div>
-            <div style="margin-top: 2em">
-                <label for="answer" class="label">답변</label>
-                <textarea class="textarea" type="text" id="answer" name="answer" rows="5"> </textarea>
+            <div id="qa-answer-area" style="margin-top: 2em">
+                <label><span>0</span>/1000</label>
+                <label for="qa-answer" class="label">답변</label>
+                <textarea class="textarea" type="text" id="qa-answer" name="answer" rows="5"> </textarea>
                 <hr class="qa-line" />
             </div>
             <footer class="footer">
-                <a href="#"><input class="footerBtn" type="button" value="취소" /></a>
-                <a href="#"><input class="footerBtn" type="button" value="등록" /></a>
+                <input class="footer-btn" type="button" value="취소" onclick="window.close()" />
+                <input class="footer-btn" type="button" value="등록" />
             </footer>
         </div>
+            <script src="projectDetail.js"></script>
     </body>
+
 </html>
 

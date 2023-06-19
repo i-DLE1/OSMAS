@@ -19,18 +19,28 @@ function projectListView(){
         }else{
             color = "days-red";
         }
-        let elementText= `
-        <div class ="project-item">
-            <div>
-                <img class="project-item-thumnail" src="${item.img}">
-            </div>
-            <div class="project-row">
-                <div>${item.money}</div>
-                <div><span class="${color}">${item.date}일남음</span></div>
-            </div>
-            <div>${item.title}</div>
-            <div>참여자 수 : <span >${item.user}</span>명</div>
-        </div>`
-        $("#project-view-list").append(elementText)
+
+        let $div = $("<div>").addClass("project-item");
+        let $thumnailDiv = $("<div>");
+        const $thumnailImg = $("<img>").addClass("project-item-thumnail").attr("src",item.img);
+        let $contentDiv = $("<div>").addClass("project-row");
+        const $moneyDiv = $("<div>").text(item.money);
+        let $labelDiv  = $("<div>");
+        const $labelSpan = $("<span>").addClass(color).text(`${item.date}일남음`);
+        const $titleDiv = $("<div>").text(item.title);
+        let $userDiv = $("<div>");
+        const $userCountSpan = $("<span>").text(item.user);
+        $userDiv.append("참여자수 : ").append($userCountSpan).append("명");
+
+        $thumnailDiv.append($thumnailImg);
+        $labelDiv.append($labelSpan);
+        $contentDiv.append($moneyDiv)
+                    .append($labelDiv);
+        $div.append($thumnailDiv)
+            .append($contentDiv)
+            .append($titleDiv)
+            .append($userDiv);
+
+        $("#project-view-list").append($div);
     })
 }
