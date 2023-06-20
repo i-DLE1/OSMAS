@@ -5,25 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>관리자 마이 페이지</title>
-    <link rel="stylesheet" href="../css/관리자 메인 페이지.css">
+    <link rel="stylesheet" href="../css/관리자 메인 페이지.css"> 
 
     <script>
-function toggleDropdown(event) {
-  event.stopPropagation(); // 클릭 이벤트의 전파를 중지합니다.
-  
-  var dropdown = document.getElementById("dropdownContent");
-  dropdown.classList.toggle("slide-open");
-}
+      function toggleDropdown(event) {
+        // event.stopPropagation(); // 클릭 이벤트의 전파를 중지합니다.
+        var dropdown = document.getElementById("dropdownContent");
+        dropdown.classList.toggle("slide-open");
+      }
 
-// 클릭 이벤트가 발생한 영역 밖을 클릭하면 슬라이드가 닫히도록 설정
-window.addEventListener("click", function (event) {
-  var dropdown = document.getElementById("dropdownContent");
-  var targetElement = event.target;
+      // 클릭 이벤트가 발생한 영역 밖을 클릭하면 슬라이드가 닫히도록 설정
+      window.addEventListener("click", function (event) {
+        var dropdown = document.getElementById("dropdownContent");
+        var targetElement = event.target;
 
-  if (!targetElement.closest(".gugu") && !targetElement.closest(".slide-content")) {
-    dropdown.classList.remove("slide-open");
-  }
-});
+        if (!targetElement.closest(".gugu") && !targetElement.closest(".slide-content")) {
+          dropdown.classList.remove("slide-open");
+        }
+      });
     </script>
     
 </head>  
@@ -37,13 +36,18 @@ window.addEventListener("click", function (event) {
             <ul>
               <li class="category">
                 <button class="gugu" onclick="toggleDropdown()">카테고리</button>
-<div class="slide-content" id="dropdownContent">
-  <a href="#">관리자 마이페이지</a>
-  <a href="./카테고리단/현재 펀딩 순위.html">현재 펀딩 순위</a>
-  <a href="./관리자의 판매자 권한 관련/부여/부여 대기.html">판매자 권한 관리</a>
-  <a href="./관리자의 상품 승인 관리 관련/승인 대기.html">상품 승인 관리</a>
-</div>
               </li>
+
+              <div class="slide-content" id="dropdownContent">
+              <div style="text-align: center;">
+                  <img src="../../static/image/Logo.png" width="150px" style="margin-top: 30px; margin-bottom: 30px;">
+              </div>
+                <a href="#">관리자 마이페이지</a>
+                <a href="./카테고리단/현재 펀딩 순위.html">현재 펀딩 순위</a>
+                <a href="./관리자의 판매자 권한 관련/부여/부여 대기.html">판매자 권한 관리</a>
+                <a href="./관리자의 상품 승인 관리 관련/승인 대기.html">상품 승인 관리</a>
+              </div>
+
               <button class="gugu" style="color: black;"><a href="./todayOpen">오늘 오픈</a></button>
               <button class="gugu" style="color: black;"><a href="./hotItem">인기 상품</a></button>
               <button class="gugu" style="color: black;"><a href="./openExpect">오픈 예정</a></button>

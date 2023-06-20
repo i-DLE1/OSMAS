@@ -127,24 +127,30 @@ aside#left {
   
   /* 카테고리 드롭다운 */
   .slide-content {
+    display: flex;
+    flex-direction: column;
     position: fixed;
-    left: -200px;
+    left: -250px;
+    background-color: #F9DFBB;
     top: 0;
-    width: 200px;
+    width: 250px;
     height: 100vh;
-    background-color: #fff;
     transition: left 0.3s ease;
+    
+  }
+  .slide-open {
+    left: 0px;
   }
   
   .slide-content a {
-    color: black !important;
+    font-size: 20px;
+    margin-top: 20%;
+    background-color: #F9DFBB;
+    color: #884A3B !important;
     text-decoration: none;
   }
   
   .slide-content a:hover {
+    background-color: #C49A6C;
     text-decoration: underline;
-  }
-  
-  .category.slide-open .slide-content {
-    left: 0;
   }
