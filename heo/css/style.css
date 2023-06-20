@@ -18,7 +18,17 @@ ul{
     font-size: 14px;
     margin: 9px 0 5px 35px;
 }
-
+button{
+    border-radius: 6px; 
+    background-color: #FFC26F;
+    color: white; 
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #884A39;
+    transition-duration: 0.3s;
+}
 .btn_submit{
     /* border-radius: 6px; */
     width: 95%;
