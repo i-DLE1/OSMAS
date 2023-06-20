@@ -20,11 +20,11 @@ ul{
 }
 
 .btn_submit{
-    border-radius: 6px;
+    /* border-radius: 6px; */
     width: 95%;
     height: 50px;
-    background-color: #884A39;
-    color: white;
+    /* background-color: #884A39; */
+    /* color: white; */
     
 }
 .container_button{
@@ -39,9 +39,20 @@ a{
 }
 
 .term{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     
 }
+textarea::-webkit-scrollbar{
+    width: 6px;
+}
+textarea::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+textarea::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: gray;
+}
+
 .term textarea{
     margin-left: 5px;
 }
@@ -70,10 +81,10 @@ a{
 .signup_info>button{
     width: 50px;
     height: 50px;
-    border-color: #cdd3d8;
-    color:#495057;
-    border-radius: 4px;
-    border: 1px solid #cdd3d8;
+    /* border-color: #cdd3d8; */
+    /* color:#495057; */
+    /* border-radius: 4px; */
+    /* border: 1px solid #cdd3d8; */
     
 }
 label{
@@ -98,10 +109,10 @@ label{
 .ok_button{
     width: 50%;
     height: 50px;
-    background-color: #884A39;
-    color: white;
+    /* background-color: #884A39; */
+    /* color: white; */
     margin-bottom: 8px;
-    border-radius: 4px;
+    /* border-radius: 4px; */
 }
 
 .condition{
@@ -143,15 +154,15 @@ label{
 }
 
 .btn_myreview a, .btn_review a{
-    color: white;
+    color: black;
 }
 .btn_myreview{
-    background-color: #00c4c4 ;
+    /* background-color: #00c4c4 ; */
     margin-right: 10px;
     padding: 10px;
 }
 .btn_review{
-    background-color: #00c4c4 ;
+    /* background-color: #00c4c4 ; */
     margin-right: 10px;
     padding: 10px;
     
@@ -169,10 +180,10 @@ label{
 .btn_re{
     width: 50px;
     height: 50px;
-    border-color: #cdd3d8;
-    color: white;
-    background-color: #00c4c4 ;
-    border-radius: 4px;
+    /* border-color: #cdd3d8; */
+    /* color: white; */
+    /* background-color: #00c4c4 ; */
+    /* border-radius: 4px; */
     border: 1px solid #cdd3d8;
 }
 
