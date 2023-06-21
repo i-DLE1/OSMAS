@@ -98,10 +98,11 @@ a {
     background-color: #D9D9D9;
     list-style: none;
     display: inline;
+    color: white;
   }
 
    .box:hover {
-    background-color: #91701F;
+    background-color: #cca77f;
    }
 /*//////////////////////////////////////////////////*/
    /* 판매자 리스트 박스 */
@@ -175,3 +176,20 @@ a {
     color: black; /* 숫자 글씨 색상을 변경하려면 원하는 색상으로 설정하세요 */
     text-decoration: none;
   }
+
+  .btn5{
+    color: white;
+    background: #cca77f;
+
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.btn5:hover{
+    background: #b68149;
+}
