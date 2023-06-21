@@ -1,164 +1,156 @@
-/* nav 영역 */
-nav ul{
+nav ul {
     list-style: none;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     text-align: center;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-
-}
-
-nav ul li{
-display: inline;
-letter-spacing: .3em;
-margin-left: 2em;
-}
-
-.gugu {
+  }
+  
+  nav ul li {
+    display: inline;
+    letter-spacing: 0.3em;
+    margin-left: 2em;
+  }
+  
+  .gugu {
     background-color: white;
     border: none;
-    letter-spacing: .3em;
+    letter-spacing: 0.3em;
     margin-left: 2em;
-    color: black;
     line-height: 3em;
     text-transform: uppercase;
-}
- 
- .gugu a {
+  }
+  
+  .gugu a {
     color: black;
-    text-decoration-line: none;
- }
-
+    text-decoration: none;
+  }
+  
 /* 왼쪽 사이드 메뉴 */
-aside#left{
+aside#left {
     float: left;
     width: 10em;
     margin-right: 1em;
-}
-
-aside#left ul{ list-style: none}
-
-aside#left ul li{
-    background-color: #F9DFBB;
-    width: 300px;
+  }
+  
+  aside#left ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  aside#left ul li {
+    background-color: #f9dfbb;
     height: 50px;
-    padding: 5px 5px;
+    line-height: 50px;
     text-align: center;
-}
-
-aside#left ul li a{
+  }
+  
+  aside#left ul li a {
+    display: block;
     color: black;
     text-decoration: none;
-}
-
-
-aside#main{
+  }
+  
+  aside#main {
     float: left;
-}
-
-/* footer영역 */
-footer{
-clear: both;
-background-color: #5B4612;
-color: white;
-
-padding: 1em 0px;
-}
-
-right {
+  }
+  
+  /* footer영역 */
+  footer {
+    clear: both;
+    background-color: #5b4612;
+    color: white;
+    padding: 1em 0px;
+  }
+  
+  .right {
     color: white;
     text-align: right;
-}
-
-.search {
+  }
+  
+  .search {
     display: flex;
     align-items: center;
     margin-right: 30px;
-}
-
-input {
-width: 100%;
-border: 1px solid #bbb;
-border-radius: 8px;
-padding: 10px 12px;
-font-size: 14px;
-}
-
-#logo{
+  }
+  
+  .search input {
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  
+  #logo {
     text-align: center;
     width: 50%;
     height: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.container {
+  }
+  
+  .container {
     display: grid;
     grid-template-columns: 200px 200px auto;
-}
-
-.container2 {
+  }
+  
+  .container2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-}
-
-.container3 {
-    /* position: relative; */
+  }
+  
+  .container3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 30px;
     padding-right: 20px;
-}
-
-.guide{
+  }
+  
+  .guide {
     padding: 10px;
-}
-
-.call{
+  }
+  
+  .call {
     text-align: center;
     margin: 0%;
-}
-
-footer a {
+  }
+  
+  footer a {
     text-decoration: none;
     color: white;
-}
-
-/* 카테고리 드롭다운 */
-.dropbtn {
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    text-align: center;
   }
   
-  .dropdown {
-    position: relative;
-    display: inline-block;
+  /* 카테고리 드롭다운 */
+  .slide-content {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: -250px;
+    background-color: #F9DFBB;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    transition: left 0.3s ease;
+    
+  }
+  .slide-open {
+    left: 0px;
   }
   
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 20px 20px;
+  .slide-content a {
+    font-size: 20px;
+    margin-top: 20%;
+    background-color: #F9DFBB;
+    color: #884A3B !important;
     text-decoration: none;
-    display: block;
   }
   
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
+  .slide-content a:hover {
+    background-color: #C49A6C;
+    text-decoration: underline;
+  }
