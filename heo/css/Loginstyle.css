@@ -48,11 +48,13 @@ a{
     display:none;
     padding-left: 10px;
 }
-
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
 
 
 .container_button{
-    margin-top: 70px;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -65,16 +67,18 @@ a{
     /* border: 1px solid #cdd3d8; */
 }
 
-.tab_list ul{
+.tab_list{
     margin:0 auto;
     width: 100%;
     max-width: 400px;
     margin-top: 50px;
     display: flex;
 }
-.tab_list ul li{
+
+.tab_list a{
     margin:0 auto;
 }
+
 .contant_header{
     border-bottom: 4px solid #333;
     padding-bottom: 4px;
