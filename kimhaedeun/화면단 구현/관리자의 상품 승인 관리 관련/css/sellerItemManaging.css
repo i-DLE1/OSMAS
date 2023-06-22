@@ -1,7 +1,6 @@
 /* nav 영역 */
 nav ul{
   list-style: none;
-
   text-align: center;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
@@ -9,8 +8,7 @@ nav ul{
 
 nav ul li{
 display: inline;
-letter-spacing: .3em;
-margin-left: 2em;
+letter-spacing: .2em;
 }
 
 nav ul li a{
@@ -20,88 +18,29 @@ line-height: 3em;
 text-transform: uppercase;
 }
 
-/* footer영역 */
-footer{
-clear: both;
-background-color: #5B4612;
-color: white;
-
-padding: 1em 0px;
-}
-
-right {
-  color: white;
-  text-align: right;
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-}
-
-input {
-width: 100%;
-border: 1px solid #bbb;
-border-radius: 8px;
-padding: 10px 12px;
-font-size: 14px;
-}
-
-#logo{
-  text-align: center;
-  width: 50%;
-  height: 400px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 200px 200px auto;
-}
-
-.container2 {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
-
-.container3 {
-  /* position: relative; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 30px;
-  padding-right: 20px;
-}
-
-.guide{
-  padding: 10px;
-}
-
-.call{
-  text-align: center;
-  margin: 0%;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
    /* 권한 페이지 넘어가는 거..*/
+   .containerbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px; 
+    justify-content: center; /* 가로로 가운데 정렬합니다 */
+    align-items: center; /* 수직으로 가운데 정렬 */
+  }
+
    .box {
     width: 200px;
     height: 50px;
     background-color: #D9D9D9;
     list-style: none;
     display: inline;
+    margin: 3px; /* 각 박스 사이의 간격을 조정할 수 있습니다 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
 
    .box:hover {
-    background-color: #91701F;
+    background-color: #89724C;
    }
 /*//////////////////////////////////////////////////*/
    /* 판매자 리스트 박스 */
@@ -122,9 +61,13 @@ a {
   }
   
   .button-container {
-    margin-left: auto;
+    display: flex; 
+    justify-content: flex-end; /* 맨 오른쪽으로 정렬 */
+    margin-left: auto; /* 맨 오른쪽으로 이동 */
+    margin-right: 15px; /* 조금 왼쪽으로 이동 */
+    
   }
-  
+
   .seller-name {
     font-size: 18px;
     margin-bottom: 5px;
@@ -145,11 +88,29 @@ a {
     cursor: pointer;
     font-size: 16px;
     margin-bottom: 5px;
+    margin-right: 5px; /* 버튼 사이의 간격을 조정 */
+    
   }
   
   .buy-button:hover,
   .add-to-cart-button:hover {
     background-color: #89724C;
+    
+  }
+
+
+  .box2 {
+    padding: 10px 20px;
+  background-color: #D9D9D9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-left: auto; /* 맨 오른쪽으로 이동 */
+  margin-right: 70px; /* 조금 왼쪽으로 이동 */
+  pointer-events: none; /* 클릭 효과 비활성화 */
   }
 
   /* 아랫단 숫자 페이지 */
@@ -158,6 +119,7 @@ a {
     list-style: none;
     display: flex;
     justify-content: center;
+    
   }
   
   .pagenation li {
@@ -167,8 +129,11 @@ a {
   
   .pagenation li:hover,
   .pagenation li:hover a {
-    background-color: #89724C;
+    background-color: #bea376;
     color: white !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
   
   .pagenation li a {
