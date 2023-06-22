@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>관리자 마이 페이지</title>
-    <link rel="stylesheet" href="../css/관리자 메인 페이지.css"> 
+    <title>관리자 메인 페이지</title>
+    <link rel="stylesheet" href="../css/AdminMainPage.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Orbit&display=swap" rel="stylesheet">
+    <style>
+        .font-example {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+      </style>
 
     <script>
       function toggleDropdown(event) {
@@ -26,10 +34,11 @@
     </script> 
     
 </head>  
+<body class="font-example">
     <header>
         <div id="logo">
-            <a href="./관리자 메인 페이지.html">
-                <img src="../img/로고.png">
+            <a href="./AdminMainPage.html">
+                <img src="../img/logo.png">
             </a>
         </div>
         <nav>
@@ -42,10 +51,11 @@
               <div style="text-align: center;">
                   <img src="../../static/image/Logo.png" width="150px" style="margin-top: 30px; margin-bottom: 30px;">
               </div>
-                <a href="#">관리자 마이페이지</a>
-                <a href="./카테고리단/현재 펀딩 순위.html">현재 펀딩 순위</a>
-                <a href="./관리자의 판매자 권한 관련/부여/부여 대기.html">판매자 권한 관리</a>
-                <a href="./관리자의 상품 승인 관리 관련/승인 대기.html">상품 승인 관리</a>
+                <a href="">관리자 마이페이지</a>
+                <a href=".fundingRanking.html">현재 펀딩 순위</a>
+                <a href="./waitingAuthorization.html">판매자 권한 관리</a>
+                <a href="./waitingItem.html">상품 승인 관리</a>
+                <a href="./gettingProposals.html">제안받기</a>
               </div>
 
               <button class="gugu" style="color: black;"><a href="./todayOpen">오늘 오픈</a></button>
@@ -60,7 +70,39 @@
     </header>
 
     <middle>
-        
+      <div class="product">
+        <div class="left-column">
+          <h2>오늘 오픈했어요!</h2>
+          <div class="popular1">
+            <div class="item">오늘 나온 상품 1</div>
+            <div class="item">오늘 나온 상품 2</div>
+            <div class="item">오늘 나온 상품 3</div>
+            <div class="item">오늘 나온 상품 4</div>
+          </div>
+          <h2>곧 마감이에요!</h2>
+          <div class="popular1">
+            <div class="item">곧 마감 상품 1</div>
+            <div class="item">곧 마감 상품 2</div>
+            <div class="item">곧 마감 상품 3</div>
+            <div class="item">곧 마감 상품 4</div>
+        </div>
+      </div>
+        <div class="right-column">
+          <h2>실시간 인기 랭킹</h2>
+            <div class="popular2">
+                <div class="item">인기목록 상품 1</div>
+                <div class="item">인기목록 상품 2</div>
+                <div class="item">인기목록 상품 3</div>
+                <div class="item">인기목록 상품 4</div>
+                <div class="item">인기목록 상품 5</div>
+                <div class="item">인기목록 상품 6</div>
+                <div class="item">인기목록 상품 7</div>
+                <div class="item">인기목록 상품 8</div>
+                <div class="item">인기목록 상품 9</div>
+                <div class="item">인기목록 상품 10</div>
+            </div>
+        </div>
+    </div>
     </middle>
 
     <footer>
@@ -68,14 +110,14 @@
             <div class="container">
                 <div>
                     <li class="guide"><a href="./notice">공지사항</a></li>
-                    <li class="guide"><a href="../화면단 구현/맨 밑 소개단/OSMAS소개.html">OSMAS 소개</a></li>
+                    <li class="guide"><a href="../OSAMSIntroduction.html">OSMAS 소개</a></li>
                     <li class="guide"><a href="">문의 사항</a></li>
                 </div>
 
                 <div>
-                    <li class="guide"><a href="./맨 밑 소개단/이용 약관.html">이용약관</a></li>
-                    <li class="guide"><a href="./맨 밑 소개단/개인정보 처리방침.html">개인정보처리방침</a></li>
-                    <li class="guide"><a href="./맨 밑 소개단/프로젝트 심사 기준.html">프로젝트 심사 기준</a></li>
+                    <li class="guide"><a href="./useTerms.html">이용약관</a></li>
+                    <li class="guide"><a href="./personalInformationProcessingPolicy.html">개인정보처리방침</a></li>
+                    <li class="guide"><a href="./projectJudgingCriteria.html">프로젝트 심사 기준</a></li>
                 </div>
             </div>
 
