@@ -157,3 +157,22 @@ aside#left {
     background-color: #C49A6C;
     text-decoration: underline;
   }
+
+  .User_container{
+    text-align: end;
+  }
+
+  .User_container button{
+    border-radius: 4px; 
+    background-color: #FFC26F;
+    height: 40px;
+    width: 70px;
+    margin: 20px 0px 0px 10px;
+    color: white; 
+    border: none;
+    cursor: pointer;
+}
+.User_container button:hover{
+    background-color: #884A39;
+    transition-duration: 0.3s;
+}
