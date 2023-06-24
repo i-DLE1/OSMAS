@@ -1,7 +1,16 @@
 .adminLogin {
-  text-align: right;
-  padding-right: 40px;
-  padding-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+.adminLogin button {
+  font-size: 10px;
+  width: 70px;
+  height: 30px;
+  margin-top: 18px;
+  margin-left: 10px;
 }
 
 nav ul {
