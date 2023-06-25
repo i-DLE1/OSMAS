@@ -1,12 +1,15 @@
-a{
-    text-decoration: none;
-    color: #884A3B;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 body{
+    font-family: 'Noto Sans KR', sans-serif;
     display: grid;
     grid-template-columns: 270px auto;
     margin: 0 60px 0 0;
+}
+
+a{
+    text-decoration: none;
+    color: #884A3B;
 }
 
 .cus-nav{

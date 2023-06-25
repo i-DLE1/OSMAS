@@ -21,8 +21,6 @@ text-transform: uppercase;
 }
 
 
-
-
 .contents{
     /* background-color: rgba(201, 195, 195, 0.7); */
     width: 1200px;
@@ -48,7 +46,8 @@ text-transform: uppercase;
 
 .category {
     text-align: center;
-    background-color: rgba(201, 195, 195, 0.7);
+    /* background-color: rgba(201, 195, 195, 0.7); */
+    background-color: #fff4e2;
     font-size: 20px;
     font-weight: bold;
     width: 100px;
@@ -177,8 +176,9 @@ text-transform: uppercase;
 .progress-bar {
     width: 600px;
     height: 40px;
-    background-color: rgba(201, 195, 195, 0.7);
+    background-color: #c49a6c;
     overflow: hidden;
+    border-radius: 30px;
     }
 
 .progresstext {  
@@ -188,26 +188,32 @@ text-transform: uppercase;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 25px ;
+    font-weight: bold;
 }
     
 .progress-gauge1 {
     width: 60%;
     height: 100%;
-    background-color: #fcd15d;
+    /* background-color: #fcd15d; */
+    background-color: #ffeac6;
     transition: width 0.5s ease-in-out;
 }
 
 .progress-gauge2 {
     width: 33%;
     height: 100%;
-    background-color: #f37e69;
+    /* background-color: #f37e69; */
+    background-color: #ffeac6;
     transition: width 0.5s ease-in-out;
     }
 
 #orderbutton{
     background-color: #C49A6C;
+    border: none;
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+    border-radius: 8px;
 }
 #orderbutton:hover{
     background-color: #dbc3a8;
@@ -219,7 +225,8 @@ text-transform: uppercase;
 
 
 .optionmiddle {
-    background-color: rgba(201, 195, 195, 0.7);
+    /* background-color: rgba(201, 195, 195, 0.7); */
+    /* background-color: #fff4e2; */
     height: 40px;
     display: flex;
     justify-content: space-between;
@@ -228,6 +235,7 @@ text-transform: uppercase;
     padding-right: 2%;
     padding-left: 2%;
     margin-bottom: 2%;
+    border-radius: 8px;
     }
 
 .optiontext {
@@ -251,6 +259,7 @@ text-transform: uppercase;
 #selectbox{
     width: 500px; 
     height: 35px;
+    border-radius: 8px;
 }
 
 #totalamount{
@@ -276,21 +285,39 @@ text-transform: uppercase;
     padding: 10px 12px;
 }
 
+
 #plusbutton{
     width: 40px; 
     font-size: 30px; 
     text-align: center;
+    border: none;
+    border-radius: 8px;
+    background-color: #C49A6C;
 }
+
+#plusbutton:hover{
+    background-color: #dbc3a8;
+
+}
+#plusbutton:active {
+    transform: scale(0.95);
+  }
 
 #minusbutton{
     width: 40px; 
     font-size: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #C49A6C;
 }
 
+#minusbutton:hover{
+    background-color: #dbc3a8;
 
-
-
-
+}
+#minusbutton:active {
+    transform: scale(0.95);
+  }
 
 
 .optionbottom {
@@ -397,4 +424,22 @@ a {
     border: 1px solid #bbb;
     border-radius: 8px;
     padding: 10px 12px;
+  }
+
+  html{
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  button{
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  select{
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  option{
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  input{
+    font-family: 'Noto Sans KR', sans-serif;
   }
