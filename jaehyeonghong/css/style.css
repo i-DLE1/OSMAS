@@ -3,7 +3,7 @@ body * {
 }
 
 /* nav 영역 */
-nav ul{
+nav{
     list-style: none;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
@@ -59,6 +59,28 @@ aside#left ul li a{
 aside#main{
     float: left;
 }
+
+
+/* 1.프로필* 첫화면*/
+.btn_setting {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    overflow:visible;
+    text-indent:-9999px;
+    background: url(../image/settingl.png) no-repeat center / 20px;
+}
+
+
+.info_box {
+    border: 0;
+    border-radius: 8px;
+    background-color: #efefef;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 60px;
+}
+
 
 /* footer영역 */
 footer{
@@ -164,27 +186,3 @@ footer a {
 .dropdown-content a:hover {background-color: #ddd;}
 
 .dropdown:hover .dropdown-content {display: block;}
-
-/* 1.프로필* 첫화면*/
-.btn_setting {
-    position: relative;
-    width: 30px;
-    height: 25px;
-    overflow:visible;
-    text-indent:-9999px;
-    background: url(../image/settingl.png) no-repeat center / 20px;
-}
-
-.info_box {
-    border: 0;
-    border-radius: 8px;
-    background-color: #efefef;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    padding: 60px;
-}
-
-/*2.프로필 설정*/
-
-
-
