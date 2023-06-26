@@ -162,6 +162,7 @@ footer a {
     font-size: 20px;
   }
 
+/* 관리자 로그인  */
 .adminLogin {
   display: flex;
   align-items: flex-start;
@@ -175,7 +176,46 @@ footer a {
   height: 30px;
   margin-top: 18px;
   margin-left: 10px;
+  color: white;
+  background: #cca77f;
+  border: none;
 }
 
+/* 계정잠금화면 css */
+.alert-box {
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+  width: 350px;  
+  height: 350px;
+  margin: 0 auto; 
+}
 
+.alert-message {
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 140px;
+
+}
+
+.logo1 {
+
+    text-align: center;
+    
+    
+}
+
+.confirm-button {
+  font-size: 10px;
+  width: 70px;
+  height: 30px;
+  margin-top: 18px;
+  margin-left: 10px;
+  color: white;
+  background: #cca77f;
+  border: none;
+}
 
