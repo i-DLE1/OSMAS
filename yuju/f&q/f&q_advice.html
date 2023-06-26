@@ -1,45 +1,120 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F&Q_ 도움말</title>
-    <link rel="stylesheet" href="./adminstyle.css">
-</head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>f&q(도움말)</title>
+        <link rel="stylesheet" href="../css/adminbasicstyle.css">
+        <link rel="stylesheet" href="../css/adminmainstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<body>
+        <script>
+            function toggleDropdown(event) {
+                var dropdown = document.getElementById("dropdownContent");
+                dropdown.classList.toggle("slide-open");
+            }
+    
+            $(document).ready(function() {
+                $('#toggleBtn').click(function() {
+                    $('.member-list').toggleClass('active');
+                });
+            });
+    
+            window.addEventListener("click", function (event) {
+                var dropdown = document.getElementById("dropdownContent");
+                var targetElement = event.target;
+    
+                if (!targetElement.closest(".gugu") && !targetElement.closest(".slide-content")) {
+                    dropdown.classList.remove("slide-open");
+                }
+            });
+        </script> 
+    </head>
+    
+    <body>
+    
+        <header>
+            <div class="adminLogin">
+                <h4>관리자님 환영합니다!</h4>
+                <button>로그아웃</button>
+            </div>
+    
+            <!-- 상단 카테고리 -->
+            <div class="notice">
+            <img class="notice_header" src="../resource/img/logo.png" style="display:block; margin: 0 auto; width:180px; height:130px;">
+            <nav>
+                <ul>
+                    <li class="category">
+                    <button class="gugu" onclick="toggleDropdown()">카테고리</button>
+                    </li>
+    
+                    <div class="slide-content" id="dropdownContent">
+                    <div style="text-align: center;">
+                        <img src="../../static/image/Logo.png" width="150px" style="margin-top: 30px; margin-bottom: 30px;">
+                    </div>
+    
+                    <a href="" onclick="toggleDropdown(event)">관리자 마이페이지</a>
+                    <a href=".fundingRanking.html">현재 펀딩 순위</a>
+                    <a href="./waitingAuthorization.html">판매자 권한 관리</a>
+                    <a href="./waitingItem.html">상품 승인 관리</a>
+                    <a href="./gettingProposals.html">제안받기</a>
+                    <a href="../notice/notice_fullview.html">공지사항 관리</a>
+                    <a href="./full_inquiry.html">회원 관리</a>
+                    <a href="../restrict/restrict_receive.html">신고 및 제재</a>
+                    <a href="./f&q_handle.html">상담 문의 처리</a>
+                    <a href="./f&q_advice.html">도움말</a>
+                </div>
+    
+                <button class="gugu" style="color: black;"><a href="./todayOpen">오늘 오픈</a></button>
+                <button class="gugu" style="color: black;"><a href="./hotItem">인기 상품</a></button>
+                <button class="gugu" style="color: black;"><a href="./openExpect">오픈 예정</a></button>
+                <button class="gugu" style="color: black;"><a href="./event">이벤트</a></button>
+                    <li class="search">
+                    <input type="text" placeholder="검색할 내용을 입력해주세요">
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-<!-- F&Q: 도움말 -->
+
+    <!-- 상단 타이틀 : F&Q 도움말 -->
     <div class="notice">
-        <img class="notice_header" src="./resource/logo.png">
-        <p class="p1">F&Q</p>
-        <p class="p2">도움말</p>
-        <hr class="custom-hr">
+        <p style="text-align: right; margin-right: 1132px; padding-top: 10px; font-weight: bold; font-size: 18px;">F&Q</p>
+        <p style="text-align: right; margin-right: 1134px; font-size: 14px; direction: rtl;">도움말</p> 
+        <hr>
+        <p class="left-align">무엇을 도와드릴까요?</p>
+        <br>
     </div>
 
     <br>
     <br>
-
+    
 
     <!-- 본문 : 검색창 -->
-    <p class="left-align">무엇을 도와드릴까요?</p>
-    <div class="search" style="text-align: center;">
-        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" class="search-icon">
-        <input type="text" placeholder="  키워드 위주로 검색해보세요" size="48">
-        <button type="submit" style="margin-left: 20px;">검색</button>
-    </div>
-    </div>
+    <div class="search-inquiry">
+        <input type="text" class="search-inquiry2" placeholder="키워드 위주로 검색해보세요">
 
+        <button type="submit" style=" position: absolute;
+        bottom: 10px;
+        top: 43px;
+        right: -60px;
+        color: white;
+        background: #cca77f;
+        border: none;
+        width: 70px;
+        height: 35px;
+        font-size: 13px;">검색</button>
+    </div>
+    </div>
     <br>
     <br>
-    <br>
+    
 
     <ul class="help-categories">
-        <li>기본도움말</li>
-        <li>후원자도움말</li>
-        <li>기타도움말</li>
+        <li>기본 도움말</li>
+        <li>후원자 도움말</li>
+        <li>기타 도움말</li>
         <li>상품/배송</li>
     </ul>
     
@@ -47,62 +122,59 @@
         <li>멤버십</li>
         <li>교환/AS</li>
         <li>취소/환불/반품</li>
-        <li>서비스이용문의</li>
+        <li>서비스 이용문의</li>
     </ul>
-    <br>
-    <br>
-    <hr class="custom-hr">
+    <br>    
+    <hr>
 
-
-
-
-    <div class="index">
-        <div class="img">
-            <!-- 프로필 이미지 -->
-            <img class="profil" id="porfile-img" src="./resource/profil.png">
-        </div>
-        <div class="user-role">
-            admin
-            <br>
-            [말콩]님
-        </div>
+    <div class="help-container">
+        <p class="help1">기본 도움말</p>
+        <p class="help3">후원자 질문</p>
     </div>
 
-
-        <!-- 본문 : 조회 리스트 -->
-
-        
-
-        <div class="content">
-            <!-- 목차 : 공지사항 -->
-            <br>
-            <h3 class="click" style="font-weight: bold; font-size: 20px;">회원관리</h3>
-            <h3 class="click" style="font-size: 16px;"><a href=5_회원관리_사용자전체조회.html>- 사용자 전체조회</a></h3>
-            <h3 class="click" style="font-size: 16px;"><a href=6_회원관리_후원회원조회.html>- 후원 회원 조회</a></h3>
-            <h3 class="click" style="font-size: 16px;"><a href=7_회원관리_판매회원조회.html>- 판매 회원 조회</a></h3>
-            <h3 class="click" style="font-size: 16px;"><a href=8_회원관리_탈퇴회원조회.html>- 탈퇴 회원 조회</a></h3>
-            <h3 class="click"><a href="./09_회원관리_회원그룹관리.html">- 회원 그룹 조회</a></h3>
-        
-
-            <!-- 목차 : 신고 및 제제 -->
-            <br>
-            <h3 class="click" style="font-weight: bold;font-size: 20px;">- 신고 및 제제</h3>
-            <h3 class="click" style="font-size: 16px;"><a href=10_신고및제제_신고접수내역.html>-  신고 접수 내역</a></h3>
-            <h3 class="click" style="font-size: 16px;"><a href=11_신고및제제_신고제제.html>- 신고 제제</a></h3>
-
-            <!-- 목차 : F&Q -->
-            <br>
-            <h3 class="click" style="font-weight: bold; font-size: 20px;">F&Q</h3>
-            <h3 class="click" style="font-size: 16px;"><a href=12_F&Q_상담문의처리.html>- 상담 문의 처리</a></h3>
-            <h3 class="click" style="font-size: 16px;"><a href=13_F&Q_도움말.html>- 도움말</a></h3>
-
-            <!-- 목차 : 공지사항 -->
-            <br>
-            <h3 class="click" style="font-weight: bold; font-size: 20px;">공지사항</h3>
-            <h3 class="click" style="font-size: 16px;"><a href=14_공지사항_공지사항등록.html>-  공지사항 등록</a></h3>
-        </div>
+    <div class="help-container2">
+    <li class="help2">크라우드 펀딩이란?</li>
+    <li class="help2">펀딩 수수료는 얼마인가요?</li>
+    <li class="help2">프로젝트 후원은 무엇인가요?</li>
+    <li class="help2">선물은 무엇인가요?</li>
     </div>
-    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <footer>
+        <ul style="list-style: none;">
+            <div class="container">
+                <div>
+                    <li class="guide"><a href="./notice_fullview.html">공지사항</a></li>
+                    <li class="guide"><a href="../OSAMSIntroduction.html">OSMAS 소개</a></li>
+                    <li class="guide"><a href="">문의 사항</a></li>
+                </div>
+
+                <div>
+                    <li class="guide"><a href="./useTerms.html">이용약관</a></li>
+                    <li class="guide"><a href="./personalInformationProcessingPolicy.html">개인정보처리방침</a></li>
+                    <li class="guide"><a href="./projectJudgingCriteria.html">프로젝트 심사 기준</a></li>
+                </div>
+            </div>
+
+            <div class="container2">
+                <div class="container3">
+                    <h5 class="call">고객 센터</h5>
+                    <h5 class="call">평일 9:00 ~ 18:00</h5>
+                    <button class="call" style="float: right; padding: 4px;">문의하기</button>
+                </div>
+                <h6 style="text-align: center; padding-top: 30px;">오스메스는 크라우드펀딩 플랫폼을 운영하는 중개자(통신판매중개자)로서 프로젝트를 진행하는 당사자가 아닙니다.<br> 
+                    상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있으므로, 각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.</h6>
+                <h6 style="padding-top: 30px;">© 2023 OSMAS. ALL RIGHTS RESERVED.</h6>    
+            </div>
+        </ul>
+    </footer>
+
     </div>
     </main>
 </body>
