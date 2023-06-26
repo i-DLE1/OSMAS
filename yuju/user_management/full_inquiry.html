@@ -2,9 +2,9 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>공지사항_보도자료</title>
-    <link rel="stylesheet" href="../css/adminstyle.css">
-    <link rel="stylesheet" href="../css/관리자 메인 페이지.css">
+    <title>full_inquiry(사용자전체조회)</title>
+    <link rel="stylesheet" href="../css/adminbasicstyle.css">
+    <link rel="stylesheet" href="../css/adminmainstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <script>
@@ -14,6 +14,12 @@
         dropdown.classList.toggle("slide-open");
         }
 
+            $(document).ready(function() {
+        $('#toggleBtn').click(function() {
+            $('.member-list').toggleClass('active');
+        });
+    });
+
         // 클릭 이벤트가 발생한 영역 밖을 클릭하면 슬라이드가 닫히도록 설정
         window.addEventListener("click", function (event) {
         var dropdown = document.getElementById("dropdownContent");
@@ -22,10 +28,12 @@
         if (!targetElement.closest(".gugu") && !targetElement.closest(".slide-content")) {
             dropdown.classList.remove("slide-open");
         }
+
         });
     </script> 
 
 </head>
+
 <body>
 
     <header>
@@ -47,11 +55,13 @@
                     <img src="../../static/image/Logo.png" width="150px" style="margin-top: 30px; margin-bottom: 30px;">
                 </div>
 
-                <a href="">관리자 마이페이지</a>
+                <a href="" onclick="toggleDropdown(event)">관리자 마이페이지</a>
                 <a href=".fundingRanking.html">현재 펀딩 순위</a>
                 <a href="./waitingAuthorization.html">판매자 권한 관리</a>
                 <a href="./waitingItem.html">상품 승인 관리</a>
                 <a href="./gettingProposals.html">제안받기</a>
+                <a href="../notice/notice_fullview.html">공지사항 관리</a>
+                <a href="./full_inquiry.html">회원 관리</a>
             </div>
 
             <button class="gugu" style="color: black;"><a href="./todayOpen">오늘 오픈</a></button>
@@ -66,16 +76,6 @@
     </header>
     
 
-</body>
-
-
-</html>
-
-
-    <link rel="stylesheet" href="./adminstyle.css">
-</head>
-
-<body>
 
     <!-- 상단 타이틀 : 회원관리-사용자 전체조회 -->
     <div class="notice">
@@ -87,10 +87,9 @@
     <br>
 
     <!-- 본문 : 검색창 -->
-    <div class="search" style="text-align: center;">
-        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" class="search-icon">
-        <input type="text" placeholder="검색 할 닉네임(이메일)을 입력하세요" size="30">
-        <button type="submit" style="margin-left: 20px;">검색</button>
+    <div class="search-inquiry">
+        <input type="text" placeholder="검색 할 닉네임(이메일)을 입력하세요" class="search-inquiry">
+        <button type="submit" class="search-button">검색</button>
     </div>
     </div>
 
@@ -151,7 +150,7 @@
             </div>
             <br>
             <br>
-            <button id="load-more-btn" onclick="loadMoreUsers()" style="display: block; margin: 0 auto;">더보기</button>
+            <button id="load-more-btn" onclick="loadMoreUsers()" class="more1">더보기</button>
 
             <br>
             <br>
@@ -160,10 +159,45 @@
         <br>
         <br>
         <br>
-
+    
     </div>
     </nav>
     </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <ul style="list-style: none;">
+            <div class="container">
+                <div>
+                    <li class="guide"><a href="./notice_fullview.html">공지사항</a></li>
+                    <li class="guide"><a href="../OSAMSIntroduction.html">OSMAS 소개</a></li>
+                    <li class="guide"><a href="">문의 사항</a></li>
+                </div>
+
+                <div>
+                    <li class="guide"><a href="./useTerms.html">이용약관</a></li>
+                    <li class="guide"><a href="./personalInformationProcessingPolicy.html">개인정보처리방침</a></li>
+                    <li class="guide"><a href="./projectJudgingCriteria.html">프로젝트 심사 기준</a></li>
+            </div>
+
+            <div class="container2">
+                <div class="container3">
+                    <h5 class="call">고객 센터</h5>
+                    <h5 class="call">평일 9:00 ~ 18:00</h5>
+                    <button class="call" style="float: right; padding: 4px;">문의하기</button>
+                </div>
+                <h6 style="text-align: center; padding-top: 30px;">오스메스는 크라우드펀딩 플랫폼을 운영하는 중개자(통신판매중개자)로서 프로젝트를 진행하는 당사자가 아닙니다.<br> 
+                    상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있으므로, 각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.</h6>
+                <h6 style="padding-top: 30px;">© 2023 OSMAS. ALL RIGHTS RESERVED.</h6>    
+            </div>
+        </ul>
+    </footer>
     </main>
 </body>
 
