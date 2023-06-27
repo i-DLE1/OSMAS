@@ -49,14 +49,6 @@ text-transform: uppercase;
     text-align: center; margin-right: 1110px; 
 }
 
-.p1{
-    text-align: right; margin-right: 1111px; padding-top: 10px; font-weight: bold; font-size: 18px;
-}
-
-.p2{
-    text-align: right; margin-right: 1084px; font-size: 14px; direction: rtl;
-}
-
 table {
     width: 60%;
     border-collapse: collapse;
@@ -151,6 +143,16 @@ td.description {
 
 .search-button:hover {
     background: #b68149;
+}
+
+.search-inquiry2 {
+    position: absolute;
+        height: 20px;
+        top: 200%;
+        left: 46.5%;
+        transform: translate(-50%, -50%);
+        width: 760px; 
+        height: 30px;
 }
 
 .member-list {
@@ -306,19 +308,18 @@ a {
 }
 
 .left-align {
-    padding-left: 200px;
+    padding-left: 253px;
 }
 .help-categories {
     display: flex;
     justify-content: center;
     list-style: none;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    padding: 30px;
 }
 
 .help-categories li {
-    margin-right: 20px; /* 단어 간격 조정 */
+    margin-right: 150px; /* 단어 간격 조정 */
 }
 
 
@@ -328,4 +329,57 @@ a {
     width: 1050px;
     background-color: #000; /* 원하는 선의 색상 설정 */
     margin: 10px auto;  /* 원하는 선의 위아래 여백 설정 */
+}
+
+.help1 {
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    text-align: center;
+    margin-right: 350px;
+}
+
+.help2 {
+    font-size: 13px;
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    text-align: center;
+    margin-left: 260px;
+    margin-bottom: 20px; 
+}
+
+.help3 {
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    text-align: center;
+    margin-right: 600px;
+    vertical-align: top; 
+}
+
+.help4 {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    float: right; /* 오른쪽으로 옮김 */
+    margin-right: 600px;
+    vertical-align: top; /* 위로 올림 */
+}
+
+
+.help-container {
+    display: flex;
+    justify-content: left;
+    margin-left: 260px;
+}
+
+
+.help-container2 {
+    /* display: flex; */
+    justify-content: left;
+    vertical-align: top;
+    /* margin-left: 260px; */
 }

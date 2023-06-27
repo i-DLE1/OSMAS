@@ -116,7 +116,7 @@
   border-radius: 4px;
   margin-bottom: 10px;
 }
-.mypage_pwd input[type="text"] {
+.mypage_pwd input[type="password"] {
   width: 30%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -139,11 +139,30 @@
   margin-bottom: 5px;
 }
 
+/* MypageAccountDelete */
 
+.top_line {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
 
+}
+.delete_top {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+}
 
+.delete_mid {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+}
 
-
+.delete_next {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
 
 
 
