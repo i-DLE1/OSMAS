@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>사용자 메인 페이지</title>
-    <link rel="stylesheet" href="../css/mypagebasic.css"> 
+    <link rel="stylesheet" href="../css/mypagebasic.css">
+    <link rel="stylesheet" href="../css/mypagemain.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Orbit&display=swap" rel="stylesheet">
@@ -73,7 +74,55 @@
           </nav>
     </header>
 
+    <main>
+      <div class="mypage">
+        <h2>마이페이지</h2>
+        <ul class="mypage_bar">
+          <li><a href="./MypageProfile.html">프로필</a></li>
+          <li><a href="./MypageAccount.html">계정</a></li>
+          <li><a href="#">후원한 프로젝트</a></li>
+          <li><a href="#">배송지</a></li>
+          <li><a href="#">알림</a></li>
+          <li><a href="#">회원탈퇴</a></li>
+      </div>
 
+        <div class="mypage_email">
+          <h3>이메일</h3>
+          <input type="text" placeholder="이메일을 입력해주세요"/><br>
+          <button class="btn_save" onclick="showMessage()">저장</button>
+        </div>
+        <div class="mypage_pwd">
+          <h3>비밀번호</h3>
+          <h4>현재 비밀번호</h4>
+          <input type="text" placeholder="현재 비밀번호"/><br>
+          <h4>변경할 비밀번호</h4>
+          <input type="text" placeholder="현재 비밀번호"/><br>
+          <input type="text" placeholder="변경할 비밀번호"/><br>
+          <button class="btn_save" onclick="showMessage()">저장</button>
+        </div>
+
+        <div class="message-container"></div>
+
+        <script>
+          function showMessage() {
+            const messageContainer = document.querySelector('.message-container');
+            const saveButton = document.querySelector('.btn_save');
+            
+            messageContainer.textContent = '저장되었습니다!';
+            messageContainer.classList.add('show');
+            
+            saveButton.disabled = true; // 저장 버튼 비활성화
+            
+            setTimeout(function() {
+              messageContainer.classList.remove('show');
+              saveButton.disabled = false; // 저장 버튼 활성화
+            }, 1000);
+          }
+        </script>
+
+    </main>
+
+<br><br><br><br><br>
 
     <footer>
         <ul style="list-style: none;">
