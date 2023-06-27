@@ -289,4 +289,31 @@
 }
 
 
+/*================*/
+/* SponsorProject */
+/*================*/
+
+.sponsor .img {
+  display: flex;
+  align-items: center;
+}
+
+.sponsor .img img {
+  width: 250px;
+  height: 200px;
+}
+
+.sponsor .img p {
+  font-weight: bold;
+  font-size: large;
+  margin-left: 20px;
+}
+
+.sponsor_top {
+  font-weight: bold;
+  font-size:large;
+  border-bottom: 3px solid #ccc;
+}
+
+
 
