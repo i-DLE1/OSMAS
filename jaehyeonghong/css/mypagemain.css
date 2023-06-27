@@ -137,14 +137,23 @@
   border-radius: 0;
 }
 
+.mypage_delete button.btn_save {
+  padding: 10px 18px; 
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  margin-top: 50px;
+}
+
 .mypage_pwd h4 {
   margin-top: 18px;
   margin-bottom: 5px;
 }
 
-/*================*/
+/*=====================*/
 /* MypageAccountDelete */
-/*================*/
+/*=====================*/
 
 .top_line {
   border-bottom: 1px solid #ccc;
