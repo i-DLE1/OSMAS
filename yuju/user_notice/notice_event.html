@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="../css/adminbasicstyle.css">
     <link rel="stylesheet" href="../css/adminmainstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <script>
         function toggleDropdown(event) {
           // event.stopPropagation(); // 클릭 이벤트의 전파를 중지합니다.
@@ -23,17 +22,27 @@
             dropdown.classList.remove("slide-open");
         }
         });
-    </script> 
 
-</head>
-<body>
+        var menuVisible = false; // 드롭다운 메뉴의 표시 여부를 저장하는 변수
 
+        function toggleMenu() {
+        var menu = document.getElementById("adminMenuContent");
+    
+        if (menuVisible) {
+        menu.style.display = "none"; // 드롭다운 메뉴를 숨김
+        menuVisible = false;
+        } else {
+        menu.style.display = "block"; // 드롭다운 메뉴를 표시
+        menuVisible = true;
+        }
+    }
+    </script>
+
+</head>  
+<body class="font-example">
     <header>
-        <div class="adminLogin">
-            <h4>관리자님 환영합니다!</h4>
-            <button>로그아웃</button>
-        </div>
-
+  
+        <!-- 상단 카테고리 -->
         <div class="notice">
         <img class="notice_header" src="../resource/img/logo.png" style="display:block; margin: 0 auto; width:180px; height:130px;">
         <nav>
@@ -47,7 +56,6 @@
                     <img src="../../static/image/Logo.png" width="150px" style="margin-top: 30px; margin-bottom: 30px;">
                 </div>
 
-            
                 <a href="" onclick="toggleDropdown(event)">관리자 마이페이지</a>
                 <a href=".fundingRanking.html">현재 펀딩 순위</a>
                 <a href="./waitingAuthorization.html">판매자 권한 관리</a>
@@ -71,17 +79,16 @@
         </nav>
     </header>
 
-    <h1 class="notice1">공지사항</h1>
-            <div class="notice2">
-                <a href="./notice_fullview.html">전체보기</a>
-                <a href="./notice_notice.html">공지사항</a>
-                <a href="./notice_event.html"  style="font-weight: bold;">이벤트</a>
-                <a href="./notice_article.html">보도자료</a>
-            </div>
+    <div class="containerbox">
+        <nav class="box3">
+            <ul style="border-bottom: none; border-top: none;">
+            <li class="box"><a href="./notice_fullview.html">전체보기</a></li>
+            <li  class="box"><a href="./notice_notice.html">공지사항</a></li>
+            <li class="box" style="background-color: #bea376;"><a href="./notice_event.html">이벤트</a></li>
+            <li class="box"><a href="../notice/notice_article.html">보도자료</a></li>
+        </ul>
         </nav>
     </div>
-
-    
 
 <div class="contents_box">
     <ul class="notice_letter">
