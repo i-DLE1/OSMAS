@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>판매자 권한 부여 대기</title>
     <link rel="stylesheet" href="../css/sellerAuthorityManaging.css">
-   
 </head>
+
 <body>
     <middle>
     <div class="containerbox">
@@ -20,22 +20,21 @@
             <li class="box"><a href="../회수/succesRetrieve.html">권한 회수 완료</a></li>
         </ul>
        </nav>
-    </div>
-
+      </div>
         <h4 style="color: rgb(168, 164, 164); text-align: center;">판매자 권한 부여를 기다리고 있습니다.</h4>
         <div class="product">
-            <div class="image-container">
-              <img src="image.jpg" alt="Product Image">
-            </div>
-            <div class="content-container">
-              <h3 class="seller-name">판매자 이름</h3>
-              <p class="sale-description">판매 내용</p>
-            </div>
-            <div class="button-container">
-              <button class="buy-button">권한 부여</button>
-              <button class="add-to-cart-button" style="margin-right: 60px;">부여 대기</button>
-            </div>
+          <div class="image-container">
+            <img src="image.jpg" alt="Product Image">
           </div>
+          <div class="content-container">
+            <h3 class="seller-name">판매자 이름</h3>
+            <p class="sale-description">판매 내용</p>
+          </div>
+          <div class="button-container">
+            <button class="buy-button">권한 부여</button>
+            <button class="add-to-cart-button" style="margin-right: 60px;">부여 대기</button>
+          </div>
+        </div>
 
           <div class="product">
             <div class="image-container">
@@ -109,5 +108,19 @@
     <!-- 테이블 종료 -->
     </div>
     </middle>
+
+    <script>
+      // 버튼 요소 선택
+      const buyButtons = document.querySelectorAll('.buy-button');
+
+      // 각 버튼에 이벤트 처리 추가
+      buyButtons.forEach(button => {
+          button.addEventListener('click', () => {
+              // 알림 메시지 표시
+              alert('권한이 부여되었습니다!');
+          });
+      });
+  </script>
+
 </body>
 </html>

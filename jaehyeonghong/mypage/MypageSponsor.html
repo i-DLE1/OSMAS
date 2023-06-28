@@ -75,40 +75,55 @@
     </header>
 
     <main>
-      <h2 class="top_line">회원탈퇴</h2>
-      <div class="delete_top">
-        <h3>서비스 이용에 불편함이 있으신가요?</h3>
-        알림을 너무 많이 수신하고 계신가요? 알림설정에서 수신을 거부할 수 있습니다.<br>
-        기타 불편한 사항이 있다면 언제든 OSMAS에 알려주세요  
+      <div class="mypage">
+        <h2>마이페이지</h2>
+        <ul class="mypage_bar">
+          <li><a href="./MypageProfile.html">프로필</a></li>
+          <li><a href="./MypageAccount.html">계정</a></li>
+          <li><a href="./MypageSponsor.html">후원한 프로젝트</a></li>
+          <li><a href="./MypageShippingAd.html">배송지</a></li>
+          <li><a href="./MypageAlarm.html">알림</a></li>
       </div>
-      
-      <div class="delete_mid">
-        <h3>탈퇴 전, 유의사항을 확인해주시기 바랍니다.</h3>
-        계정 및 알림<br>
-        연동돼 있었던 모든 계정과 연동이 모두 해제됩니다.
-        <br><br>
-        후원 및 결제<br>
-        이미 결제된 후원은 취소되지 않습니다.<br>
-        관련 법령에 따라 후원 및 후원취소에 관한 기록, 결제 및 선물 전달에 관한 기록은 5년 동안 보관됩니다.
-      </div>
-      <br>
-      <div class="delete_bottom">
-        <input type="checkbox" id="checkmessage">
-        <label for="checkmessage">탈퇴 유의사항을 확인했습니다.</label>
-        <br><br>
-        <button class="delete_next" onclick="redirectToNewPage()">다음</button>
-      </div>
-    </main>
-    <script>
-      function redirectToNewPage() {
-        // 페이지 이동 로직 구현
-        window.location.href = "./MypageAccountDeleteNext.html"; // 새로운 페이지로 이동
-      }
-    </script>
 
+      <div class="sponsor">
+        <div class="img">
+          <img src="../image/bigsize.png">
+          <p>상품준비중</p>
+        </div>
+      </div>
+
+        <div class="sponsor_top"> 
+          입고 태어난 듯! 플러스사이즈 스웻셔츠/럭비티/팬츠<br>
+          755% 7,551,600원 [펀딩성공!]
+        </div>
+
+        <div class="sponsor">
+          <div class="img">
+            <img src="../image/overfit.png">
+            <p>배송중</p>
+          </div>
+        </div>
+  
+          <div class="sponsor_top"> 
+            환절기 필수템! 오버핏[도포 셔츠]<br>
+            7503% 75,030,200원 [펀딩성공!]
+          </div>
+          
+          <div class="sponsor">
+            <div class="img">
+              <img src="../image/summersize.png">
+              <p>배송완료</p>
+            </div>
+          </div>
     
+            <div class="sponsor_top"> 
+              Summer하와이안 셔츠! 플러스 사이즈<br>
+              221% 1,106,000원 [펀딩성공!]
+            </div> 
 
-<br><br><br><br><br>
+    </main>
+
+    <br><br>
 
     <footer>
         <ul style="list-style: none;">
