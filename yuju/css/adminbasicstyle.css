@@ -432,3 +432,14 @@ a {
     position: relative;
     left: -70px;
 }
+
+.btn5{
+    color: white;
+    background: #cca77f;
+
+    border: none;
+    font-size: 15px;
+}
+.btn5:hover{
+    background: #b68149;
+}
